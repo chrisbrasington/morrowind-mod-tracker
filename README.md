@@ -9,22 +9,22 @@
 
 | Mod Name | Content File | Paths Used |
 |----------|--------------|-------------|
-| Audiobooks | AudiobooksOfMorrowind.ESP | /mnt/nvme-slot2/mods/morrowind/Audiobooks |
-| Audiobooks | audiobook-openmw.omwscripts | /mnt/nvme-slot2/mods/morrowind/Audiobooks |
+| Audiobooks | AudiobooksOfMorrowind.ESP | /home/chris/mods/morrowind/Audiobooks |
+| Audiobooks | audiobook-openmw.omwscripts | /home/chris/mods/morrowind/Audiobooks |
 
 ## Camping
 
 | Mod Name | Content File | Paths Used |
 |----------|--------------|-------------|
-| Devilish Needs | Devilish Needs.esp | /mnt/nvme-slot2/mods/morrowind/Camping/Devilish Needs |
-| Devilish Needs | Devilish Needs.omwscripts | /mnt/nvme-slot2/mods/morrowind/Camping/Devilish Needs |
-| OAAB | OAAB_Data.esm | /mnt/nvme-slot2/mods/morrowind/Camping/OAAB |
+| Devilish Needs | Devilish Needs.esp | /home/chris/mods/morrowind/Camping/Devilish Needs |
+| Devilish Needs | Devilish Needs.omwscripts | /home/chris/mods/morrowind/Camping/Devilish Needs |
+| OAAB | OAAB_Data.esm | /home/chris/mods/morrowind/Camping/OAAB |
 
 ## Cheat
 
 | Mod Name | Content File | Paths Used |
 |----------|--------------|-------------|
-| Cheat | No Arrow Weight.ESP | /mnt/nvme-slot2/mods/morrowind/Cheat |
+| Cheat | No Arrow Weight.ESP | /home/chris/mods/morrowind/Cheat |
 
 ## Cyrodill
 
@@ -36,7 +36,7 @@
 
 | Mod Name | Content File | Paths Used |
 |----------|--------------|-------------|
-| Extra | Camping Kits.ESP | /mnt/nvme-slot2/mods/morrowind/Extra |
+| Extra | Camping Kits.ESP | /home/chris/mods/morrowind/Extra |
 
 ## Fixes
 
@@ -58,36 +58,36 @@
 
 | Mod Name | Content File | Paths Used |
 |----------|--------------|-------------|
-| Grass TR | Grass TR AC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass TR | Grass TR AC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
-| Grass TR | Grass TR AI.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass TR | Grass TR AI.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
-| Grass TR | Grass TR AL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass TR | Grass TR AL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
-| Grass TR | Grass TR AT.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass TR | Grass TR AT.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
-| Grass TR | Grass TR BC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass TR | Grass TR BC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
-| Grass TR | Grass TR GL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass TR | Grass TR GL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
-| Grass TR | Grass TR SV.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass TR | Grass TR SV.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
-| Grass TR | Grass TR WG.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass TR | Grass TR WG.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
-| Grass Vanilla regions | Grass AC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass Vanilla regions | Grass AC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
-| Grass Vanilla regions | Grass AI.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass Vanilla regions | Grass AI.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
-| Grass Vanilla regions | Grass AL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass Vanilla regions | Grass AL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
-| Grass Vanilla regions | Grass BC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass Vanilla regions | Grass BC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
-| Grass Vanilla regions | Grass Bloodmoon.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass Vanilla regions | Grass Bloodmoon.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
-| Grass Vanilla regions | Grass GL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass Vanilla regions | Grass GL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
-| Grass Vanilla regions | Grass WG.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| Grass Vanilla regions | Grass WG.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass TR | Grass TR AC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR AC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR AI.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR AI.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR AL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR AL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR AT.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR AT.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR BC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR BC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR GL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR GL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR SV.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR SV.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass Vanilla regions | Grass AC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass AC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass AI.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass AI.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass AL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass AL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass BC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass BC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass Bloodmoon.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass Bloodmoon.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass GL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass GL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
 
 ## Landmasses
 
@@ -179,17 +179,17 @@
 | Mod Name | Content File | Paths Used |
 |----------|--------------|-------------|
 | Data Files | Cantons_on_the_Global_Map_v1.1.esp | /home/chris/mods/morrowind/UserInterface/CantonsontheGlobalMap/Data Files |
-| PerfectPlacement | Perfect Placement.omwscripts | /mnt/nvme-slot2/mods/morrowind/UserInterface/PerfectPlacement |
+| PerfectPlacement | Perfect Placement.omwscripts | /home/chris/mods/morrowind/UserInterface/PerfectPlacement |
 
 ## Voice
 
 | Mod Name | Content File | Paths Used |
 |----------|--------------|-------------|
-| LuaHelper | OpenMW_luahelper.esp | /mnt/nvme-slot2/mods/morrowind/Voice/LuaHelper |
-| LuaHelper | OpenMW_luahelper.omwscripts | /mnt/nvme-slot2/mods/morrowind/Voice/LuaHelper |
-| LuaHelper | OpenMW_luahelper_dialog.esp | /mnt/nvme-slot2/mods/morrowind/Voice/LuaHelper |
-| LuaHelper | OpenMW_luahelper_dialog_TR.esp | /mnt/nvme-slot2/mods/morrowind/Voice/LuaHelper |
-| PatchForOpenMW | VoV OpenMW.omwscripts | /mnt/nvme-slot2/mods/morrowind/Voice/PatchForOpenMW |
+| LuaHelper | OpenMW_luahelper.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
+| LuaHelper | OpenMW_luahelper.omwscripts | /home/chris/mods/morrowind/Voice/LuaHelper |
+| LuaHelper | OpenMW_luahelper_dialog.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
+| LuaHelper | OpenMW_luahelper_dialog_TR.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
+| PatchForOpenMW | VoV OpenMW.omwscripts | /home/chris/mods/morrowind/Voice/PatchForOpenMW |
 
 ## Water
 
