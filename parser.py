@@ -65,27 +65,33 @@ def generate_readme_data(data_dirs, content_files, content_map):
             continue
 
         mod_path = content_map[esp]
-        mod_root = None
         matched_paths = []
+
+        section = get_section_name(str(mod_path))
+        mod_root = None
 
         for base in data_dirs:
             if str(mod_path).startswith(base):
-                rel_path = Path(mod_path).relative_to(base)
-                mod_root = rel_path.parts[0] if rel_path.parts else Path(mod_path).name
-                matched_paths.append(base)
+                base_parts = Path(base).parts
+                mod_parts = Path(mod_path).parts
+                try:
+                    section_index = mod_parts.index(section)
+                    mod_root = "/".join(mod_parts[section_index + 1:])
+                    matched_paths.append(base)
+                    break  # only use the first match
+                except ValueError:
+                    continue
 
         if not mod_root:
             mod_root = Path(mod_path).name
+            matched_paths = [str(mod_path)]
 
-        section = get_section_name(str(mod_path))
+        print(f"[INFO] Section: {section} | Mod: {mod_root} | ESP: {esp} | Path(s): {matched_paths}")
 
-        print(f"[INFO] Section: {section} | Mod: {mod_root} | ESP: {esp} | Path(s): {matched_paths or [str(mod_path)]}")
-
-        for base in matched_paths or [str(mod_path)]:
+        for base in matched_paths:
             output[section].append((mod_root, esp, base))
 
     return output
-
 
 def update_readme(existing, generated):
     merged = defaultdict(set)
