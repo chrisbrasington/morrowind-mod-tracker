@@ -169,10 +169,10 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| LuaHelper |  | OpenMW_luahelper.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
-| LuaHelper |  | OpenMW_luahelper.omwscripts | /home/chris/mods/morrowind/Voice/LuaHelper |
-| LuaHelper |  | OpenMW_luahelper_dialog.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
-| LuaHelper |  | OpenMW_luahelper_dialog_TR.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
+| [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Voice dialogue | OpenMW_luahelper.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
+| [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Voice dialogue | OpenMW_luahelper.omwscripts | /home/chris/mods/morrowind/Voice/LuaHelper |
+| [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Voice dialogue | OpenMW_luahelper_dialog.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
+| [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Voice dialogue | OpenMW_luahelper_dialog_TR.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
 | PatchForOpenMW |  | VoV OpenMW.omwscripts | /home/chris/mods/morrowind/Voice/PatchForOpenMW |
 
 ## Water
