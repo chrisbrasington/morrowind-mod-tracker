@@ -83,13 +83,18 @@ def print_mod_info(mod_name, data, content_files, paths_used):
     else:
         print("  No notes found.")
 
-def interactive_walk():
+def interactive_walk(skip_existing):
     mod_data, content_files, paths_used = extract_mod_data()
     last_url = ""
     last_notes = ""
 
     for i, (mod_name, data) in enumerate(sorted(mod_data.items()), 1):
         print_mod_info(mod_name, data, content_files, paths_used)
+
+        # Check if we should skip this mod (i.e., it already has a URL set)
+        if skip_existing and data["url"]:
+            print(f"  ✅ Skipping {mod_name} (URL already set: {data['url']})")
+            continue
 
         url = input("  Enter new URL (or press Enter to skip, 'ditto' to reuse last): ").strip()
         if url.lower() == "ditto":
@@ -134,10 +139,11 @@ def interactive_single():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-w", "--walk", action="store_true", help="Walk through each mod interactively")
+    parser.add_argument("-s", "--skip", action="store_true", help="Skip mods that already have a URL")
     args = parser.parse_args()
 
     if args.walk:
-        interactive_walk()
+        interactive_walk(args.skip)
     else:
         interactive_single()
 

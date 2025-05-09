@@ -16,8 +16,8 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| Devilish Needs |  | Devilish Needs.esp | /home/chris/mods/morrowind/Camping/Devilish Needs |
-| Devilish Needs |  | Devilish Needs.omwscripts | /home/chris/mods/morrowind/Camping/Devilish Needs |
+| [Devilish Needs](https://www.nexusmods.com/morrowind/mods/56480) | Survival mod, mostly used for camping. openmw 0.49 | Devilish Needs.esp | /home/chris/mods/morrowind/Camping/Devilish Needs |
+| [Devilish Needs](https://www.nexusmods.com/morrowind/mods/56480) | Survival mod, mostly used for camping. openmw 0.49 | Devilish Needs.omwscripts | /home/chris/mods/morrowind/Camping/Devilish Needs |
 | OAAB |  | OAAB_Data.esm | /home/chris/mods/morrowind/Camping/OAAB |
 
 ## Cheat
@@ -30,29 +30,29 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| Cyrodill |  | Cyr_Main.esm | /home/chris/mods/morrowind/Cyrodill |
+| [Cyrodill](https://www.nexusmods.com/morrowind/mods/44922) | Project Cyrodill | Cyr_Main.esm | /home/chris/mods/morrowind/Cyrodill |
 
 ## Extra
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| Extra |  | Camping Kits.ESP | /home/chris/mods/morrowind/Extra |
+| [Extra](https://www.nexusmods.com/morrowind/mods/42919?tab=description) | Tent and bed, simplier than Devilish Needs | Camping Kits.ESP | /home/chris/mods/morrowind/Extra |
 
 ## Fixes
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |  | HM_DDD_Ghostfence_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
-| DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |  | HM_DDD_Strongholds_H_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
-| DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |  | HM_DDD_Strongholds_R_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
-| DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |  | HM_DDD_Strongholds_T_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
+| [DynamicDistantBuildingsforOpenMW/Dynamic Distant Details](https://www.nexusmods.com/morrowind/mods/51236) | Makes distant lands repsonsive to quests, such as deactivation of Ghostfence | HM_DDD_Ghostfence_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
+| [DynamicDistantBuildingsforOpenMW/Dynamic Distant Details](https://www.nexusmods.com/morrowind/mods/51236) | Makes distant lands repsonsive to quests, such as deactivation of Ghostfence | HM_DDD_Strongholds_H_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
+| [DynamicDistantBuildingsforOpenMW/Dynamic Distant Details](https://www.nexusmods.com/morrowind/mods/51236) | Makes distant lands repsonsive to quests, such as deactivation of Ghostfence | HM_DDD_Strongholds_R_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
+| [DynamicDistantBuildingsforOpenMW/Dynamic Distant Details](https://www.nexusmods.com/morrowind/mods/51236) | Makes distant lands repsonsive to quests, such as deactivation of Ghostfence | HM_DDD_Strongholds_T_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
 
 ## Gameplay
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |  | correctUV Ore Replacer_fixed.esp | /home/chris/mods/morrowind/Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |
-| GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |  | correctUV Ore Replacer_respawning.esp | /home/chris/mods/morrowind/Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |
+| [GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README](https://www.nexusmods.com/morrowind/mods/46599) | Pick plants visually | correctUV Ore Replacer_fixed.esp | /home/chris/mods/morrowind/Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |
+| [GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README](https://www.nexusmods.com/morrowind/mods/46599) | Pick plants visually | correctUV Ore Replacer_respawning.esp | /home/chris/mods/morrowind/Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |
 
 ## Groundcover
 
@@ -85,11 +85,11 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| GlowingFlames |  | Glowing Flames - NoMoreLightlessFlames v1.1.ESP | /home/chris/mods/morrowind/Lighting/GlowingFlames |
-| GlowingFlames |  | Glowing Flames - TrueLightsAndDarkness Tweaks.ESP | /home/chris/mods/morrowind/Lighting/GlowingFlames |
-| GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |  | GITD_Telvanni_Dormers.ESP | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |
-| GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |  | GITD_Telvanni_Dormers_NoUvirith.ESP | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |
-| GlowintheDahrk/04 Raven Rock Glass Windows |  | GITD_WL_RR_Interiors.esp | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/04 Raven Rock Glass Windows |
+| [GlowingFlames](https://www.nexusmods.com/morrowind/mods/46124) | Flames illuminate environment | Glowing Flames - NoMoreLightlessFlames v1.1.ESP | /home/chris/mods/morrowind/Lighting/GlowingFlames |
+| [GlowingFlames](https://www.nexusmods.com/morrowind/mods/46124) | Flames illuminate environment | Glowing Flames - TrueLightsAndDarkness Tweaks.ESP | /home/chris/mods/morrowind/Lighting/GlowingFlames |
+| [GlowintheDahrk/03 Telvanni Dormers on Vvardenfell](https://www.nexusmods.com/morrowind/mods/45886) | Window glow | GITD_Telvanni_Dormers.ESP | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |
+| [GlowintheDahrk/03 Telvanni Dormers on Vvardenfell](https://www.nexusmods.com/morrowind/mods/45886) | Window glow | GITD_Telvanni_Dormers_NoUvirith.ESP | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |
+| [GlowintheDahrk/04 Raven Rock Glass Windows](https://www.nexusmods.com/morrowind/mods/45886) | Window glow | GITD_WL_RR_Interiors.esp | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/04 Raven Rock Glass Windows |
 
 ## ModdingResources
 
@@ -131,7 +131,7 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| ExpansionDelay |  | Expansion Delay.ESP | /home/chris/mods/morrowind/PatchesFixesandConsistency/ExpansionDelay |
+| [ExpansionDelay](https://www.nexusmods.com/morrowind/mods/47588) | Delays dark brotherhood assassins (tribunal expansion) | Expansion Delay.ESP | /home/chris/mods/morrowind/PatchesFixesandConsistency/ExpansionDelay |
 
 ## Performance
 
@@ -179,12 +179,12 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| DistantSeafloorforOpenMW/00 Core |  | distant_seafloor_2.00.esm | /home/chris/mods/morrowind/Water/DistantSeafloorforOpenMW/00 Core |
-| DistantSeafloorforOpenMW/01 Patch for vanilla Solstheim location |  | distant seafloor bloodmoon patch.esp | /home/chris/mods/morrowind/Water/DistantSeafloorforOpenMW/01 Patch for vanilla Solstheim location |
+| [DistantSeafloorforOpenMW/00 Core](https://www.nexusmods.com/morrowind/mods/50796) | Extends seafloor visibility | distant_seafloor_2.00.esm | /home/chris/mods/morrowind/Water/DistantSeafloorforOpenMW/00 Core |
+| [DistantSeafloorforOpenMW/01 Patch for vanilla Solstheim location](https://www.nexusmods.com/morrowind/mods/50796) | Extends seafloor visibility | distant seafloor bloodmoon patch.esp | /home/chris/mods/morrowind/Water/DistantSeafloorforOpenMW/01 Patch for vanilla Solstheim location |
 
 ## Weather
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| KirelsInteriorWeather |  | k_weather (louder sounds).esp | /home/chris/mods/morrowind/Weather/KirelsInteriorWeather |
-| KirelsInteriorWeather |  | k_weather.esp | /home/chris/mods/morrowind/Weather/KirelsInteriorWeather |
+| [KirelsInteriorWeather](https://www.nexusmods.com/morrowind/mods/49278) | Plays weather sound effects in interior cells | k_weather (louder sounds).esp | /home/chris/mods/morrowind/Weather/KirelsInteriorWeather |
+| [KirelsInteriorWeather](https://www.nexusmods.com/morrowind/mods/49278) | Plays weather sound effects in interior cells | k_weather.esp | /home/chris/mods/morrowind/Weather/KirelsInteriorWeather |
