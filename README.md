@@ -2,21 +2,18 @@
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| MorrowindInteriorsProject |  | MorrowindInteriorsProject.ESP, MorrowindInteriorsProject_TR.ESP | /home/chris/mods/morrowind/Architecture/MorrowindInteriorsProject |
 | [MorrowindInteriorsProject](https://www.nexusmods.com/morrowind/mods/52237?tab=description) | Adds exteriors to interior cells with windows | MorrowindInteriorsProject.ESP, MorrowindInteriorsProject_TR.ESP | /home/chris/mods/morrowind/Architecture/MorrowindInteriorsProject |
 
 ## Audiobooks
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| Audiobooks |  | AudiobooksOfMorrowind.ESP, audiobook-openmw.omwscripts | /home/chris/mods/morrowind/Audiobooks |
 | [Audiobooks](https://www.nexusmods.com/morrowind/mods/52458) | AI, Stephen Fry | AudiobooksOfMorrowind.ESP, audiobook-openmw.omwscripts | /home/chris/mods/morrowind/Audiobooks |
 
 ## Camping
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| Devilish Needs |  | Devilish Needs.esp, Devilish Needs.omwscripts | /home/chris/mods/morrowind/Camping/Devilish Needs |
 | [Devilish Needs](https://www.nexusmods.com/morrowind/mods/56480) | Survival mod, mostly used for camping. openmw 0.49 | Devilish Needs.esp, Devilish Needs.omwscripts | /home/chris/mods/morrowind/Camping/Devilish Needs |
 | [OAAB](https://www.nexusmods.com/morrowind/mods/49042) | Asset repository (used by Devilish Needs) | OAAB_Data.esm | /home/chris/mods/morrowind/Camping/OAAB |
 
@@ -42,22 +39,18 @@
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |  | HM_DDD_Ghostfence_v1.0.esp, HM_DDD_Strongholds_H_v1.0.esp, HM_DDD_Strongholds_R_v1.0.esp, HM_DDD_Strongholds_T_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
 | [DynamicDistantBuildingsforOpenMW/Dynamic Distant Details](https://www.nexusmods.com/morrowind/mods/51236) | Makes distant lands repsonsive to quests, such as deactivation of Ghostfence | HM_DDD_Ghostfence_v1.0.esp, HM_DDD_Strongholds_H_v1.0.esp, HM_DDD_Strongholds_R_v1.0.esp, HM_DDD_Strongholds_T_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
 
 ## Gameplay
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |  | correctUV Ore Replacer_fixed.esp, correctUV Ore Replacer_respawning.esp | /home/chris/mods/morrowind/Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |
 | [GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README](https://www.nexusmods.com/morrowind/mods/46599) | Pick plants visually | correctUV Ore Replacer_fixed.esp, correctUV Ore Replacer_respawning.esp | /home/chris/mods/morrowind/Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |
 
 ## Groundcover
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR AC.esp, Grass TR AI.esp, Grass TR AL.esp, Grass TR AT.esp, Grass TR BC.esp, Grass TR GL.esp, Grass TR SV.esp, Grass TR WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass Vanilla regions |  | Grass AC.esp, Grass AI.esp, Grass AL.esp, Grass BC.esp, Grass Bloodmoon.esp, Grass GL.esp, Grass WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
 | [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR AC.esp, Grass TR AI.esp, Grass TR AL.esp, Grass TR AT.esp, Grass TR BC.esp, Grass TR GL.esp, Grass TR SV.esp, Grass TR WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
 | [AesthesiaGroundcovergrassmod/Grass Vanilla regions](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass AC.esp, Grass AI.esp, Grass AL.esp, Grass BC.esp, Grass Bloodmoon.esp, Grass GL.esp, Grass WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
 
@@ -72,8 +65,6 @@
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| GlowingFlames |  | Glowing Flames - NoMoreLightlessFlames v1.1.ESP, Glowing Flames - TrueLightsAndDarkness Tweaks.ESP | /home/chris/mods/morrowind/Lighting/GlowingFlames |
-| GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |  | GITD_Telvanni_Dormers.ESP, GITD_Telvanni_Dormers_NoUvirith.ESP | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |
 | [GlowingFlames](https://www.nexusmods.com/morrowind/mods/46124) | Flames illuminate environment | Glowing Flames - NoMoreLightlessFlames v1.1.ESP, Glowing Flames - TrueLightsAndDarkness Tweaks.ESP | /home/chris/mods/morrowind/Lighting/GlowingFlames |
 | [GlowintheDahrk/03 Telvanni Dormers on Vvardenfell](https://www.nexusmods.com/morrowind/mods/45886) | Window glow | GITD_Telvanni_Dormers.ESP, GITD_Telvanni_Dormers_NoUvirith.ESP | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |
 | [GlowintheDahrk/04 Raven Rock Glass Windows](https://www.nexusmods.com/morrowind/mods/45886) | Window glow | GITD_WL_RR_Interiors.esp | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/04 Raven Rock Glass Windows |
@@ -82,14 +73,12 @@
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| TamrielData |  | Tamriel_Data.esm, Tamriel_Data.omwscripts | /home/chris/mods/morrowind/ModdingResources/TamrielData |
 | [TamrielData](https://www.nexusmods.com/morrowind/mods/42145) | Tamriel Rebuilt 25.05.09 | Tamriel_Data.esm, Tamriel_Data.omwscripts | /home/chris/mods/morrowind/ModdingResources/TamrielData |
 
 ## Morrowind
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| Data Files |  | Bloodmoon.esm, Morrowind.esm, Tribunal.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
 | [Data Files](https://store.steampowered.com/app/22320/The_Elder_Scrolls_III_Morrowind_Game_of_the_Year_Edition/) | Base game + expansions | Bloodmoon.esm, Morrowind.esm, Tribunal.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
 
 ## NPCs
@@ -108,7 +97,6 @@
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| PatchforPurists |  | Patch for Purists - Book Typos.ESP, Patch for Purists - Semi-Purist Fixes.ESP, Patch for Purists.esm | /home/chris/mods/morrowind/Patches/PatchforPurists |
 | [PatchforPurists](https://www.nexusmods.com/morrowind/mods/45096) | 9000+ bug patch | Patch for Purists - Book Typos.ESP, Patch for Purists - Semi-Purist Fixes.ESP, Patch for Purists.esm | /home/chris/mods/morrowind/Patches/PatchforPurists |
 | [UnofficialMorrowindOfficialPluginsPatched/Compatibility Version](https://www.nexusmods.com/morrowind/mods/43931) | More patches Apparently | Unofficial Morrowind Official Plugins Patched.ESP | /home/chris/mods/morrowind/Patches/UnofficialMorrowindOfficialPluginsPatched |
 
@@ -134,7 +122,6 @@
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| Skyrim |  | Sky_Main.esm, Sky_Main_Grass.esp | /home/chris/mods/morrowind/Skyrim |
 | [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | Skyrim Home of the Nords | Sky_Main.esm, Sky_Main_Grass.esp | /home/chris/mods/morrowind/Skyrim |
 
 ## TexturePacks
@@ -154,7 +141,6 @@
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| LuaHelper |  | OpenMW_luahelper.esp, OpenMW_luahelper.omwscripts, OpenMW_luahelper_dialog.esp, OpenMW_luahelper_dialog_TR.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
 | [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Voice dialogue | OpenMW_luahelper.esp, OpenMW_luahelper.omwscripts, OpenMW_luahelper_dialog.esp, OpenMW_luahelper_dialog_TR.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
 | [PatchForOpenMW](https://www.nexusmods.com/morrowind/mods/52279) | Kezyma's Voices of Vvardenfell | VoV OpenMW.omwscripts | /home/chris/mods/morrowind/Voice/PatchForOpenMW |
 
@@ -169,5 +155,4 @@
 
 | Mod Name | Notes | Content File(s) | Paths Used |
 |----------|-------|------------------|-------------|
-| KirelsInteriorWeather |  | k_weather (louder sounds).esp, k_weather.esp | /home/chris/mods/morrowind/Weather/KirelsInteriorWeather |
 | [KirelsInteriorWeather](https://www.nexusmods.com/morrowind/mods/49278) | Plays weather sound effects in interior cells | k_weather (louder sounds).esp, k_weather.esp | /home/chris/mods/morrowind/Weather/KirelsInteriorWeather |
