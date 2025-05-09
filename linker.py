@@ -85,14 +85,27 @@ def print_mod_info(mod_name, data, content_files, paths_used):
 
 def interactive_walk():
     mod_data, content_files, paths_used = extract_mod_data()
+    last_url = ""
+    last_notes = ""
 
     for i, (mod_name, data) in enumerate(sorted(mod_data.items()), 1):
         print_mod_info(mod_name, data, content_files, paths_used)
 
-        url = input("  Enter new URL (or press Enter to skip): ").strip()
+        url = input("  Enter new URL (or press Enter to skip, 'ditto' to reuse last): ").strip()
+        if url.lower() == "ditto":
+            url = last_url
+        elif url:
+            last_url = url
+
         if not url:
-            continue
-        notes = input("  Enter notes (or press Enter to leave unchanged): ").strip()
+            continue  # Skip this mod if no URL is provided
+
+        notes = input("  Enter notes (or press Enter to leave unchanged, 'ditto' to reuse last): ").strip()
+        if notes.lower() == "ditto":
+            notes = last_notes
+        elif notes:
+            last_notes = notes
+
         update_readme_with_link(mod_name, url, notes)
         print(f"  ✅ Updated {mod_name}.")
 

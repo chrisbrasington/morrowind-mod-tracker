@@ -9,8 +9,8 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| Audiobooks |  | AudiobooksOfMorrowind.ESP | /home/chris/mods/morrowind/Audiobooks |
-| Audiobooks |  | audiobook-openmw.omwscripts | /home/chris/mods/morrowind/Audiobooks |
+| [Audiobooks](https://www.nexusmods.com/morrowind/mods/52458) | AI, Stephen Fry | AudiobooksOfMorrowind.ESP | /home/chris/mods/morrowind/Audiobooks |
+| [Audiobooks](https://www.nexusmods.com/morrowind/mods/52458) | AI, Stephen Fry | audiobook-openmw.omwscripts | /home/chris/mods/morrowind/Audiobooks |
 
 ## Camping
 
@@ -24,7 +24,7 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| Cheat |  | No Arrow Weight.ESP | /home/chris/mods/morrowind/Cheat |
+| [Cheat](https://www.nexusmods.com/morrowind/mods/42570) | No arrow weight | No Arrow Weight.ESP | /home/chris/mods/morrowind/Cheat |
 
 ## Cyrodill
 
@@ -58,21 +58,21 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR AC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR AI.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR AL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR AT.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR BC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR GL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR SV.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass TR |  | Grass TR WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass Vanilla regions |  | Grass AC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass Vanilla regions |  | Grass AI.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass Vanilla regions |  | Grass AL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass Vanilla regions |  | Grass BC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass Vanilla regions |  | Grass Bloodmoon.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass Vanilla regions |  | Grass GL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
-| AesthesiaGroundcovergrassmod/Grass Vanilla regions |  | Grass WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR AC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR AI.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR AL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR AT.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR BC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR GL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR SV.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass TR](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass TR WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass Vanilla regions](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass AC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass Vanilla regions](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass AI.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass Vanilla regions](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass AL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass Vanilla regions](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass BC.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass Vanilla regions](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass Bloodmoon.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass Vanilla regions](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass GL.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| [AesthesiaGroundcovergrassmod/Grass Vanilla regions](https://www.nexusmods.com/morrowind/mods/46377) | Best working grass mod | Grass WG.esp | /home/chris/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
 
 ## Landmasses
 
@@ -162,7 +162,7 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| CantonsontheGlobalMap/Data Files |  | Cantons_on_the_Global_Map_v1.1.esp | /home/chris/mods/morrowind/UserInterface/CantonsontheGlobalMap/Data Files |
+| [CantonsontheGlobalMap/Data Files](https://www.nexusmods.com/morrowind/mods/50534) | Vivec and Molag Mar no longer look like empty water | Cantons_on_the_Global_Map_v1.1.esp | /home/chris/mods/morrowind/UserInterface/CantonsontheGlobalMap/Data Files |
 | PerfectPlacement |  | Perfect Placement.omwscripts | /home/chris/mods/morrowind/UserInterface/PerfectPlacement |
 
 ## Voice
