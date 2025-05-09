@@ -2,8 +2,8 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| MorrowindInteriorsProject |  | MorrowindInteriorsProject.ESP | /home/chris/mods/morrowind/Architecture/MorrowindInteriorsProject |
-| MorrowindInteriorsProject |  | MorrowindInteriorsProject_TR.ESP | /home/chris/mods/morrowind/Architecture/MorrowindInteriorsProject |
+| [MorrowindInteriorsProject](https://www.nexusmods.com/morrowind/mods/52237?tab=description) | Adds exteriors to interior cells with windows | MorrowindInteriorsProject.ESP | /home/chris/mods/morrowind/Architecture/MorrowindInteriorsProject |
+| [MorrowindInteriorsProject](https://www.nexusmods.com/morrowind/mods/52237?tab=description) | Adds exteriors to interior cells with windows | MorrowindInteriorsProject_TR.ESP | /home/chris/mods/morrowind/Architecture/MorrowindInteriorsProject |
 
 ## Audiobooks
 
@@ -18,7 +18,7 @@
 |----------|-------|--------------|-------------|
 | [Devilish Needs](https://www.nexusmods.com/morrowind/mods/56480) | Survival mod, mostly used for camping. openmw 0.49 | Devilish Needs.esp | /home/chris/mods/morrowind/Camping/Devilish Needs |
 | [Devilish Needs](https://www.nexusmods.com/morrowind/mods/56480) | Survival mod, mostly used for camping. openmw 0.49 | Devilish Needs.omwscripts | /home/chris/mods/morrowind/Camping/Devilish Needs |
-| OAAB |  | OAAB_Data.esm | /home/chris/mods/morrowind/Camping/OAAB |
+| [OAAB](https://www.nexusmods.com/morrowind/mods/49042) | Asset repository (used by Devilish Needs) | OAAB_Data.esm | /home/chris/mods/morrowind/Camping/OAAB |
 
 ## Cheat
 
@@ -78,8 +78,8 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| TamrielRebuilt/00 Core |  | TR_Mainland.esm | /home/chris/mods/morrowind/Landmasses/TamrielRebuilt/00 Core |
-| TamrielRebuilt/01 Faction Integration |  | TR_Factions.esp | /home/chris/mods/morrowind/Landmasses/TamrielRebuilt/01 Faction Integration |
+| [TamrielRebuilt/00 Core](https://www.nexusmods.com/morrowind/mods/42145) | Tamriel Rebuilt 25.05.09 | TR_Mainland.esm | /home/chris/mods/morrowind/Landmasses/TamrielRebuilt/00 Core |
+| [TamrielRebuilt/01 Faction Integration](https://www.nexusmods.com/morrowind/mods/42145) | Tamriel Rebuilt 25.05.09 | TR_Factions.esp | /home/chris/mods/morrowind/Landmasses/TamrielRebuilt/01 Faction Integration |
 
 ## Lighting
 
@@ -95,8 +95,8 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| TamrielData |  | Tamriel_Data.esm | /home/chris/mods/morrowind/ModdingResources/TamrielData |
-| TamrielData |  | Tamriel_Data.omwscripts | /home/chris/mods/morrowind/ModdingResources/TamrielData |
+| [TamrielData](https://www.nexusmods.com/morrowind/mods/42145) | Tamriel Rebuilt 25.05.09 | Tamriel_Data.esm | /home/chris/mods/morrowind/ModdingResources/TamrielData |
+| [TamrielData](https://www.nexusmods.com/morrowind/mods/42145) | Tamriel Rebuilt 25.05.09 | Tamriel_Data.omwscripts | /home/chris/mods/morrowind/ModdingResources/TamrielData |
 
 ## Morrowind
 
@@ -110,22 +110,22 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| QuestGreetings |  | Quest Voice Greetings.ESP | /home/chris/mods/morrowind/NPCs/QuestGreetings |
+| [QuestGreetings](https://www.nexusmods.com/morrowind/mods/52273) | AI quest greetings | Quest Voice Greetings.ESP | /home/chris/mods/morrowind/NPCs/QuestGreetings |
 
 ## ObjectsClutter
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| OpenMWContainersAnimated/Containers Animated |  | Containers Animated.esp | /home/chris/mods/morrowind/ObjectsClutter/OpenMWContainersAnimated/Containers Animated |
+| [OpenMWContainersAnimated/Containers Animated](https://www.nexusmods.com/morrowind/mods/46232) | Containers animate | Containers Animated.esp | /home/chris/mods/morrowind/ObjectsClutter/OpenMWContainersAnimated/Containers Animated |
 
 ## Patches
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| PatchforPurists |  | Patch for Purists - Book Typos.ESP | /home/chris/mods/morrowind/Patches/PatchforPurists |
-| PatchforPurists |  | Patch for Purists - Semi-Purist Fixes.ESP | /home/chris/mods/morrowind/Patches/PatchforPurists |
-| PatchforPurists |  | Patch for Purists.esm | /home/chris/mods/morrowind/Patches/PatchforPurists |
-| UnofficialMorrowindOfficialPluginsPatched/Compatibility Version |  | Unofficial Morrowind Official Plugins Patched.ESP | /home/chris/mods/morrowind/Patches/UnofficialMorrowindOfficialPluginsPatched |
+| [PatchforPurists](https://www.nexusmods.com/morrowind/mods/45096) | 9000+ bug patch | Patch for Purists - Book Typos.ESP | /home/chris/mods/morrowind/Patches/PatchforPurists |
+| [PatchforPurists](https://www.nexusmods.com/morrowind/mods/45096) | 9000+ bug patch | Patch for Purists - Semi-Purist Fixes.ESP | /home/chris/mods/morrowind/Patches/PatchforPurists |
+| [PatchforPurists](https://www.nexusmods.com/morrowind/mods/45096) | 9000+ bug patch | Patch for Purists.esm | /home/chris/mods/morrowind/Patches/PatchforPurists |
+| [UnofficialMorrowindOfficialPluginsPatched/Compatibility Version](https://www.nexusmods.com/morrowind/mods/43931) | More patches Apparently | Unofficial Morrowind Official Plugins Patched.ESP | /home/chris/mods/morrowind/Patches/UnofficialMorrowindOfficialPluginsPatched |
 
 ## PatchesFixesandConsistency
 
@@ -137,33 +137,33 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| MorrowindOptimizationPatch/01 Lake Fjalding Anti-Suck |  | Lake Fjalding Anti-Suck.ESP | /home/chris/mods/morrowind/Performance/MorrowindOptimizationPatch/01 Lake Fjalding Anti-Suck |
+| [MorrowindOptimizationPatch/01 Lake Fjalding Anti-Suck](https://www.nexusmods.com/morrowind/mods/45384) | performance | Lake Fjalding Anti-Suck.ESP | /home/chris/mods/morrowind/Performance/MorrowindOptimizationPatch/01 Lake Fjalding Anti-Suck |
 
 ## Shaders
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| VtastekLightShaders |  | LightFixes.esp | /home/chris/mods/morrowind/Shaders/VtastekLightShaders |
+| [VtastekLightShaders](https://modding-openmw.com/mods/vtasteks-light-shaders/) | A highly advanced shader replacement that also revamps all lighting in the game | LightFixes.esp | /home/chris/mods/morrowind/Shaders/VtastekLightShaders |
 
 ## Skyrim
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| Skyrim |  | Sky_Main.esm | /home/chris/mods/morrowind/Skyrim |
-| Skyrim |  | Sky_Main_Grass.esp | /home/chris/mods/morrowind/Skyrim |
+| [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | Skyrim Home of the Nords | Sky_Main.esm | /home/chris/mods/morrowind/Skyrim |
+| [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | Skyrim Home of the Nords | Sky_Main_Grass.esp | /home/chris/mods/morrowind/Skyrim |
 
 ## TexturePacks
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| RealSignposts |  | RealSignposts.esp | /home/chris/mods/morrowind/TexturePacks/RealSignposts |
+| [RealSignposts](https://www.nexusmods.com/morrowind/mods/3879) | Readable signposts | RealSignposts.esp | /home/chris/mods/morrowind/TexturePacks/RealSignposts |
 
 ## UserInterface
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
 | [CantonsontheGlobalMap/Data Files](https://www.nexusmods.com/morrowind/mods/50534) | Vivec and Molag Mar no longer look like empty water | Cantons_on_the_Global_Map_v1.1.esp | /home/chris/mods/morrowind/UserInterface/CantonsontheGlobalMap/Data Files |
-| PerfectPlacement |  | Perfect Placement.omwscripts | /home/chris/mods/morrowind/UserInterface/PerfectPlacement |
+| [PerfectPlacement](https://www.nexusmods.com/morrowind/mods/46562) | Placement of objects, rotation, wall mounting - openmw0.49 | Perfect Placement.omwscripts | /home/chris/mods/morrowind/UserInterface/PerfectPlacement |
 
 ## Voice
 
@@ -173,7 +173,7 @@
 | [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Voice dialogue | OpenMW_luahelper.omwscripts | /home/chris/mods/morrowind/Voice/LuaHelper |
 | [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Voice dialogue | OpenMW_luahelper_dialog.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
 | [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Voice dialogue | OpenMW_luahelper_dialog_TR.esp | /home/chris/mods/morrowind/Voice/LuaHelper |
-| PatchForOpenMW |  | VoV OpenMW.omwscripts | /home/chris/mods/morrowind/Voice/PatchForOpenMW |
+| [PatchForOpenMW](https://www.nexusmods.com/morrowind/mods/52279) | Kezyma's Voices of Vvardenfell | VoV OpenMW.omwscripts | /home/chris/mods/morrowind/Voice/PatchForOpenMW |
 
 ## Water
 
