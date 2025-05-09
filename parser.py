@@ -100,11 +100,11 @@ def update_readme(existing, generated):
     lines = []
     for section in sorted(merged.keys()):
         lines.append(f"## {section}\n")
-        lines.append("| Mod Name | Content File | Paths Used |")
-        lines.append("|----------|--------------|-------------|")
+        lines.append("| Mod Name | Notes | Content File | Paths Used |")
+        lines.append("|----------|-------|--------------|-------------|")
 
         for mod_name, content_file, path_used in sorted(merged[section]):
-            lines.append(f"| {mod_name} | {content_file} | {path_used} |")
+            lines.append(f"| {mod_name} |  | {content_file} | {path_used} |")
 
         lines.append("")
 
