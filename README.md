@@ -102,9 +102,9 @@
 
 | Mod Name | Notes | Content File | Paths Used |
 |----------|-------|--------------|-------------|
-| Data Files |  | Bloodmoon.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
-| Data Files |  | Morrowind.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
-| Data Files |  | Tribunal.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
+| [Data Files](https://store.steampowered.com/app/22320/The_Elder_Scrolls_III_Morrowind_Game_of_the_Year_Edition/) | Base game + expansions | Bloodmoon.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
+| [Data Files](https://store.steampowered.com/app/22320/The_Elder_Scrolls_III_Morrowind_Game_of_the_Year_Edition/) | Base game + expansions | Morrowind.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
+| [Data Files](https://store.steampowered.com/app/22320/The_Elder_Scrolls_III_Morrowind_Game_of_the_Year_Edition/) | Base game + expansions | Tribunal.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
 
 ## NPCs
 
