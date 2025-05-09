@@ -1,0 +1,206 @@
+## Architecture
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| MorrowindInteriorsProject | MorrowindInteriorsProject.ESP | /home/chris/mods/morrowind/Architecture/MorrowindInteriorsProject |
+| MorrowindInteriorsProject | MorrowindInteriorsProject_TR.ESP | /home/chris/mods/morrowind/Architecture/MorrowindInteriorsProject |
+
+## Audiobooks
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Audiobooks | AudiobooksOfMorrowind.ESP | /mnt/nvme-slot2/mods/morrowind/Audiobooks |
+| Audiobooks | audiobook-openmw.omwscripts | /mnt/nvme-slot2/mods/morrowind/Audiobooks |
+
+## Camping
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Devilish Needs | Devilish Needs.esp | /mnt/nvme-slot2/mods/morrowind/Camping/Devilish Needs |
+| Devilish Needs | Devilish Needs.omwscripts | /mnt/nvme-slot2/mods/morrowind/Camping/Devilish Needs |
+| OAAB | OAAB_Data.esm | /mnt/nvme-slot2/mods/morrowind/Camping/OAAB |
+
+## Cheat
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Cheat | No Arrow Weight.ESP | /mnt/nvme-slot2/mods/morrowind/Cheat |
+
+## Cyrodill
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Cyrodill | Cyr_Main.esm | /home/chris/mods/morrowind/Cyrodill |
+
+## Extra
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Extra | Camping Kits.ESP | /mnt/nvme-slot2/mods/morrowind/Extra |
+
+## Fixes
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Dynamic Distant Details | HM_DDD_Ghostfence_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
+| Dynamic Distant Details | HM_DDD_Strongholds_H_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
+| Dynamic Distant Details | HM_DDD_Strongholds_R_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
+| Dynamic Distant Details | HM_DDD_Strongholds_T_v1.0.esp | /home/chris/mods/morrowind/Fixes/DynamicDistantBuildingsforOpenMW/Dynamic Distant Details |
+
+## Gameplay
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| 00 Correct UV Ore + README | correctUV Ore Replacer_fixed.esp | /home/chris/mods/morrowind/Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |
+| 00 Correct UV Ore + README | correctUV Ore Replacer_respawning.esp | /home/chris/mods/morrowind/Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00 Correct UV Ore + README |
+
+## Groundcover
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Grass TR | Grass TR AC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR AC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR AI.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR AI.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR AL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR AL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR AT.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR AT.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR BC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR BC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR GL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR GL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR SV.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR SV.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass TR | Grass TR WG.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass TR | Grass TR WG.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass TR |
+| Grass Vanilla regions | Grass AC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass AC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass AI.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass AI.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass AL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass AL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass BC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass BC.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass Bloodmoon.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass Bloodmoon.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass GL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass GL.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+| Grass Vanilla regions | Grass WG.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod |
+| Grass Vanilla regions | Grass WG.esp | /mnt/nvme-slot2/mods/morrowind/Groundcover/AesthesiaGroundcovergrassmod/Grass Vanilla regions |
+
+## Landmasses
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| 00 Core | TR_Mainland.esm | /home/chris/mods/morrowind/Landmasses/TamrielRebuilt/00 Core |
+| 01 Faction Integration | TR_Factions.esp | /home/chris/mods/morrowind/Landmasses/TamrielRebuilt/01 Faction Integration |
+
+## Lighting
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| 03 Telvanni Dormers on Vvardenfell | GITD_Telvanni_Dormers.ESP | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |
+| 03 Telvanni Dormers on Vvardenfell | GITD_Telvanni_Dormers_NoUvirith.ESP | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/03 Telvanni Dormers on Vvardenfell |
+| 04 Raven Rock Glass Windows | GITD_WL_RR_Interiors.esp | /home/chris/mods/morrowind/Lighting/GlowintheDahrk/04 Raven Rock Glass Windows |
+| GlowingFlames | Glowing Flames - NoMoreLightlessFlames v1.1.ESP | /home/chris/mods/morrowind/Lighting/GlowingFlames |
+| GlowingFlames | Glowing Flames - TrueLightsAndDarkness Tweaks.ESP | /home/chris/mods/morrowind/Lighting/GlowingFlames |
+
+## ModdingResources
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| TamrielData | Tamriel_Data.esm | /home/chris/mods/morrowind/ModdingResources/TamrielData |
+| TamrielData | Tamriel_Data.omwscripts | /home/chris/mods/morrowind/ModdingResources/TamrielData |
+
+## Morrowind
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Data Files | Bloodmoon.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
+| Data Files | Morrowind.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
+| Data Files | Tribunal.esm | /mnt/nvme-slot2/SteamLibrary/steamapps/common/Morrowind/Data Files |
+
+## NPCs
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| QuestGreetings | Quest Voice Greetings.ESP | /home/chris/mods/morrowind/NPCs/QuestGreetings |
+
+## ObjectsClutter
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Containers Animated | Containers Animated.esp | /home/chris/mods/morrowind/ObjectsClutter/OpenMWContainersAnimated/Containers Animated |
+
+## Patches
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Compatibility Version | Unofficial Morrowind Official Plugins Patched.ESP | /home/chris/mods/morrowind/Patches/UnofficialMorrowindOfficialPluginsPatched |
+| Compatibility Version | Unofficial Morrowind Official Plugins Patched.ESP | /home/chris/mods/morrowind/Patches/UnofficialMorrowindOfficialPluginsPatched/Compatibility Version |
+| PatchforPurists | Patch for Purists - Book Typos.ESP | /home/chris/mods/morrowind/Patches/PatchforPurists |
+| PatchforPurists | Patch for Purists - Semi-Purist Fixes.ESP | /home/chris/mods/morrowind/Patches/PatchforPurists |
+| PatchforPurists | Patch for Purists.esm | /home/chris/mods/morrowind/Patches/PatchforPurists |
+
+## PatchesFixesandConsistency
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| ExpansionDelay | Expansion Delay.ESP | /home/chris/mods/morrowind/PatchesFixesandConsistency/ExpansionDelay |
+
+## Performance
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| 01 Lake Fjalding Anti-Suck | Lake Fjalding Anti-Suck.ESP | /home/chris/mods/morrowind/Performance/MorrowindOptimizationPatch/01 Lake Fjalding Anti-Suck |
+
+## Shaders
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| VtastekLightShaders | LightFixes.esp | /home/chris/mods/morrowind/Shaders/VtastekLightShaders |
+
+## Skyrim
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Skyrim | Sky_Main.esm | /home/chris/mods/morrowind/Skyrim |
+| Skyrim | Sky_Main_Grass.esp | /home/chris/mods/morrowind/Skyrim |
+
+## TexturePacks
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| RealSignposts | RealSignposts.esp | /home/chris/mods/morrowind/TexturePacks/RealSignposts |
+
+## UserInterface
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| Data Files | Cantons_on_the_Global_Map_v1.1.esp | /home/chris/mods/morrowind/UserInterface/CantonsontheGlobalMap/Data Files |
+| PerfectPlacement | Perfect Placement.omwscripts | /mnt/nvme-slot2/mods/morrowind/UserInterface/PerfectPlacement |
+
+## Voice
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| LuaHelper | OpenMW_luahelper.esp | /mnt/nvme-slot2/mods/morrowind/Voice/LuaHelper |
+| LuaHelper | OpenMW_luahelper.omwscripts | /mnt/nvme-slot2/mods/morrowind/Voice/LuaHelper |
+| LuaHelper | OpenMW_luahelper_dialog.esp | /mnt/nvme-slot2/mods/morrowind/Voice/LuaHelper |
+| LuaHelper | OpenMW_luahelper_dialog_TR.esp | /mnt/nvme-slot2/mods/morrowind/Voice/LuaHelper |
+| PatchForOpenMW | VoV OpenMW.omwscripts | /mnt/nvme-slot2/mods/morrowind/Voice/PatchForOpenMW |
+
+## Water
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| 00 Core | distant_seafloor_2.00.esm | /home/chris/mods/morrowind/Water/DistantSeafloorforOpenMW/00 Core |
+| 01 Patch for vanilla Solstheim location | distant seafloor bloodmoon patch.esp | /home/chris/mods/morrowind/Water/DistantSeafloorforOpenMW/01 Patch for vanilla Solstheim location |
+
+## Weather
+
+| Mod Name | Content File | Paths Used |
+|----------|--------------|-------------|
+| KirelsInteriorWeather | k_weather (louder sounds).esp | /home/chris/mods/morrowind/Weather/KirelsInteriorWeather |
+| KirelsInteriorWeather | k_weather.esp | /home/chris/mods/morrowind/Weather/KirelsInteriorWeather |
