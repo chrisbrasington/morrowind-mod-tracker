@@ -29,7 +29,7 @@ def extract_mod_data():
                 url = None
 
             # Save mod metadata
-            if plain_name not in mod_data:
+            if plain_name not in mod_data and mod_name_cell != "Mod Name":
                 mod_data[plain_name] = {"linked": mod_name_cell, "url": url, "notes": notes.strip()}
 
             content_files[plain_name].append(content_file.strip())
