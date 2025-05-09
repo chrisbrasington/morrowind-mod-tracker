@@ -1,9 +1,11 @@
 import os, sys
 import re
+import shutil
 from pathlib import Path
 from collections import defaultdict
 
 OPENMW_CFG = Path.home() / ".config/openmw/openmw.cfg"
+LOCAL_CFG_COPY = Path("./openmw.cfg") 
 README_PATH = Path("README.md")
 
 def parse_openmw_cfg(cfg_path):
@@ -149,6 +151,10 @@ def update_readme(existing, generated):
         f.write("\n".join(lines))
 
 def main():
+    # Copy the openmw.cfg to local directory
+    shutil.copy(OPENMW_CFG, LOCAL_CFG_COPY)
+    print(f"Copied {OPENMW_CFG} to {LOCAL_CFG_COPY}")
+
     data_dirs, content_files = parse_openmw_cfg(OPENMW_CFG)
     content_map = find_content_paths(data_dirs)
     existing = load_existing_readme(README_PATH)
