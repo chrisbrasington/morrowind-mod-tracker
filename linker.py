@@ -1,72 +1,175 @@
-import argparse
-from mod_data import ModData
+import os
+import sys
+import re
+import shutil
+from pathlib import Path
+from collections import defaultdict
 
-README_PATH = "README.md"
+OPENMW_CFG = Path.home() / ".config/openmw/openmw.cfg"
+LOCAL_CFG_COPY = Path("./openmw.cfg")
+README_PATH = Path("README.md")
 
-def print_section_mods(mod_data, content_files, paths_used, section_name):
-    print(f"\n🔹 {section_name}")
-    mods_in_section = [mod for mod in mod_data if mod.startswith(section_name)]
-    
-    if not mods_in_section:
-        print("  No mods found in this section.")
-        return
 
-    for i, mod_name in enumerate(mods_in_section, 1):
-        print(f"{i} - {mod_name}")
+def parse_openmw_cfg(cfg_path):
+    data_dirs = []
+    content_files = []
 
+    with open(cfg_path, "r") as f:
+        for line in f:
+            if line.startswith("Data="):
+                data_dirs.append(line.split("=", 1)[1].strip())
+            elif line.startswith("Content="):
+                content_files.append(line.split("=", 1)[1].strip())
+
+    return data_dirs, content_files
+
+
+def find_content_paths(data_dirs):
+    content_map = {}
+
+    for base_dir in data_dirs:
+        for root, dirs, files in os.walk(base_dir):
+            for file in files:
+                if file.lower().endswith((".esp", ".esm", "omwscripts")):
+                    content_map[file] = Path(root)
+
+    return content_map
+
+
+def get_section_name(path):
+    parts = Path(path).parts
     try:
-        mod_index = int(input("Enter the number of the mod: ")) - 1
-        mod_name = mods_in_section[mod_index]
-    except (IndexError, ValueError):
-        print("Invalid selection.")
-        return
+        index = parts.index("morrowind") + 1
+        return parts[index] if index < len(parts) else parts[-1]
+    except ValueError:
+        return parts[-2] if len(parts) > 1 else parts[-1]
 
-    data = mod_data[mod_name]
-    print_mod_info(mod_name, data, content_files, paths_used)
 
-    url = input("  Enter new URL (or press Enter to skip): ").strip()
-    notes = input("  Enter notes (or press Enter to leave unchanged): ").strip()
-    mod_data.update_readme_with_link(README_PATH, mod_name, url, notes)
-    print(f"  ✅ Updated {mod_name}.")
+def load_existing_readme(path):
+    if not path.exists():
+        return defaultdict(list)
 
-def print_mod_info(mod_name, data, content_files, paths_used):
-    print(f"\n🔹 {mod_name}")
-    if content_files.get(mod_name):
-        print("  Content Files:")
-        for cf in content_files[mod_name]:
-            print(f"    - {cf}" if cf else "    - No content files")
-    if paths_used.get(mod_name):
-        print("  Paths Used:")
-        for p in sorted(paths_used[mod_name]):
-            print(f"    - {p}")
+    section_pattern = re.compile(r"^## (.+)")
+    row_pattern = re.compile(r"^\|\s*(.+?)\s*\|\s*(.*?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|")
+    sections = defaultdict(list)
+    current_section = None
 
-    if data["url"]:
-        print(f"  Current URL: {data['url']}")
-    else:
-        print("  No URL found.")
+    with open(path, "r") as f:
+        for line in f:
+            section_match = section_pattern.match(line)
+            row_match = row_pattern.match(line)
 
-    if data["notes"]:
-        print(f"  Notes: {data['notes']}")
-    else:
-        print("  No notes found.")
+            if section_match:
+                current_section = section_match.group(1)
+            elif row_match and current_section:
+                mod, notes, content, paths = row_match.groups()
+                sections[current_section].append((mod, notes, content, paths))
 
-def interactive_walk():
-    mod_data_handler = ModData()
-    mod_data_handler.extract_data_from_readme(README_PATH)
-    mod_data, content_files, paths_used = mod_data_handler.get_mod_data()
+    return sections
 
-    section_names = sorted(set([mod.split(" ")[0] for mod in mod_data.keys()]))
 
-    for section_name in section_names:
-        print_section_mods(mod_data, content_files, paths_used, section_name)
+def generate_readme_data(data_dirs, content_files, content_map):
+    output = defaultdict(list)
+
+    for esp in content_files:
+        if esp not in content_map:
+            print(f"[WARN] Could not find ESP on disk: {esp}")
+            continue
+
+        mod_path = content_map[esp]
+        matched_paths = []
+        section = get_section_name(str(mod_path))
+        mod_root = None
+
+        for base in data_dirs:
+            if str(mod_path).startswith(base):
+                base_parts = Path(base).parts
+                mod_parts = Path(mod_path).parts
+
+                try:
+                    section_index = mod_parts.index(section)
+                    mod_root = "/".join(mod_parts[section_index + 1:])
+                    matched_paths.append(base)
+                    break
+                except ValueError:
+                    continue
+
+        if not mod_root:
+            mod_root = Path(mod_path).name
+            matched_paths = [str(mod_path)]
+
+        print(f"[INFO] Section: {section} | Mod: {mod_root} | ESP: {esp} | Path(s): {matched_paths}")
+
+        for base in matched_paths:
+            output[section].append((mod_root, "", esp, base))  # (mod_name, notes, content_file, path_used)
+
+    return output
+
+
+def update_readme(existing, generated):
+    # Create a merged dictionary that will hold all rows for the sections
+    merged = defaultdict(list)
+
+    # Copy over all existing rows to the merged dictionary
+    for section, rows in existing.items():
+        for row in rows:
+            # Skip headers or dividers
+            if row[0].startswith("Mod Name") or row[0].startswith("---"):
+                # Ensure each row has 4 elements
+                if len(row) == 3:
+                    row = (row[0], "", row[1], row[2])  # Add empty notes
+                continue
+            else:
+                merged[section].append(row)
+
+    # Process the generated rows
+    for section, rows in generated.items():
+        for mod_name, notes, content_file, path_used in rows:
+            # Check if content_file already exists (should compare against row[2])
+            if any(row[2] == content_file for row in merged[section]):
+                continue
+            # Add new row
+            merged[section].append((mod_name, "", content_file, path_used))
+
+    lines = []
+
+    for section in sorted(merged.keys()):
+        if merged[section]:
+            lines.append(f"## {section}\n")
+            lines.append("| Mod Name | Notes | Content File(s) | Paths Used |")
+            lines.append("|----------|-------|------------------|-------------|")
+
+            # Group by (mod_name, notes)
+            grouped = defaultdict(list)
+
+            for mod_name, notes, content_file, path in merged[section]:
+                grouped[(mod_name, notes)].append((content_file, path))
+
+            for (mod_name, notes), entries in sorted(grouped.items()):
+                content_files = ", ".join(sorted({esp for esp, _ in entries}))
+                paths_used = ", ".join(sorted({path for _, path in entries}))
+                lines.append(f"| {mod_name} | {notes} | {content_files} | {paths_used} |")
+
+            lines.append("")
+
+    # Write the updated content to the README
+    with open(README_PATH, "w") as f:
+        f.write("\n".join(lines))
+
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-w", "--walk", action="store_true", help="Walk through each mod interactively")
-    args = parser.parse_args()
+    # Copy the openmw.cfg to local directory
+    shutil.copy(OPENMW_CFG, LOCAL_CFG_COPY)
+    print(f"Copied {OPENMW_CFG} to {LOCAL_CFG_COPY}")
 
-    if args.walk:
-        interactive_walk()
+    data_dirs, content_files = parse_openmw_cfg(OPENMW_CFG)
+    content_map = find_content_paths(data_dirs)
+    existing = load_existing_readme(README_PATH)
+    generated = generate_readme_data(data_dirs, content_files, content_map)
+
+    update_readme(existing, generated)
+    print("README.md updated.")
+
 
 if __name__ == "__main__":
     main()
