@@ -8,8 +8,13 @@ OPENMW_CFG = "openmw.cfg"
 class Mod:
     def __init__(self, name: str):
         self.name = name
+        self.content = []
+        self.data = []
 
-class ModData:
+    def __str__(self):
+        return f"Mod: {self.name}"
+
+class ModPath:
     def __init__(self, name: str, path: str):
         self.name = name
         self.path = path.replace(MOD_DIR, '')
@@ -18,7 +23,7 @@ class ModData:
         return f"    {self.name}\n    Path: [{self.path}]"
 
 
-class ModContent:
+class ModContentFile:
     def __init__(self, name: str, path: str):
         self.name = name
         self.path = path.replace(MOD_DIR, '')
@@ -31,24 +36,24 @@ class ModSection:
     def __init__(self, name: str, path: str):
         self.name = name
         self.path = path
-        self.content = []
-        self.data = []
+        self.mods = []
 
-    def add_content(self, content: ModContent):
-        if not any(c.name == content.name for c in self.content):
-            self.content.append(content)
+    # def add_content(self, content: ModContentFile):
+    #     if not any(c.name == content.name for c in self.content):
+    #         self.content.append(content)
 
-    def add_data(self, data: ModData):
-        if not any(d.name == data.name for d in self.data):
-            self.data.append(data)
+    # def add_data(self, data: ModData):
+    #     if not any(d.name == data.name for d in self.data):
+    #         self.data.append(data)
 
     def __str__(self):
-        content_str = "\n".join(str(c) for c in self.content)
-        data_str = "\n".join(str(d) for d in self.data)
-        return (f"ModSection: {self.name}\n"
-                f"  Content:\n{content_str or '    (none)'}\n"
-                f"  Data:\n{data_str or '    (none)'}\n"
-                f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        # content_str = "\n".join(str(c) for c in self.content)
+        # data_str = "\n".join(str(d) for d in self.data)
+        # return (f"ModSection: {self.name}\n"
+        #         f"  Content File:\n{content_str or '    (none)'}\n"
+        #         f"  Data Path:\n{data_str or '    (none)'}\n"
+        #         f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        return f"Section: {self.name}"
 
 class ModDictionary:
     def __init__(self):
@@ -94,10 +99,10 @@ class ModDictionary:
                 if section not in sections:
                     sections[section] = ModSection(section, path)
 
-                if isContent:
-                    sections[section].add_content(ModContent(name, path))
-                else:
-                    sections[section].add_data(ModData(name, path))
+                # if isContent:
+                #     sections[section].add_content(ModContent(name, path))
+                # else:
+                #     sections[section].add_data(ModData(name, path))
  
                 
         return sections
