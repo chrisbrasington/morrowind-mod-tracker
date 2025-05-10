@@ -1,48 +1,57 @@
+from pathlib import Path
+
+# Full implementation of parser.py with support for:
+# - Texture-only mods (no content files)
+# - Grouping data directories under mod names
+# - Alphabetical sorting of mods in sections
+# - Merging README.md and GENERATED.md without duplication
+
 import os
 import re
 import shutil
 from pathlib import Path
 from collections import defaultdict
-from dataclasses import dataclass, field
 from typing import List, Dict
 
-# Config paths
 OPENMW_CFG = Path.home() / ".config/openmw/openmw.cfg"
 LOCAL_CFG_COPY = Path("./openmw.cfg")
 README_PATH = Path("README.md")
-GENERATED_MD = Path("GENERATED.md")
-MERGED_MD = Path("MERGED.md")
+GENERATED_PATH = Path("GENERATED.md")
+MERGED_PATH = Path("MERGED.md")
 
 
-@dataclass
 class ModEntry:
-    mod_name: str
-    notes: str = ""
-    content_files: List[str] = field(default_factory=list)
-    paths_used: List[str] = field(default_factory=list)
+    def __init__(self, mod_name: str, notes: str = "", content_files: List[str] = None, paths_used: List[str] = None):
+        self.mod_name = mod_name
+        self.notes = notes
+        self.content_files = sorted(set(content_files or []))
+        self.paths_used = sorted(set(paths_used or []))
 
-    def merge(self, other: 'ModEntry'):
+    def merge(self, other):
         self.content_files = sorted(set(self.content_files + other.content_files))
         self.paths_used = sorted(set(self.paths_used + other.paths_used))
 
+    def __eq__(self, other):
+        return set(self.content_files) == set(other.content_files)
 
-@dataclass
+    def __hash__(self):
+        return hash(tuple(sorted(self.content_files)))
+
+
 class ModSection:
-    name: str
-    entries: List[ModEntry] = field(default_factory=list)
+    def __init__(self, name: str):
+        self.name = name
+        self.entries: Dict[str, ModEntry] = {}
 
-    def find_entry_by_content_file(self, content_file: str) -> ModEntry:
-        for entry in self.entries:
-            if content_file in entry.content_files:
-                return entry
-        return None
-
-    def add_or_merge_entry(self, new_entry: ModEntry):
-        existing = self.find_entry_by_content_file(new_entry.content_files[0])
-        if existing:
-            existing.merge(new_entry)
+    def add_or_merge_entry(self, entry: ModEntry):
+        key = entry.mod_name
+        if key in self.entries:
+            self.entries[key].merge(entry)
         else:
-            self.entries.append(new_entry)
+            self.entries[key] = entry
+
+    def sorted_entries(self):
+        return [self.entries[k] for k in sorted(self.entries.keys())]
 
 
 def parse_openmw_cfg(cfg_path: Path):
@@ -58,10 +67,10 @@ def parse_openmw_cfg(cfg_path: Path):
     return data_dirs, content_files
 
 
-def find_content_paths(data_dirs: List[str]):
+def find_content_paths(data_dirs):
     content_map = {}
     for base_dir in data_dirs:
-        for root, _, files in os.walk(base_dir):
+        for root, dirs, files in os.walk(base_dir):
             for file in files:
                 if file.lower().endswith((".esp", ".esm", "omwscripts")):
                     content_map[file] = Path(root)
@@ -77,9 +86,22 @@ def get_section_name(path: str):
         return parts[-2] if len(parts) > 1 else parts[-1]
 
 
-def generate_sections(data_dirs, content_files, content_map) -> Dict[str, ModSection]:
-    sections = {}
+def get_mod_name(path: str, section: str):
+    parts = Path(path).parts
+    try:
+        section_index = parts.index(section)
+        if section_index + 1 < len(parts):
+            return parts[section_index + 1]
+        else:
+            return parts[section_index]  # fallback to section name
+    except ValueError:
+        return parts[-1]  # fallback if section not in path
 
+
+def generate_mod_sections(data_dirs, content_files, content_map):
+    sections: Dict[str, ModSection] = {}
+
+    # Track all content files
     for esp in content_files:
         if esp not in content_map:
             print(f"[WARN] Could not find ESP on disk: {esp}")
@@ -87,47 +109,35 @@ def generate_sections(data_dirs, content_files, content_map) -> Dict[str, ModSec
 
         mod_path = content_map[esp]
         section = get_section_name(str(mod_path))
-        mod_name = Path(mod_path).name
-        matched_path = ""
+        mod_name = get_mod_name(str(mod_path), section)
+        base_path = next((d for d in data_dirs if str(mod_path).startswith(d)), str(mod_path))
 
-        for base in data_dirs:
-            if str(mod_path).startswith(base):
-                matched_path = base
-                break
+        entry = ModEntry(mod_name=mod_name, content_files=[esp], paths_used=[base_path])
+        sections.setdefault(section, ModSection(section)).add_or_merge_entry(entry)
 
-        if section not in sections:
-            sections[section] = ModSection(name=section)
-
-        entry = ModEntry(
-            mod_name=mod_name,
-            content_files=[esp],
-            paths_used=[matched_path or str(mod_path)]
-        )
-        sections[section].add_or_merge_entry(entry)
+    # Track texture-only mods
+    for data_dir in data_dirs:
+        section = get_section_name(data_dir)
+        mod_name = get_mod_name(data_dir, section)
+        entry = ModEntry(mod_name=mod_name, content_files=[], paths_used=[data_dir])
+        sections.setdefault(section, ModSection(section)).add_or_merge_entry(entry)
 
     return sections
 
 
-def write_markdown(sections: Dict[str, ModSection], path: Path):
+def write_sections_to_file(sections: Dict[str, ModSection], path: Path):
     lines = []
-
-    for section in sorted(sections.keys()):
-        mod_section = sections[section]
-        if not mod_section.entries:
-            continue
-
-        lines.append(f"## {section}\n")
+    for section_name in sorted(sections.keys()):
+        section = sections[section_name]
+        lines.append(f"## {section_name}")
         lines.append("| Mod Name | Notes | Content File(s) | Paths Used |")
         lines.append("|----------|-------|------------------|-------------|")
-
-        for entry in sorted(mod_section.entries, key=lambda e: e.mod_name.lower()):
-            content = ", ".join(sorted(entry.content_files))
-            paths = ", ".join(sorted(entry.paths_used))
+        for entry in section.sorted_entries():
+            content = ", ".join(entry.content_files)
+            paths = ", ".join(entry.paths_used)
             lines.append(f"| {entry.mod_name} | {entry.notes} | {content} | {paths} |")
-        lines.append("")  # Blank line after each section
-
+        lines.append("")
     path.write_text("\n".join(lines))
-    print(f"[INFO] Wrote markdown to {path}")
 
 
 def load_readme_sections(path: Path) -> Dict[str, ModSection]:
@@ -135,7 +145,7 @@ def load_readme_sections(path: Path) -> Dict[str, ModSection]:
     section_name = None
 
     section_pattern = re.compile(r"^## (.+)")
-    row_pattern = re.compile(r"^\|\s*(.+?)\s*\|\s*(.*?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|")
+    row_pattern = re.compile(r"^\|\s*(.+?)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|")
 
     with open(path, "r") as f:
         for line in f:
@@ -149,60 +159,65 @@ def load_readme_sections(path: Path) -> Dict[str, ModSection]:
             elif row_match and section_name:
                 mod_name, notes, content_files, paths_used = [x.strip() for x in row_match.groups()]
 
-                # ✅ Skip table headers or separator lines
                 if mod_name.lower() == "mod name" or mod_name.startswith("---"):
                     continue
 
                 entry = ModEntry(
                     mod_name=mod_name,
                     notes=notes,
-                    content_files=[x.strip() for x in content_files.split(",")],
-                    paths_used=[x.strip() for x in paths_used.split(",")]
+                    content_files=[x.strip() for x in content_files.split(",") if x.strip()],
+                    paths_used=[x.strip() for x in paths_used.split(",") if x.strip()]
                 )
                 sections[section_name].add_or_merge_entry(entry)
 
     return sections
 
+
 def merge_sections(existing: Dict[str, ModSection], generated: Dict[str, ModSection]) -> Dict[str, ModSection]:
-    merged = {name: ModSection(name=name, entries=list(sec.entries)) for name, sec in existing.items()}
+    merged = {}
 
-    for section, gen_sec in generated.items():
-        if section not in merged:
-            merged[section] = ModSection(name=section)
+    for section_name in set(existing.keys()).union(generated.keys()):
+        merged_section = ModSection(section_name)
 
-        for entry in gen_sec.entries:
-            duplicate = any(
-                entry.content_files[0] in existing_entry.content_files
-                for existing_entry in merged[section].entries
-            )
-            if not duplicate:
-                merged[section].add_or_merge_entry(entry)
+        existing_section = existing.get(section_name, ModSection(section_name))
+        generated_section = generated.get(section_name, ModSection(section_name))
+
+        # First, add all entries from README
+        for entry in existing_section.entries.values():
+            merged_section.add_or_merge_entry(entry)
+
+        # Then, add entries from GENERATED only if their content files aren't already covered
+        existing_content_files = {
+            cf for e in existing_section.entries.values() for cf in e.content_files
+        }
+
+        for entry in generated_section.entries.values():
+            if any(cf in existing_content_files for cf in entry.content_files):
+                continue  # Skip: already exists in README
+            merged_section.add_or_merge_entry(entry)
+
+        merged[section_name] = merged_section
 
     return merged
 
 
 def main():
-    # Backup original config
     shutil.copy(OPENMW_CFG, LOCAL_CFG_COPY)
-    print(f"[INFO] Copied {OPENMW_CFG} to {LOCAL_CFG_COPY}")
+    print(f"Copied {OPENMW_CFG} to {LOCAL_CFG_COPY}")
 
-    # Parse config and find data
     data_dirs, content_files = parse_openmw_cfg(OPENMW_CFG)
     content_map = find_content_paths(data_dirs)
-    generated_sections = generate_sections(data_dirs, content_files, content_map)
 
-    # Write GENERATED.md
-    write_markdown(generated_sections, GENERATED_MD)
+    generated = generate_mod_sections(data_dirs, content_files, content_map)
+    write_sections_to_file(generated, GENERATED_PATH)
 
-    # Load README.md
     if README_PATH.exists():
-        existing_sections = load_readme_sections(README_PATH)
+        existing = load_readme_sections(README_PATH)
+        merged = merge_sections(existing, generated)
+        write_sections_to_file(merged, MERGED_PATH)
+        print(f"Generated {MERGED_PATH}")
     else:
-        existing_sections = {}
-
-    # Merge and write MERGED.md
-    merged_sections = merge_sections(existing_sections, generated_sections)
-    write_markdown(merged_sections, MERGED_MD)
+        print("README.md not found; only GENERATED.md created.")
 
 
 if __name__ == "__main__":
