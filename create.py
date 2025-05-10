@@ -5,17 +5,32 @@ from pathlib import Path
 MOD_DIR = "/home/chris/mods/morrowind/"
 OPENMW_CFG = "openmw.cfg"
 
-class ModData:
+class Mod:
     def __init__(self, name: str):
         self.name = name
+
+class ModData:
+    def __init__(self, name: str, path: str):
+        self.name = name
+        self.path = path.replace(MOD_DIR, '')
+
+    def __str__(self):
+        return f"    {self.name}\n    Path: [{self.path}]"
+
 
 class ModContent:
-    def __init__(self, name: str):
+    def __init__(self, name: str, path: str):
         self.name = name
+        self.path = path.replace(MOD_DIR, '')
+
+    def __str__(self):
+        return f"    {self.name}\n    Path: [{self.path}]"
+
 
 class ModSection:
-    def __init__(self, name: str):
+    def __init__(self, name: str, path: str):
         self.name = name
+        self.path = path
         self.content = []
         self.data = []
 
@@ -28,11 +43,12 @@ class ModSection:
             self.data.append(data)
 
     def __str__(self):
-        content_names = ", ".join(c.name for c in self.content)
-        data_names = ", ".join(d.name for d in self.data)
+        content_str = "\n".join(str(c) for c in self.content)
+        data_str = "\n".join(str(d) for d in self.data)
         return (f"ModSection: {self.name}\n"
-                f"  Content: [{content_names}]\n"
-                f"  Data:    [{data_names}]")
+                f"  Content:\n{content_str or '    (none)'}\n"
+                f"  Data:\n{data_str or '    (none)'}\n"
+                f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 class ModDictionary:
     def __init__(self):
@@ -61,33 +77,27 @@ class ModDictionary:
                 line = line.replace(MOD_DIR, "")
                 isContent = 'content=' in line
                 section = ""
+                path = ""
 
                 if isContent:
                     name = line.split('=')[-1]
-                    # print(f'Searching for {name}..')
                     path = self.find_mod_file(name, MOD_DIR)
                     section = self.get_section(path)
 
-                else:
+                else: # is data
                     parts = line.split('/')
                     section = self.get_section(line)
                     name = '/'.join(parts[1:]).replace('"','')
-
-                print(line)
-                print(f'  Section: {section}')
-                print(f'  Name: {name}')
-                if isContent:
-                    print(f'  isContent: {isContent}')
-                print()
+                    path = line.split('=')[-1].replace('"','')
 
                 # if section does not exist, add it
                 if section not in sections:
-                    sections[section] = ModSection(section)
+                    sections[section] = ModSection(section, path)
 
                 if isContent:
-                    sections[section].add_content(ModContent(name))
+                    sections[section].add_content(ModContent(name, path))
                 else:
-                    sections[section].add_data(ModData(name))
+                    sections[section].add_data(ModData(name, path))
  
                 
         return sections
