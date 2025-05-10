@@ -1,57 +1,16 @@
 from pathlib import Path
-
-# Full implementation of parser.py with support for:
-# - Texture-only mods (no content files)
-# - Grouping data directories under mod names
-# - Alphabetical sorting of mods in sections
-# - Merging README.md and GENERATED.md without duplication
-
 import os
-import re
 import shutil
-from pathlib import Path
 from collections import defaultdict
 from typing import List, Dict
+from mod_data import ModData, ModEntry, ModSection
+import re
 
 OPENMW_CFG = Path.home() / ".config/openmw/openmw.cfg"
 LOCAL_CFG_COPY = Path("./openmw.cfg")
 README_PATH = Path("README.md")
 GENERATED_PATH = Path("GENERATED.md")
 MERGED_PATH = Path("MERGED.md")
-
-
-class ModEntry:
-    def __init__(self, mod_name: str, notes: str = "", content_files: List[str] = None, paths_used: List[str] = None):
-        self.mod_name = mod_name
-        self.notes = notes
-        self.content_files = sorted(set(content_files or []))
-        self.paths_used = sorted(set(paths_used or []))
-
-    def merge(self, other):
-        self.content_files = sorted(set(self.content_files + other.content_files))
-        self.paths_used = sorted(set(self.paths_used + other.paths_used))
-
-    def __eq__(self, other):
-        return set(self.content_files) == set(other.content_files)
-
-    def __hash__(self):
-        return hash(tuple(sorted(self.content_files)))
-
-
-class ModSection:
-    def __init__(self, name: str):
-        self.name = name
-        self.entries: Dict[str, ModEntry] = {}
-
-    def add_or_merge_entry(self, entry: ModEntry):
-        key = entry.mod_name
-        if key in self.entries:
-            self.entries[key].merge(entry)
-        else:
-            self.entries[key] = entry
-
-    def sorted_entries(self):
-        return [self.entries[k] for k in sorted(self.entries.keys())]
 
 
 def parse_openmw_cfg(cfg_path: Path):
@@ -99,7 +58,7 @@ def get_mod_name(path: str, section: str):
 
 
 def generate_mod_sections(data_dirs, content_files, content_map):
-    sections: Dict[str, ModSection] = {}
+    mod_data_handler = ModData()
 
     # Track all content files
     for esp in content_files:
@@ -113,16 +72,16 @@ def generate_mod_sections(data_dirs, content_files, content_map):
         base_path = next((d for d in data_dirs if str(mod_path).startswith(d)), str(mod_path))
 
         entry = ModEntry(mod_name=mod_name, content_files=[esp], paths_used=[base_path])
-        sections.setdefault(section, ModSection(section)).add_or_merge_entry(entry)
+        mod_data_handler.add_or_merge_entry(entry, section)
 
     # Track texture-only mods
     for data_dir in data_dirs:
         section = get_section_name(data_dir)
         mod_name = get_mod_name(data_dir, section)
         entry = ModEntry(mod_name=mod_name, content_files=[], paths_used=[data_dir])
-        sections.setdefault(section, ModSection(section)).add_or_merge_entry(entry)
+        mod_data_handler.add_or_merge_entry(entry, section)
 
-    return sections
+    return mod_data_handler
 
 
 def write_sections_to_file(sections: Dict[str, ModSection], path: Path):
@@ -208,7 +167,10 @@ def main():
     data_dirs, content_files = parse_openmw_cfg(OPENMW_CFG)
     content_map = find_content_paths(data_dirs)
 
-    generated = generate_mod_sections(data_dirs, content_files, content_map)
+    # Use ModData to generate the sections
+    mod_data_handler = generate_mod_sections(data_dirs, content_files, content_map)
+    generated = mod_data_handler.get_mod_sections()
+
     write_sections_to_file(generated, GENERATED_PATH)
 
     if README_PATH.exists():
