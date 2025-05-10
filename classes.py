@@ -156,8 +156,7 @@ class ModDictionary:
                 name = ""
 
                 if isContent:
-                    name = line.split('=')[-1]  
-                    path = self.find_mod_file(name, MOD_DIR)
+                    path = self.find_mod_file(line.split('=')[-1] , MOD_DIR)
 
                     if path is None:
                         continue
@@ -166,6 +165,10 @@ class ModDictionary:
 
                     if path.count('/') == 1: # if in root
                         name = section       # use section name as mod name
+                    else:
+                        parts = path.split('/')
+
+                        name = parts[1] if len(parts) > 1 else parts[0]
 
                     mod_entry = ModContentFile(name, path)
                 else:
