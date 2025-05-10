@@ -14,9 +14,9 @@ class Mod:
     def __str__(self):
         files_str = "\n".join(str(c) for c in self.files)
         paths_str = "\n".join(str(d) for d in self.paths)
-        return (f"\tMod:\n\t      {self.name}\n"
-                f"\tFiles:\n" + '\n'.join([f"\t{path}" for path in files_str.splitlines()] or ['\t\t(none)']) + '\n'
-                f"\tPaths:\n" + '\n'.join([f"\t{path}" for path in paths_str.splitlines()] or ['\t\t(none)']))
+        return (f"  {self.name}\n"
+                f"    Files:\n" + '\n'.join([f"{path}" for path in files_str.splitlines()] or ['\t\t(none)']) + '\n'
+                f"    Paths:\n" + '\n'.join([f"{path}" for path in paths_str.splitlines()] or ['\t\t(none)']))
 
 
     def add_file(self, files: 'ModfilesFile'):
@@ -76,7 +76,7 @@ class ModSection:
 
     def __str__(self):
         mods_str = "\n".join(str(m) for m in self.mods)
-        return (f"Section: {self.name}\n"
+        return (f"{self.name}\n"
                 f"{mods_str or '  No mods in this section.'}\n"
                 f"{'~'*60}")
 
