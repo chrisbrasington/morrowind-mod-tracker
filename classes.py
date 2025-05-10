@@ -1,7 +1,9 @@
+import re
 from pathlib import Path
 
 MOD_DIR = "/home/chris/mods/morrowind/"
 OPENMW_CFG = "openmw.cfg"
+MARKDOWN_OUTPUT = "README.md"
 
 class Mod:
     def __init__(self, name: str):
@@ -84,8 +86,54 @@ class ModSection:
 
 
 class ModDictionary:
-    def __init__(self):
-        self.sections = self.read_config(OPENMW_CFG)  # Store sections as a dictionary or list
+    def __init__(self, from_markdown: bool = False):
+        if from_markdown:
+            self.sections = self.read_markdown(MARKDOWN_OUTPUT)
+        else:
+            self.sections = self.read_config(OPENMW_CFG)
+
+    def read_markdown(self, markdown_path: str) -> dict[str, ModSection]:
+        sections = {}
+        current_section = None
+        table_pattern = re.compile(r'^\| (.+?) \| (.*?) \| (.*?) \| (.*?) \| (.*?) \|$')
+
+        with open(markdown_path, 'r') as f:
+            lines = f.readlines()
+
+        for line in lines:
+            line = line.strip()
+            if line.startswith('|---') or line.startswith('| Name'):
+                continue
+
+            if line.startswith('## '):
+                section_name = line.replace('## ', '').strip()
+                current_section = ModSection(section_name, "")
+                sections[section_name] = current_section
+            elif table_pattern.match(line):
+                match = table_pattern.match(line)
+                name, notes, url, files_str, paths_str = [part.strip() for part in match.groups()]
+
+                # print(name)
+                # print(match)
+
+                mod = Mod(name)
+                mod.notes = notes
+                mod.url = url
+
+                if files_str and files_str.lower() != "(none)":
+                    for file_path in [f.strip() for f in files_str.split(',')]:
+                        if file_path:
+                            mod.add_file(ModContentFile(name, file_path))
+
+                if paths_str and paths_str.lower() != "(none)":
+                    for path in [p.strip() for p in paths_str.split(',')]:
+                        if path:
+                            mod.add_path(ModPath(name, path))
+
+                if current_section:
+                    current_section.mods.append(mod)
+
+        return sections
 
     def generate_markdown(self, output_path):
         """
