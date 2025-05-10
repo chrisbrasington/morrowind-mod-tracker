@@ -15,7 +15,7 @@ class Mod:
         files_str = "\n".join(str(c) for c in self.files)
         paths_str = "\n".join(str(d) for d in self.paths)
         return (f"\tMod:\n\t      {self.name}\n"
-                f"\tFiles:\n\t{files_str or '(none)'}\n"
+                f"\tFiles:\n" + '\n'.join([f"\t{path}" for path in files_str.splitlines()] or ['\t\t(none)']) + '\n'
                 f"\tPaths:\n" + '\n'.join([f"\t{path}" for path in paths_str.splitlines()] or ['\t\t(none)']))
 
 
