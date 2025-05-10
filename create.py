@@ -29,6 +29,7 @@ class Mod:
 class ModPath:
     def __init__(self, name: str, path: str):
         self.name = name
+
         self.path = path.replace(MOD_DIR, '')
 
     def __str__(self):
@@ -38,6 +39,7 @@ class ModPath:
 class ModContentFile:
     def __init__(self, name: str, path: str):
         self.name = name
+            
         self.file = path.replace(MOD_DIR, '')
 
     def get_mod_name(self):
@@ -100,8 +102,17 @@ class ModDictionary:
         with open(config_path, "r") as file:
             for line in file:
                 line = line.strip()
+                print(line, end='')
 
-                if line.startswith("#") or line == "":
+                # skip base game + expansions (not "mods" but requires)
+                if (line == "content=Tribunal.esm" or 
+                    line == "content=Bloodmoon.esm" or 
+                    line == "content=Morrowind.esm" or 
+                    line.startswith("#") or 
+                    line == "" or 
+                    line.endswith("Morrowind/Data Files\"") or
+                    not (line.startswith('data=') or line.startswith('content='))):
+                    print('')
                     continue
 
                 line = line.replace(MOD_DIR, "")
@@ -114,6 +125,10 @@ class ModDictionary:
                     name = line.split('=')[-1]  
                     path = self.find_mod_file(name, MOD_DIR)
 
+                    if path is None:
+                        continue
+
+
                     mod_entry = ModContentFile(name, path)
                     section = self.get_section(path)
                 else:
@@ -124,7 +139,8 @@ class ModDictionary:
                     mod_entry = ModPath(name, path)
                     section = self.get_section(path)
 
-                # print(line)
+                print('  ✅')
+                
                 # print(f'  Section:\t{section}')
                 # print(f'  Name:\t\t{name}')
                 # print(f'  Path:\t\t{path}')
@@ -144,6 +160,7 @@ class ModDictionary:
 
 def main():
     mod_dict = ModDictionary()
+    mod_dict.sections = dict(sorted(mod_dict.sections.items()))
     print(f"{'~'*60}")
     for name, section in mod_dict.sections.items():
         print(section)
