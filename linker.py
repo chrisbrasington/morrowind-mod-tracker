@@ -76,15 +76,10 @@ def main():
     for section_name, section in mod_dict.sections.items():
         print(section)
 
-    sys.exit()
-
     if args.walk:
         walk_missing_urls(mod_dict)
     else:
         interactive_selection(mod_dict)
-
-    # Save updated markdown
-    save(mod_dict)
 
 if __name__ == "__main__":
     main()
