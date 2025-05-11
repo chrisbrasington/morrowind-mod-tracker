@@ -156,7 +156,7 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | wazalightfixes | This is a tool which generates a plugin which fixes lights. | [waza_lightfixes](https://modding-openmw.com/mods/waza_lightfixes/) | (none) | Tools/wazalightfixes |
-| luahelper | UPDATE: Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Tools/luahelper/OpenMW_luahelper.esp, Tools/luahelper/OpenMW_luahelper.omwscripts, Tools/luahelper/OpenMW_luahelper_dialog.esp | Tools/luahelper |
+| luahelper | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Tools/luahelper/OpenMW_luahelper.esp, Tools/luahelper/OpenMW_luahelper.omwscripts, Tools/luahelper/OpenMW_luahelper_dialog.esp | Tools/luahelper |
 
 ## UserInterface
 
@@ -164,34 +164,34 @@
 |------|-------|-------|-------|-------|
 | BigIcons | Replaces the small 16x16 spell effect icons with your choice of larger icons. Works with your choice of MWSE or OpenMW | [big-icons](https://modding-openmw.com/mods/big-icons/) | (none) | UserInterface/BigIcons/078XTextured |
 | CantonsontheGlobalMap | Vivec and Molag Mar no longer look like empty water on the global map. | [50534](https://www.nexusmods.com/morrowind/mods/50534) | UserInterface/CantonsontheGlobalMap/DataFiles/Cantons_on_the_Global_Map_v1.1.esp | UserInterface/CantonsontheGlobalMap/DataFiles |
-| Better Dialogue Font |  |  | (none) | UserInterface/BetterDialogueFont |
-| InterfaceReimaigned |  |  | (none) | UserInterface/InterfaceReimaigned |
-| TitleScreen |  |  | (none) | UserInterface/TitleScreen, UserInterface/TitleScreen/Textures, UserInterface/TitleScreen/Video |
-| PerfectPlacement |  |  | UserInterface/PerfectPlacement/PerfectPlacement.omwscripts | UserInterface/PerfectPlacement |
+| Better Dialogue Font | A high resolution replacer for Morrowind's Magic Cards font, used in most of the UI - menus, dialogue and the journal. | [36873](https://www.nexusmods.com/morrowind/mods/36873) | (none) | UserInterface/BetterDialogueFont |
+| InterfaceReimaigned | Modernized Dialogue and Decluttering of the UI | [54985](https://www.nexusmods.com/morrowind/mods/54985) | (none) | UserInterface/InterfaceReimaigned |
+| TitleScreen | HD Title Screen and Logo Video. | [43657](https://www.nexusmods.com/morrowind/mods/43657) | (none) | UserInterface/TitleScreen, UserInterface/TitleScreen/Textures, UserInterface/TitleScreen/Video |
+| PerfectPlacement | Adds interactive placement, rotation and wall mounting of items. Arrange gear, books and anything else you can pick up. Requires MWSE 2.1 or OpenMW 0.49dev. | [46562](https://www.nexusmods.com/morrowind/mods/46562) | UserInterface/PerfectPlacement/PerfectPlacement.omwscripts | UserInterface/PerfectPlacement |
 
 ## Voice
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| LuaHelper |  |  | Voice/LuaHelper/OpenMW_luahelper_dialog_TR.esp | Voice/LuaHelper, Voice/LuaHelper/scripts, Voice/LuaHelper/scripts/OpenMW_luahelper |
-| VoicesOfVvardenfell |  |  | (none) | Voice/VoicesOfVvardenfell, Voice/VoicesOfVvardenfell/00-Core, Voice/VoicesOfVvardenfell/01-PatchforPurists, Voice/VoicesOfVvardenfell/11-FurbyZone'sSkyrimNeloth, Voice/VoicesOfVvardenfell/12-FurbyZone'sAlmalexia, Voice/VoicesOfVvardenfell/00-Core/MWSE/mods/AIVoices |
-| PatchForOpenMW |  |  | (none) | Voice/PatchForOpenMW |
+| LuaHelper | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Voice/LuaHelper/OpenMW_luahelper_dialog_TR.esp | Voice/LuaHelper, Voice/LuaHelper/scripts, Voice/LuaHelper/scripts/OpenMW_luahelper |
+| VoicesOfVvardenfell | Kezyma's Voices of Vvardenfell - A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. | [52279](https://www.nexusmods.com/morrowind/mods/52279) | (none) | Voice/VoicesOfVvardenfell, Voice/VoicesOfVvardenfell/00-Core, Voice/VoicesOfVvardenfell/01-PatchforPurists, Voice/VoicesOfVvardenfell/11-FurbyZone'sSkyrimNeloth, Voice/VoicesOfVvardenfell/12-FurbyZone'sAlmalexia, Voice/VoicesOfVvardenfell/00-Core/MWSE/mods/AIVoices |
+| PatchForOpenMW | NEW version for Full Working of Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49 only. | [54137](https://www.nexusmods.com/morrowind/mods/54137) | (none) | Voice/PatchForOpenMW |
 
 ## Water
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| DistantSeafloorforOpenMW |  |  | Water/DistantSeafloorforOpenMW/00Core/distant_seafloor_2.00.esm, Water/DistantSeafloorforOpenMW/01PatchforvanillaSolstheimlocation/distantseafloorbloodmoonpatch.esp | Water/DistantSeafloorforOpenMW/00Core, Water/DistantSeafloorforOpenMW/01PatchforvanillaSolstheimlocation |
+| DistantSeafloorforOpenMW | Extends the seafloor around Vvardenfell to hide the edge of the world in OpenMW. Compatible with everything. | [50796](https://www.nexusmods.com/morrowind/mods/50796) | Water/DistantSeafloorforOpenMW/00Core/distant_seafloor_2.00.esm, Water/DistantSeafloorforOpenMW/01PatchforvanillaSolstheimlocation/distantseafloorbloodmoonpatch.esp | Water/DistantSeafloorforOpenMW/00Core, Water/DistantSeafloorforOpenMW/01PatchforvanillaSolstheimlocation |
 
 ## Weapons
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| WeaponSheathing |  |  | (none) | Weapons/WeaponSheathing/DataFiles |
+| WeaponSheathing | Makes unreadied weapons appear on the character's hip or back. | [46069](https://www.nexusmods.com/morrowind/mods/46069) | (none) | Weapons/WeaponSheathing/DataFiles |
 
 ## Weather
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| KirelsInteriorWeather |  |  | Weather/KirelsInteriorWeather/k_weather.esp, Weather/KirelsInteriorWeather/k_weather(loudersounds).esp | Weather/KirelsInteriorWeather |
+| KirelsInteriorWeather | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. | [49278](https://www.nexusmods.com/morrowind/mods/49278) | Weather/KirelsInteriorWeather/k_weather.esp, Weather/KirelsInteriorWeather/k_weather(loudersounds).esp | Weather/KirelsInteriorWeather |
 
