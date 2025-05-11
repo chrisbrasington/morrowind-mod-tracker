@@ -117,39 +117,39 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | PatchforPurists | Patch for Purists is an unofficial patch for The Elder Scrolls III: Morrowind Game of the Year Edition which attempts to continue where the latest official version of the game left off. Over 9000+ bugs still present in the game have been fixed. | [45096](https://www.nexusmods.com/morrowind/mods/45096) | Patches/PatchforPurists/PatchforPurists.esm, Patches/PatchforPurists/PatchforPurists-Semi-PuristFixes.ESP, Patches/PatchforPurists/PatchforPurists-BookTypos.ESP | Patches/PatchforPurists |
-| UnofficialMorrowindOfficialPluginsPatched |  |  | Patches/UnofficialMorrowindOfficialPluginsPatched/UnofficialMorrowindOfficialPluginsPatched.ESP | Patches/UnofficialMorrowindOfficialPluginsPatched, Patches/UnofficialMorrowindOfficialPluginsPatched/CompatibilityVersion |
+| UnofficialMorrowindOfficialPluginsPatched | An attempt to fix the many issues present in Bethesda's original Official Plugins. Includes fixes for all of the Official Plugins, and offers merged and compatibility options as well. | [43931](https://www.nexusmods.com/morrowind/mods/43931) | Patches/UnofficialMorrowindOfficialPluginsPatched/UnofficialMorrowindOfficialPluginsPatched.ESP | Patches/UnofficialMorrowindOfficialPluginsPatched, Patches/UnofficialMorrowindOfficialPluginsPatched/CompatibilityVersion |
 
 ## PatchesFixesandConsistency
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| ExpansionDelay |  |  | PatchesFixesandConsistency/ExpansionDelay/ExpansionDelay.ESP | PatchesFixesandConsistency/ExpansionDelay |
+| ExpansionDelay | This mod fixes Bethesda's overly enthusiastic expansion hooks by delaying the Dark Brotherhood attacks (for Tribunal) and limiting intrustive dialogue topics to a few NPCs (Bloodmoon). | [47588](https://www.nexusmods.com/morrowind/mods/47588) | PatchesFixesandConsistency/ExpansionDelay/ExpansionDelay.ESP | PatchesFixesandConsistency/ExpansionDelay |
 
 ## Performance
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| MorrowindOptimizationPatch |  |  | Performance/MorrowindOptimizationPatch/01LakeFjaldingAnti-Suck/LakeFjaldingAnti-Suck.ESP | Performance/MorrowindOptimizationPatch/00Core, Performance/MorrowindOptimizationPatch/01LakeFjaldingAnti-Suck, Performance/MorrowindOptimizationPatch/04BetterVanillaTextures, Performance/MorrowindOptimizationPatch/05GraphicHerbalismPatch, Performance/MorrowindOptimizationPatch/02WeaponSheathingPatch |
-| ProjectAtlas |  |  | (none) | Performance/ProjectAtlas/Project-Atlas-master/00Core, Performance/ProjectAtlas/Project-Atlas-master/01Textures-MET, Performance/ProjectAtlas/Project-Atlas-master/02Urns-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/03Redware-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/04EmperorParasols-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/07GraphicHerbalismPatch, Performance/ProjectAtlas/Project-Atlas-master/06GlowintheDahrkPatch |
+| MorrowindOptimizationPatch | Greatly improves performance and fixes tons of mesh errors. | [45384](https://www.nexusmods.com/morrowind/mods/45384) | Performance/MorrowindOptimizationPatch/01LakeFjaldingAnti-Suck/LakeFjaldingAnti-Suck.ESP | Performance/MorrowindOptimizationPatch/00Core, Performance/MorrowindOptimizationPatch/01LakeFjaldingAnti-Suck, Performance/MorrowindOptimizationPatch/04BetterVanillaTextures, Performance/MorrowindOptimizationPatch/05GraphicHerbalismPatch, Performance/MorrowindOptimizationPatch/02WeaponSheathingPatch |
+| ProjectAtlas | The goal of Project Atlas is to identify the most performance heavy areas of vanilla Morrowind and some popular mods and target high usage/strain meshes in those areas for atlasing. This effort involves reworking the UVs for those meshes and creating texture atlases to cover various sets. | [45399](https://www.nexusmods.com/morrowind/mods/45399) | (none) | Performance/ProjectAtlas/Project-Atlas-master/00Core, Performance/ProjectAtlas/Project-Atlas-master/01Textures-MET, Performance/ProjectAtlas/Project-Atlas-master/02Urns-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/03Redware-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/04EmperorParasols-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/07GraphicHerbalismPatch, Performance/ProjectAtlas/Project-Atlas-master/06GlowintheDahrkPatch |
 
 ## Shaders
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| VtastekLightShaders |  |  | Shaders/VtastekLightShaders/LightFixes.esp | Shaders/VtastekLightShaders |
+| VtastekLightShaders | A highly advanced shader replacement that also revamps all lighting in the game. | https://modding-openmw.com/mods/vtasteks-light-shaders/ | Shaders/VtastekLightShaders/LightFixes.esp | Shaders/VtastekLightShaders |
 
 ## Skyrim
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Skyrim |  |  | Skyrim/Sky_Main.esm, Skyrim/Sky_Main_Grass.esp | Skyrim |
+| Skyrim | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. | [44921](https://www.nexusmods.com/morrowind/mods/44921) | Skyrim/Sky_Main.esm, Skyrim/Sky_Main_Grass.esp | Skyrim |
 
 ## TexturePacks
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| MorrowindEnhancedTextures |  |  | (none) | TexturePacks/MorrowindEnhancedTextures/Interface, TexturePacks/MorrowindEnhancedTextures/atlas, TexturePacks/MorrowindEnhancedTextures/MET6-1main |
-| RealSignposts |  |  | TexturePacks/RealSignposts/RealSignposts.esp | TexturePacks/RealSignposts |
+| MorrowindEnhancedTextures | Upscales every in-game texture with the help of machine learning. 100% vanilla-friendly. | [46221](https://www.nexusmods.com/morrowind/mods/46221) | (none) | TexturePacks/MorrowindEnhancedTextures/Interface, TexturePacks/MorrowindEnhancedTextures/atlas, TexturePacks/MorrowindEnhancedTextures/MET6-1main |
+| RealSignposts | The RealSignposts Plugin replaces the signposts in Morrowind by signposts showing the real names of the locations. | [3879](https://www.nexusmods.com/morrowind/mods/3879) | TexturePacks/RealSignposts/RealSignposts.esp | TexturePacks/RealSignposts |
 
 ## Tools
 
