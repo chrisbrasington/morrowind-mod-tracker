@@ -1,5 +1,5 @@
 {
   "MOD_DIR": "~/mods/morrowind/",
-  "OPENMW_CFG": "~/.config/openmw/openmw.cfg",
+  "OPENMW_CFG": "openmw.cfg",
   "OUTPUT": "README.md"
 }
