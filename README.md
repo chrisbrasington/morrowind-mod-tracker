@@ -1,9 +1,15 @@
+## Architecture
+
+| Name | Notes | URL   | Files | Paths |
+|------|-------|-------|-------|-------|
+| MorrowindInteriorsProject |  |  | Architecture/MorrowindInteriorsProject/MorrowindInteriorsProject_TR.ESP, Architecture/MorrowindInteriorsProject/MorrowindInteriorsProject.ESP | Architecture/MorrowindInteriorsProject |
+| Nordsshutyourwindows |  |  | (none) | Architecture/Nordsshutyourwindows/00Core, Architecture/Nordsshutyourwindows/05PuristSunrays |
 
 ## Audiobooks
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Audiobooks |  |  | Audiobooks/AudiobooksOfMorrowind.ESP, Audiobooks/audiobook-openmw.omwscripts | Audiobooks |
+| Audiobooks | notes | url | Audiobooks/AudiobooksOfMorrowind.ESP, Audiobooks/audiobook-openmw.omwscripts | Audiobooks |
 
 ## Books
 
@@ -16,6 +22,7 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | Devilish Needs |  |  | Camping/DevilishNeeds/DevilishNeeds.esp, Camping/DevilishNeeds/DevilishNeeds.omwscripts | Camping/DevilishNeeds |
+| OAAB |  |  | Camping/OAAB/OAAB_Data.esm | Camping/OAAB |
 
 ## Cheat
 
@@ -102,7 +109,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| OpenMWContainersAnimated |  |  | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated/ContainersAnimated.esp | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated, ObjectsClutter/OpenMWContainersAnimated/Optional/kollops |
+| OpenMWContainersAnimated |  |  | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated/ContainersAnimated.esp | ObjectsClutter/OpenMWContainersAnimated/Optional/kollops, ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated |
 
 ## Patches
 
@@ -140,7 +147,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| MorrowindEnhancedTextures |  |  | (none) | TexturePacks/MorrowindEnhancedTextures/MET6-1main, TexturePacks/MorrowindEnhancedTextures/Interface, TexturePacks/MorrowindEnhancedTextures/atlas |
+| MorrowindEnhancedTextures |  |  | (none) | TexturePacks/MorrowindEnhancedTextures/Interface, TexturePacks/MorrowindEnhancedTextures/atlas, TexturePacks/MorrowindEnhancedTextures/MET6-1main |
 | RealSignposts |  |  | TexturePacks/RealSignposts/RealSignposts.esp | TexturePacks/RealSignposts |
 
 ## Tools
@@ -185,5 +192,5 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| KirelsInteriorWeather |  |  | Weather/KirelsInteriorWeather/k_weather(loudersounds).esp, Weather/KirelsInteriorWeather/k_weather.esp | Weather/KirelsInteriorWeather |
+| KirelsInteriorWeather |  |  | Weather/KirelsInteriorWeather/k_weather.esp, Weather/KirelsInteriorWeather/k_weather(loudersounds).esp | Weather/KirelsInteriorWeather |
 
