@@ -46,12 +46,21 @@ def interactive_selection(mod_dict):
         _, mod = mods[int(choice) - 1]
         edit_mod(mod)
 
+        save(mod_dict)
+
+def save(mod_dict):
+    # Save updated markdown
+    print("💾 Saving updated markdown...")
+    mod_dict.generate_markdown(MARKDOWN_PATH)
+    print(f"✅ Saved to {MARKDOWN_PATH}.")
+
 def walk_missing_urls(mod_dict):
     mods = flatten_mods(mod_dict)
     for section_name, mod in mods:
         if not mod.url:
             print(f"\n[{section_name}] {mod.name}")
             edit_mod(mod)
+            save(mod_dict)
 
 def main():
     parser = argparse.ArgumentParser(description="Mod Linker Utility")
@@ -70,9 +79,7 @@ def main():
         interactive_selection(mod_dict)
 
     # Save updated markdown
-    print("💾 Saving updated markdown...")
-    mod_dict.generate_markdown(MARKDOWN_PATH)
-    print(f"✅ Saved to {MARKDOWN_PATH}.")
+    save(mod_dict)
 
 if __name__ == "__main__":
     main()
