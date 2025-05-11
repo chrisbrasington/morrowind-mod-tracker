@@ -1,9 +1,3 @@
-## Architecture
-
-| Name | Notes | URL   | Files | Paths |
-|------|-------|-------|-------|-------|
-| MorrowindInteriorsProject |  |  | Architecture/MorrowindInteriorsProject/MorrowindInteriorsProject_TR.ESP, Architecture/MorrowindInteriorsProject/MorrowindInteriorsProject.ESP | Architecture/MorrowindInteriorsProject |
-| Nordsshutyourwindows |  |  | (none) | Architecture/Nordsshutyourwindows/00Core, Architecture/Nordsshutyourwindows/05PuristSunrays |
 
 ## Audiobooks
 
@@ -22,7 +16,6 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | Devilish Needs |  |  | Camping/DevilishNeeds/DevilishNeeds.esp, Camping/DevilishNeeds/DevilishNeeds.omwscripts | Camping/DevilishNeeds |
-| OAAB |  |  | Camping/OAAB/OAAB_Data.esm | Camping/OAAB |
 
 ## Cheat
 
