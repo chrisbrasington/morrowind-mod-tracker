@@ -89,34 +89,34 @@
 | RafaelsShaderPack | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly | https://www.nexusmods.com/morrowind/mods/53667 | (none) | Lighting/RafaelsShaderPack |
 | Enhanced PBR Lighting for OpenMW | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly | https://www.nexusmods.com/morrowind/mods/53667 | (none) | Lighting/EnhancedPBRLightingforOpenMW/OpenMW0.49 |
 | Enhanced Shadows for OpenMW | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly | https://www.nexusmods.com/morrowind/mods/53667 | (none) | Lighting/EnhancedShadowsforOpenMW/OpenMW0.49 |
-| Enhanced Water for OpenMW |  |  | (none) | Lighting/EnhancedWaterforOpenMW/OpenMW0.49 |
+| Enhanced Water for OpenMW | OpenMW Water Shaders with dynamic caustics, water foam, volumetric light rays, and realistic fog effects. | [56186](https://www.nexusmods.com/morrowind/mods/56186) | (none) | Lighting/EnhancedWaterforOpenMW/OpenMW0.49 |
 
 ## ModdingResources
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| TamrielData |  |  | ModdingResources/TamrielData/Tamriel_Data.omwscripts, ModdingResources/TamrielData/Tamriel_Data.esm | ModdingResources/TamrielData |
+| TamrielData | Tamriel_Data contains a data unified file structure spearheaded by Project Tamriel and Tamriel Rebuilt as the first adopter. | [44537](https://www.nexusmods.com/morrowind/mods/44537) | ModdingResources/TamrielData/Tamriel_Data.omwscripts, ModdingResources/TamrielData/Tamriel_Data.esm | ModdingResources/TamrielData |
 
 ## NPCs
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| FamiliarFacesbyCaleb |  |  | (none) | NPCs/FamiliarFacesbyCaleb |
-| Facelift |  |  | (none) | NPCs/Facelift |
-| QuestGreetings |  |  | NPCs/QuestGreetings/QuestVoiceGreetings.ESP | NPCs/QuestGreetings |
-| Voices of Vardenfell |  |  | NPCs/VoicesofVardenfell/VoVOpenMW.omwscripts | (none) |
+| FamiliarFacesbyCaleb | An in-depth yet completely vanilla friendly touch up of every head and almost every hair (a few looked okay) in the game. | [50093](https://www.nexusmods.com/morrowind/mods/50093) | (none) | NPCs/FamiliarFacesbyCaleb |
+| Facelift | https://www.nexusmods.com/morrowind/mods/47617 | [47617](https://www.nexusmods.com/morrowind/mods/47617) | (none) | NPCs/Facelift |
+| QuestGreetings | ElevenAI generated voices for quest-giving NPCs in Morrowind. Currently adds over 1800 original lines of voiced dialogue using the original actors voices. | [52273](https://www.nexusmods.com/morrowind/mods/52273) | NPCs/QuestGreetings/QuestVoiceGreetings.ESP | NPCs/QuestGreetings |
+| Voices of Vardenfell | A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. | [52279](https://www.nexusmods.com/morrowind/mods/52279) | NPCs/VoicesofVardenfell/VoVOpenMW.omwscripts | (none) |
 
 ## ObjectsClutter
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| OpenMWContainersAnimated |  |  | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated/ContainersAnimated.esp | ObjectsClutter/OpenMWContainersAnimated/Optional/kollops, ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated |
+| OpenMWContainersAnimated | This mod adds open/close animation and sounds to all containers that should have animation. | [46232](https://www.nexusmods.com/morrowind/mods/46232) | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated/ContainersAnimated.esp | ObjectsClutter/OpenMWContainersAnimated/Optional/kollops, ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated |
 
 ## Patches
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| PatchforPurists |  |  | Patches/PatchforPurists/PatchforPurists.esm, Patches/PatchforPurists/PatchforPurists-Semi-PuristFixes.ESP, Patches/PatchforPurists/PatchforPurists-BookTypos.ESP | Patches/PatchforPurists |
+| PatchforPurists | Patch for Purists is an unofficial patch for The Elder Scrolls III: Morrowind Game of the Year Edition which attempts to continue where the latest official version of the game left off. Over 9000+ bugs still present in the game have been fixed. | [45096](https://www.nexusmods.com/morrowind/mods/45096) | Patches/PatchforPurists/PatchforPurists.esm, Patches/PatchforPurists/PatchforPurists-Semi-PuristFixes.ESP, Patches/PatchforPurists/PatchforPurists-BookTypos.ESP | Patches/PatchforPurists |
 | UnofficialMorrowindOfficialPluginsPatched |  |  | Patches/UnofficialMorrowindOfficialPluginsPatched/UnofficialMorrowindOfficialPluginsPatched.ESP | Patches/UnofficialMorrowindOfficialPluginsPatched, Patches/UnofficialMorrowindOfficialPluginsPatched/CompatibilityVersion |
 
 ## PatchesFixesandConsistency
