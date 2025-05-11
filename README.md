@@ -23,7 +23,7 @@
 |------|-------|-------|-------|-------|
 | Devilish Needs | Camping mostly - Eat, drink, sleep, and stay dry or suffer the consequences. | [56480](https://www.nexusmods.com/morrowind/mods/56480) | Camping/DevilishNeeds/DevilishNeeds.esp, Camping/DevilishNeeds/DevilishNeeds.omwscripts | Camping/DevilishNeeds |
 | OAAB | OAAB_Data is a free-to-use asset repository for the Morrowind Community. | [49042](https://www.nexusmods.com/morrowind/mods/49042) | Camping/OAAB/OAAB_Data.esm | Camping/OAAB |
-| Easy Camping | An extremely simple, balanced and practical camping mod that seems to actually work! | [42919](https://www.nexusmods.com/morrowind/mods/42919) | Camping/EasyCamping/CampingKits.ESP | (none) |
+| Easy Camping | An extremely simple, balanced and practical camping mod that seems to actually work! | [42919](https://www.nexusmods.com/morrowind/mods/42919) | Camping/EasyCamping/CampingKits.ESP | Camping/EasyCamping |
 
 ## Cheat
 
@@ -41,8 +41,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| LuaMultiMark |  |  | Extra/LuaMultiMark/LuaMultiMark.omwaddon | (none) |
-| Extra |  |  | (none) | Extra |
+| LuaMultiMark |  |  | Extra/LuaMultiMark/LuaMultiMark.omwaddon | Extra/LuaMultiMark |
 
 ## Fixes
 
