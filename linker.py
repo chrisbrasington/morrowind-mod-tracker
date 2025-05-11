@@ -1,5 +1,5 @@
 import argparse
-import os
+import os, sys
 from classes import ModDictionary
 
 MARKDOWN_PATH = "README.md"
@@ -72,6 +72,11 @@ def main():
         return
 
     mod_dict = ModDictionary(from_markdown=True)
+
+    for section_name, section in mod_dict.sections.items():
+        print(section)
+
+    sys.exit()
 
     if args.walk:
         walk_missing_urls(mod_dict)
