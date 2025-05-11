@@ -9,6 +9,7 @@ from urllib.parse import urlparse, parse_qs
 MARKDOWN_PATH = "README.md"
 last_url = None
 last_notes = None
+last_search_query = None
 
 class DuckDuckGoParser(HTMLParser):
     def __init__(self):
@@ -76,9 +77,21 @@ def display_mod_list(mods):
         print(f"{idx}. [{section_name}] {mod.name}\n     URL: {url_display}\n     Notes: {notes_display}")
 
 def edit_mod(mod):
-    global last_url, last_notes
+    global last_url, last_notes, last_search_query
     clear_screen()
-    open_mod_page(mod.name)
+
+    query = f"morrowind {mod.name}"
+    if last_search_query == query:
+        print(f"🔁 Same mod name as last: auto-filling URL and notes")
+        if last_url:
+            mod.url = last_url
+        if last_notes:
+            mod.notes = last_notes
+        print("  ✅ Mod auto-updated.\n")
+        return
+
+    # Otherwise, search and allow manual input
+    search_result_url = open_mod_page(mod.name)
     print(f"\nEditing '{mod.name}'")
     print(mod)
 
@@ -97,15 +110,17 @@ def edit_mod(mod):
     notes_input = input(notes_prompt).strip()
 
     # Handle 'ditto' and empty input
-    if url_input.lower() == "ditto" or url_input.lower() == "d":
+    if url_input.lower() in ["ditto", "d"]:
         url = last_url
     elif url_input:
         url = format_nexusmods_link(url_input)
         last_url = url
     else:
-        url = None
+        url = format_nexusmods_link(search_result_url) if search_result_url else None
+        if url:
+            last_url = url
 
-    if notes_input.lower() == "ditto" or notes_input.lower() == "d":
+    if notes_input.lower() in ["ditto", "d"]:
         notes = last_notes
     elif notes_input:
         notes = notes_input
@@ -119,6 +134,7 @@ def edit_mod(mod):
         mod.notes = notes
 
     print("  ✅ Mod updated.\n")
+
 
 def flatten_mods(mod_dict):
     """Return a list of (section_name, mod) tuples."""
@@ -161,29 +177,35 @@ def interactive_selection(mod_dict):
 #     webbrowser.open(url)
 
 def open_mod_page(name):
+    global last_search_query
+
     query = f"morrowind {name}"
     encoded_query = urllib.parse.quote(query)
     url = f"https://html.duckduckgo.com/html/?q={encoded_query}"
-    
-    print(f"Searching: {encoded_query}")
-    print(url)
 
-    # Fetch the search results page
+    if last_search_query == query:
+        print(f"🔁 Skipping search (same as last): {query}")
+        return None  # So we don’t open the browser again
+
+    last_search_query = query
+
+    print(f"🔍 Searching: {query}")
+    print(f"🔗 URL: {url}")
+
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     with urllib.request.urlopen(req) as response:
         html = response.read().decode('utf-8')
 
-    # Parse HTML to find the first result link
     parser = DuckDuckGoParser()
     parser.feed(html)
-
-    # Get the prioritized link
     first_link = parser.get_priority_link()
 
     if first_link:
         webbrowser.open(first_link)
     else:
-        print("No result found.")
+        print("❌ No result found.")
+
+    return first_link
 
 def save(mod_dict):
     # Save updated markdown
