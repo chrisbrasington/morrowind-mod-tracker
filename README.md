@@ -86,9 +86,9 @@
 |------|-------|-------|-------|-------|
 | GlowintheDahrk | This is a modern, pluginless replacement of the old Windows Glow mods | https://modding-openmw.com/mods/glow-in-the-dahrk/ | Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers_NoUvirith.ESP, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers.ESP, Lighting/GlowintheDahrk/04RavenRockGlassWindows/GITD_WL_RR_Interiors.esp | Lighting/GlowintheDahrk/00Core, Lighting/GlowintheDahrk/01HiResWindowTextureReplacer, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell, Lighting/GlowintheDahrk/04RavenRockGlassWindows, Lighting/GlowintheDahrk/07TelvanniTowerInteriorGlowOpenMW |
 | GlowingFlames | Flames are now glow mapped and/or properly illuminated. | [46124](https://www.nexusmods.com/morrowind/mods/46124) | Lighting/GlowingFlames/GlowingFlames-NoMoreLightlessFlamesv1.1.ESP, Lighting/GlowingFlames/GlowingFlames-TrueLightsAndDarknessTweaks.ESP | Lighting/GlowingFlames |
-| RafaelsShaderPack |  |  | (none) | Lighting/RafaelsShaderPack |
-| Enhanced PBR Lighting for OpenMW |  |  | (none) | Lighting/EnhancedPBRLightingforOpenMW/OpenMW0.49 |
-| Enhanced Shadows for OpenMW |  |  | (none) | Lighting/EnhancedShadowsforOpenMW/OpenMW0.49 |
+| RafaelsShaderPack | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly | https://www.nexusmods.com/morrowind/mods/53667 | (none) | Lighting/RafaelsShaderPack |
+| Enhanced PBR Lighting for OpenMW | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly | https://www.nexusmods.com/morrowind/mods/53667 | (none) | Lighting/EnhancedPBRLightingforOpenMW/OpenMW0.49 |
+| Enhanced Shadows for OpenMW | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly | https://www.nexusmods.com/morrowind/mods/53667 | (none) | Lighting/EnhancedShadowsforOpenMW/OpenMW0.49 |
 | Enhanced Water for OpenMW |  |  | (none) | Lighting/EnhancedWaterforOpenMW/OpenMW0.49 |
 
 ## ModdingResources

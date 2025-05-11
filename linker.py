@@ -37,6 +37,9 @@ class DuckDuckGoParser(HTMLParser):
             if 'uddg' in query_params:
                 # Decode the URL and append to the appropriate list based on domain
                 cleaned_url = query_params['uddg'][0]
+
+                cleaned_url = cleaned_url.split('?')[0]
+
                 if 'nexusmods.com' in cleaned_url:
                     nexusmods_urls.append(cleaned_url)
                 elif 'modding-openmw.com' in cleaned_url:
@@ -94,6 +97,11 @@ def edit_mod(mod):
     elif isinstance(search_result, str):
         # A new URL was opened and set
         last_url = search_result
+
+    print()
+    print(f'Last url: {last_url}')
+    print(f'Last notes: {last_notes}')
+    print()
 
     # Prompt user for URL
     url_prompt = f"  Current URL: {mod.url or '(none)'}\n"
@@ -197,13 +205,13 @@ def open_mod_page(mod_name):
         # If it's the same as the last opened, prompt to reuse
         if first_link == last_url:
             print(f"🔁 Same URL as last opened:\n   ➤ URL: {last_url or '(none)'}\n   ➤ Notes: {last_notes or '(none)'}")
-            confirm = input("   Use same URL and Notes? [Y/n]: ").strip().lower()
+            confirm = input("   Use same URL and Notes? [Y/n] (enter for Y): ").strip().lower()
             if confirm in ("", "y"):
                 return "reuse"
         else:
             webbrowser.open(first_link)
             last_url = first_link
-            return first_link.split('?')[0]
+            return first_link
     else:
         print("❌ No result found.")
         return None
