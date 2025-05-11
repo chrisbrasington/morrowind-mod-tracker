@@ -168,6 +168,7 @@
 | InterfaceReimaigned | Modernized Dialogue and Decluttering of the UI | [54985](https://www.nexusmods.com/morrowind/mods/54985) | (none) | UserInterface/InterfaceReimaigned |
 | TitleScreen | HD Title Screen and Logo Video. | [43657](https://www.nexusmods.com/morrowind/mods/43657) | (none) | UserInterface/TitleScreen, UserInterface/TitleScreen/Textures, UserInterface/TitleScreen/Video |
 | PerfectPlacement | Adds interactive placement, rotation and wall mounting of items. Arrange gear, books and anything else you can pick up. Requires MWSE 2.1 or OpenMW 0.49dev. | [46562](https://www.nexusmods.com/morrowind/mods/46562) | UserInterface/PerfectPlacement/PerfectPlacement.omwscripts | UserInterface/PerfectPlacement |
+| Small SKyrim Crosshair | Adds small skyrim-a-like crosshair with ownership mod compatibility | [46351](https://www.nexusmods.com/morrowind/mods/46351) | (none) | UserInterface/SmallSKyrimCrosshair |
 
 ## Voice
 
