@@ -253,5 +253,7 @@ def main():
     else:
         interactive_selection(mod_dict)
 
+    print('\nDONE')
+
 if __name__ == "__main__":
     main()
