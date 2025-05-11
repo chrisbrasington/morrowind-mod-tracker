@@ -155,15 +155,15 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| wazalightfixes |  |  | (none) | Tools/wazalightfixes |
-| luahelper |  |  | Tools/luahelper/OpenMW_luahelper.esp, Tools/luahelper/OpenMW_luahelper.omwscripts, Tools/luahelper/OpenMW_luahelper_dialog.esp | Tools/luahelper |
+| wazalightfixes | This is a tool which generates a plugin which fixes lights. | [waza_lightfixes](https://modding-openmw.com/mods/waza_lightfixes/) | (none) | Tools/wazalightfixes |
+| luahelper | UPDATE: Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Tools/luahelper/OpenMW_luahelper.esp, Tools/luahelper/OpenMW_luahelper.omwscripts, Tools/luahelper/OpenMW_luahelper_dialog.esp | Tools/luahelper |
 
 ## UserInterface
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| BigIcons |  |  | (none) | UserInterface/BigIcons/078XTextured |
-| CantonsontheGlobalMap |  |  | UserInterface/CantonsontheGlobalMap/DataFiles/Cantons_on_the_Global_Map_v1.1.esp | UserInterface/CantonsontheGlobalMap/DataFiles |
+| BigIcons | Replaces the small 16x16 spell effect icons with your choice of larger icons. Works with your choice of MWSE or OpenMW | [big-icons](https://modding-openmw.com/mods/big-icons/) | (none) | UserInterface/BigIcons/078XTextured |
+| CantonsontheGlobalMap | Vivec and Molag Mar no longer look like empty water on the global map. | [50534](https://www.nexusmods.com/morrowind/mods/50534) | UserInterface/CantonsontheGlobalMap/DataFiles/Cantons_on_the_Global_Map_v1.1.esp | UserInterface/CantonsontheGlobalMap/DataFiles |
 | Better Dialogue Font |  |  | (none) | UserInterface/BetterDialogueFont |
 | InterfaceReimaigned |  |  | (none) | UserInterface/InterfaceReimaigned |
 | TitleScreen |  |  | (none) | UserInterface/TitleScreen, UserInterface/TitleScreen/Textures, UserInterface/TitleScreen/Video |
