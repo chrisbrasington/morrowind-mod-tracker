@@ -15,7 +15,6 @@ MARKDOWN_OUTPUT = expand_if_tilde(config["OUTPUT"])
 print(MOD_DIR)
 print(OPENMW_CFG)
 print(MARKDOWN_OUTPUT)
-sys.exit()
 
 class Mod:
     def __init__(self, name: str):
