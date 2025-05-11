@@ -25,11 +25,19 @@ def edit_mod(mod):
     notes = input(f"  Current Notes: {mod.notes or '(none)'}\n  New Notes (or Enter to skip): ").strip()
 
     if url:
-        mod.url = url
+        mod.url = format_nexusmods_link(url)
     if notes:
         mod.notes = notes
 
     print("  ✅ Mod updated.\n")
+
+def format_nexusmods_link(url: str) -> str:
+    if "nexusmods.com/morrowind/mods/" in url:
+        # Extract the mod ID from the URL
+        mod_id = url.rstrip("/").split("/")[-1]
+        return f"[{mod_id}]({url})"
+    return url  # Return the original if it's not a Nexus Mods URL
+
 
 def interactive_selection(mod_dict):
     while True:
