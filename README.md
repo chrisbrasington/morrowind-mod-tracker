@@ -60,7 +60,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| AlternativeTrueTypeFonts | Fonts to replace the default fonts used by OpenMW | https://modding-openmw.com/mods/alternative-truetype-fonts/ | (none) | Fonts/AlternativeTrueTypeFonts |
+| AlternativeTrueTypeFonts | Fonts to replace the default fonts used by OpenMW: Pelagiad by Isak Larborn and Ayembedt by Georg Duffner. | [alternative-truetype-fonts](https://modding-openmw.com/mods/alternative-truetype-fonts/) | (none) | Fonts/AlternativeTrueTypeFonts |
 
 ## Gameplay
 
@@ -84,7 +84,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| GlowintheDahrk | This is a modern, pluginless replacement of the old Windows Glow mods | https://modding-openmw.com/mods/glow-in-the-dahrk/ | Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers_NoUvirith.ESP, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers.ESP, Lighting/GlowintheDahrk/04RavenRockGlassWindows/GITD_WL_RR_Interiors.esp | Lighting/GlowintheDahrk/00Core, Lighting/GlowintheDahrk/01HiResWindowTextureReplacer, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell, Lighting/GlowintheDahrk/04RavenRockGlassWindows, Lighting/GlowintheDahrk/07TelvanniTowerInteriorGlowOpenMW |
+| GlowintheDahrk | This is a modern, pluginless replacement of the old Windows Glow mods | [glow-in-the-dahrk](https://modding-openmw.com/mods/glow-in-the-dahrk/) | Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers_NoUvirith.ESP, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers.ESP, Lighting/GlowintheDahrk/04RavenRockGlassWindows/GITD_WL_RR_Interiors.esp | Lighting/GlowintheDahrk/00Core, Lighting/GlowintheDahrk/01HiResWindowTextureReplacer, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell, Lighting/GlowintheDahrk/04RavenRockGlassWindows, Lighting/GlowintheDahrk/07TelvanniTowerInteriorGlowOpenMW |
 | GlowingFlames | Flames are now glow mapped and/or properly illuminated. | [46124](https://www.nexusmods.com/morrowind/mods/46124) | Lighting/GlowingFlames/GlowingFlames-NoMoreLightlessFlamesv1.1.ESP, Lighting/GlowingFlames/GlowingFlames-TrueLightsAndDarknessTweaks.ESP | Lighting/GlowingFlames |
 | RafaelsShaderPack | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly | https://www.nexusmods.com/morrowind/mods/53667 | (none) | Lighting/RafaelsShaderPack |
 | Enhanced PBR Lighting for OpenMW | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly | https://www.nexusmods.com/morrowind/mods/53667 | (none) | Lighting/EnhancedPBRLightingforOpenMW/OpenMW0.49 |
@@ -102,7 +102,7 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | FamiliarFacesbyCaleb | An in-depth yet completely vanilla friendly touch up of every head and almost every hair (a few looked okay) in the game. | [50093](https://www.nexusmods.com/morrowind/mods/50093) | (none) | NPCs/FamiliarFacesbyCaleb |
-| Facelift | https://www.nexusmods.com/morrowind/mods/47617 | [47617](https://www.nexusmods.com/morrowind/mods/47617) | (none) | NPCs/Facelift |
+| Facelift | Some people have desired a simple enhancement of vanilla faces and hairs, so here you go. | [47617](https://www.nexusmods.com/morrowind/mods/47617) | (none) | NPCs/Facelift |
 | QuestGreetings | ElevenAI generated voices for quest-giving NPCs in Morrowind. Currently adds over 1800 original lines of voiced dialogue using the original actors voices. | [52273](https://www.nexusmods.com/morrowind/mods/52273) | NPCs/QuestGreetings/QuestVoiceGreetings.ESP | NPCs/QuestGreetings |
 | Voices of Vardenfell | A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. | [52279](https://www.nexusmods.com/morrowind/mods/52279) | NPCs/VoicesofVardenfell/VoVOpenMW.omwscripts | (none) |
 
@@ -136,7 +136,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| VtastekLightShaders | A highly advanced shader replacement that also revamps all lighting in the game. |  | Shaders/VtastekLightShaders/LightFixes.esp | Shaders/VtastekLightShaders |
+| VtastekLightShaders | A highly advanced shader replacement that also revamps all lighting in the game. | [vtasteks-light-shaders](https://modding-openmw.com/mods/vtasteks-light-shaders/) | Shaders/VtastekLightShaders/LightFixes.esp | Shaders/VtastekLightShaders |
 
 ## Skyrim
 
