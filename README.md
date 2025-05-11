@@ -41,8 +41,8 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Extra |  |  | (none) | Extra |
 | LuaMultiMark |  |  | Extra/LuaMultiMark/LuaMultiMark.omwaddon | (none) |
+| Extra |  |  | (none) | Extra |
 
 ## Fixes
 

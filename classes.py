@@ -1,8 +1,8 @@
 import re
 from pathlib import Path
 
-MOD_DIR = "/home/chris/mods/morrowind/"
-OPENMW_CFG = "openmw.cfg"
+MOD_DIR = "~/mods/morrowind/"
+OPENMW_CFG = "~/.config/openmw/openmw.cfg"
 MARKDOWN_OUTPUT = "README.md"
 
 class Mod:
