@@ -77,46 +77,25 @@ def display_mod_list(mods):
         print(f"{idx}. [{section_name}] {mod.name}\n     URL: {url_display}\n     Notes: {notes_display}")
 
 def edit_mod(mod):
-    global last_url, last_notes, last_search_query
+    global last_url, last_notes
     clear_screen()
 
-    query = f"morrowind {mod.name}"
-    encoded_query = urllib.parse.quote(query)
-    search_url = f"https://html.duckduckgo.com/html/?q={encoded_query}"
-
-    # Fetch and parse the DuckDuckGo results
-    req = urllib.request.Request(search_url, headers={'User-Agent': 'Mozilla/5.0'})
-    with urllib.request.urlopen(req) as response:
-        html = response.read().decode('utf-8')
-
-    parser = DuckDuckGoParser()
-    parser.feed(html)
-    first_link = parser.get_priority_link()
-
-    if first_link:
-        global last_url, last_notes
-        if first_link == last_url:
-            print(f"🔁 Same URL as last opened:")
-            print(f"   ➤ URL:   {last_url or '(none)'}")
-            print(f"   ➤ Notes: {last_notes or '(none)'}")
-            confirm = input("   Use same URL and Notes? [Y/n]: ").strip().lower()
-            if confirm in ("", "y"):
-                if last_url:
-                    mod.url = last_url
-                if last_notes:
-                    mod.notes = last_notes
-                print("  ✅ Mod auto-updated.\n")
-                return
-        else:
-            # Open in browser and update last_url
-            webbrowser.open(first_link)
-            last_url = first_link  # track the URL we just opened
-
-    # Otherwise, search and allow manual input
-    search_result_url = open_mod_page(mod.name)
     print(f"\nEditing '{mod.name}'")
     print(mod)
 
+    search_result = open_mod_page(mod.name)
+    if search_result == "reuse":
+        if last_url:
+            mod.url = last_url
+        if last_notes:
+            mod.notes = last_notes
+        print("  ✅ Mod auto-updated.\n")
+        return
+    elif isinstance(search_result, str):
+        # A new URL was opened and set
+        last_url = search_result
+
+    # Prompt user for URL
     url_prompt = f"  Current URL: {mod.url or '(none)'}\n"
     if last_url:
         url_prompt += "  New URL (Enter to skip, 'ditto' or 'd' to reuse last): "
@@ -124,6 +103,7 @@ def edit_mod(mod):
         url_prompt += "  New URL (Enter to skip): "
     url_input = input(url_prompt).strip()
 
+    # Prompt user for Notes
     notes_prompt = f"  Current Notes: {mod.notes or '(none)'}\n"
     if last_notes:
         notes_prompt += "  New Notes (Enter to skip, 'ditto' or 'd' to reuse last): "
@@ -131,18 +111,17 @@ def edit_mod(mod):
         notes_prompt += "  New Notes (Enter to skip): "
     notes_input = input(notes_prompt).strip()
 
-    # Handle 'ditto' and empty input
-    if url_input.lower() in ["ditto", "d"]:
+    # Handle URL input
+    if last_url and url_input.lower() in ("ditto", "d"):
         url = last_url
     elif url_input:
         url = format_nexusmods_link(url_input)
         last_url = url
     else:
-        url = format_nexusmods_link(search_result_url) if search_result_url else None
-        if url:
-            last_url = url
+        url = None
 
-    if notes_input.lower() in ["ditto", "d"]:
+    # Handle Notes input
+    if last_notes and notes_input.lower() in ("ditto", "d"):
         notes = last_notes
     elif notes_input:
         notes = notes_input
@@ -156,7 +135,6 @@ def edit_mod(mod):
         mod.notes = notes
 
     print("  ✅ Mod updated.\n")
-
 
 def flatten_mods(mod_dict):
     """Return a list of (section_name, mod) tuples."""
@@ -198,22 +176,15 @@ def interactive_selection(mod_dict):
 #     # Open the URL in the default web browser
 #     webbrowser.open(url)
 
-def open_mod_page(name):
-    global last_search_query
-
-    query = f"morrowind {name}"
+def open_mod_page(mod_name):
+    global last_url
+    query = f"morrowind {mod_name}"
     encoded_query = urllib.parse.quote(query)
     url = f"https://html.duckduckgo.com/html/?q={encoded_query}"
 
-    if last_search_query == query:
-        print(f"🔁 Skipping search (same as last): {query}")
-        return None  # So we don’t open the browser again
+    print(f"\n🔍 Searching: {url}")
 
-    last_search_query = query
-
-    print(f"🔍 Searching: {query}")
-    print(f"🔗 URL: {url}")
-
+    # Fetch the search results page
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     with urllib.request.urlopen(req) as response:
         html = response.read().decode('utf-8')
@@ -223,11 +194,20 @@ def open_mod_page(name):
     first_link = parser.get_priority_link()
 
     if first_link:
-        webbrowser.open(first_link)
+        # If it's the same as the last opened, prompt to reuse
+        if first_link == last_url:
+            print(f"🔁 Same URL as last opened:\n   ➤ URL: {last_url or '(none)'}\n   ➤ Notes: {last_notes or '(none)'}")
+            confirm = input("   Use same URL and Notes? [Y/n]: ").strip().lower()
+            if confirm in ("", "y"):
+                return "reuse"
+        else:
+            webbrowser.open(first_link)
+            last_url = first_link
+            return first_link.split('?')[0]
     else:
         print("❌ No result found.")
+        return None
 
-    return first_link
 
 def save(mod_dict):
     # Save updated markdown
