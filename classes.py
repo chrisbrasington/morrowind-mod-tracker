@@ -7,14 +7,12 @@ def expand_if_tilde(path_str):
 # Load config from JSON
 with open("config.json") as f:
     config = json.load(f)
+    print(config)
+    print()
 
 MOD_DIR = expand_if_tilde(config["MOD_DIR"])
 OPENMW_CFG = expand_if_tilde(config["OPENMW_CFG"])
 MARKDOWN_OUTPUT = expand_if_tilde(config["OUTPUT"])
-
-print(MOD_DIR)
-print(OPENMW_CFG)
-print(MARKDOWN_OUTPUT)
 
 class Mod:
     def __init__(self, name: str):
@@ -53,7 +51,7 @@ class ModContentFile:
     def __init__(self, name: str, path: str):
         self.name = name
             
-        self.file = path.replace(MOD_DIR, '')
+        self.file = path.replace(MOD_DIR, '').lstrip('/')
 
     def get_mod_name(self):
         parts = self.file.split('/')
@@ -214,12 +212,15 @@ class ModDictionary:
                 path = ""
                 name = ""
 
+                if "=" in line:
+                    line = line.split('=')[-1].replace('"','').lstrip('/')
+
                 if isContent:
-                    path = self.find_mod_file(line.split('=')[-1] , MOD_DIR)
+                    path = self.find_mod_file(line.split('=')[-1] , MOD_DIR).lstrip('/')
 
                     if path is None:
                         continue
-    
+ 
                     section = self.get_section(path)
 
                     if path.count('/') == 1: # if in root
@@ -234,6 +235,7 @@ class ModDictionary:
                     parts = line.split('/')
                     name = (parts[1] if len(parts) > 1 else parts[-1]).replace('"','').replace('data=','')
                     path = line.split('=')[-1].replace('"','')
+                    path = path.lstrip('/')
 
                     mod_entry = ModPath(name, path)
                     section = self.get_section(path)
