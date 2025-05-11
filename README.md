@@ -41,44 +41,44 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| LuaMultiMark |  |  | Extra/LuaMultiMark/LuaMultiMark.omwaddon | Extra/LuaMultiMark |
+| LuaMultiMark | Allows the player to have multiple marked locations. | [53260](https://www.nexusmods.com/morrowind/mods/53260) | Extra/LuaMultiMark/LuaMultiMark.omwaddon | Extra/LuaMultiMark |
 
 ## Fixes
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| JammingsOff |  |  | (none) | Fixes/JammingsOff/Jammingsoff(v1.1)/ver1.0(only_Xnif_files)/DataFiles |
-| DynamicDistantBuildingsforOpenMW |  |  | Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Ghostfence_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_H_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_R_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_T_v1.0.esp | Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails |
+| JammingsOff | Changing Bounding Box size for all NPC and Player. | [44523](https://www.nexusmods.com/morrowind/mods/44523) | (none) | Fixes/JammingsOff/Jammingsoff(v1.1)/ver1.0(only_Xnif_files)/DataFiles |
+| DynamicDistantBuildingsforOpenMW | Makes distant land more responsive to quest progress. Great House strongholds do not appear in the distance at game start, and the whole Ghostfence vanishes at the end of the main quest. | [51236](https://www.nexusmods.com/morrowind/mods/51236) | Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Ghostfence_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_H_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_R_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_T_v1.0.esp | Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails |
 
 ## Fog
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| openmw-volumetric-clouds-main |  |  | (none) | Fog/openmw-volumetric-clouds-main |
+| openmw-volumetric-clouds-main | Zesterer's Volumetric Cloud & Mist Mod for OpenMW | https://github.com/zesterer/openmw-volumetric-clouds | (none) | Fog/openmw-volumetric-clouds-main |
 
 ## Fonts
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| AlternativeTrueTypeFonts |  |  | (none) | Fonts/AlternativeTrueTypeFonts |
+| AlternativeTrueTypeFonts | Fonts to replace the default fonts used by OpenMW | https://modding-openmw.com/mods/alternative-truetype-fonts/ | (none) | Fonts/AlternativeTrueTypeFonts |
 
 ## Gameplay
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| GraphicHerbalismMWSEandOpenMWEdition |  |  | Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00CorrectUVOre+README/correctUVOreReplacer_respawning.esp, Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00CorrectUVOre+README/correctUVOreReplacer_fixed.esp | Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00Core+VanillaMeshes, Gameplay/GraphicHerbalismMWSEandOpenMWEdition/01Optional-SmoothedMeshes, Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00CorrectUVOre+README |
+| GraphicHerbalismMWSEandOpenMWEdition | Pick plants | [46599](https://www.nexusmods.com/morrowind/mods/46599) | Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00CorrectUVOre+README/correctUVOreReplacer_respawning.esp, Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00CorrectUVOre+README/correctUVOreReplacer_fixed.esp | Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00Core+VanillaMeshes, Gameplay/GraphicHerbalismMWSEandOpenMWEdition/01Optional-SmoothedMeshes, Gameplay/GraphicHerbalismMWSEandOpenMWEdition/00CorrectUVOre+README |
 
 ## Groundcover
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| AesthesiaGroundcovergrassmod |  |  | Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanilla/GrassBloodmoon.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassWG.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAT.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRSV.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRWG.esp | Groundcover/AesthesiaGroundcovergrassmod, Groundcover/AesthesiaGroundcovergrassmod/darker, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions, Groundcover/AesthesiaGroundcovergrassmod/GrassTR |
+| AesthesiaGroundcovergrassmod | Grass for Morrowind - vanilla and Tamriel Rebuilt support. Made for every region. Includes Mesh Generator files. | [46377](https://www.nexusmods.com/morrowind/mods/46377) | Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanilla/GrassBloodmoon.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassWG.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAT.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRSV.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRWG.esp | Groundcover/AesthesiaGroundcovergrassmod, Groundcover/AesthesiaGroundcovergrassmod/darker, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions, Groundcover/AesthesiaGroundcovergrassmod/GrassTR |
 
 ## Landmasses
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| TamrielRebuilt |  |  | Landmasses/TamrielRebuilt/00Core/TR_Mainland.esm, Landmasses/TamrielRebuilt/01FactionIntegration/TR_Factions.esp | Landmasses/TamrielRebuilt/00Core, Landmasses/TamrielRebuilt/01FactionIntegration |
+| TamrielRebuilt | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. | https://www.tamriel-rebuilt.org/ | Landmasses/TamrielRebuilt/00Core/TR_Mainland.esm, Landmasses/TamrielRebuilt/01FactionIntegration/TR_Factions.esp | Landmasses/TamrielRebuilt/00Core, Landmasses/TamrielRebuilt/01FactionIntegration |
 
 ## Lighting
 

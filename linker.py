@@ -1,8 +1,31 @@
 import argparse
 import os, platform, sys, webbrowser
 from classes import ModDictionary
+#from duckduckgo_search import DDGS
+import urllib.parse
+import urllib.request
+from html.parser import HTMLParser
 
 MARKDOWN_PATH = "README.md"
+
+class DuckDuckGoParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.first_link = None
+
+    def handle_starttag(self, tag, attrs):
+        if self.first_link:  # Already found, skip further processing
+            return
+        if tag == 'a':
+            attrs_dict = dict(attrs)
+            href = attrs_dict.get('href', '')
+            class_ = attrs_dict.get('class', '')
+            if 'result__a' in class_ and href:
+                # Normalize the link (adds "https:" if it starts with "//")
+                if href.startswith("//"):
+                    href = "https:" + href
+                self.first_link = href
+
 
 def clear_screen():
     if platform.system() == "Windows":
@@ -64,13 +87,35 @@ def interactive_selection(mod_dict):
 
         save(mod_dict)
 
-def open_mod_page(name):
-    # Format the name for the URL (replace spaces with + and make it lowercase)
-    formatted_name = name.replace(' ', '+').lower()
-    url = f'https://www.nexusmods.com/games/morrowind/search?keyword={formatted_name}'
+# def open_mod_page(name):
+#     # Format the name for the URL (replace spaces with + and make it lowercase)
+#     formatted_name = name.replace(' ', '+').lower()
+#     url = f'https://www.nexusmods.com/games/morrowind/search?keyword={formatted_name}'
     
-    # Open the URL in the default web browser
-    webbrowser.open(url)
+#     # Open the URL in the default web browser
+#     webbrowser.open(url)
+
+def open_mod_page(name):
+    query = f"{name}"
+    encoded_query = urllib.parse.quote(query)
+    url = f"https://html.duckduckgo.com/html/?q={encoded_query}"
+    
+    print(f"Searching: {encoded_query}")
+    print(url)
+
+    # Fetch the search results page
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(req) as response:
+        html = response.read().decode('utf-8')
+
+    # Parse HTML to find the first result link
+    parser = DuckDuckGoParser()
+    parser.feed(html)
+
+    if parser.first_link:
+        webbrowser.open(parser.first_link)
+    else:
+        print("No result found.")
 
 def save(mod_dict):
     # Save updated markdown
