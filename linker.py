@@ -84,20 +84,20 @@ def edit_mod(mod):
 
     url_prompt = f"  Current URL: {mod.url or '(none)'}\n"
     if last_url:
-        url_prompt += "  New URL (Enter to skip, 'ditto' to reuse last): "
+        url_prompt += "  New URL (Enter to skip, 'ditto' or 'd' to reuse last): "
     else:
         url_prompt += "  New URL (Enter to skip): "
     url_input = input(url_prompt).strip()
 
     notes_prompt = f"  Current Notes: {mod.notes or '(none)'}\n"
     if last_notes:
-        notes_prompt += "  New Notes (Enter to skip, 'ditto' to reuse last): "
+        notes_prompt += "  New Notes (Enter to skip, 'ditto' or 'd' to reuse last): "
     else:
         notes_prompt += "  New Notes (Enter to skip): "
     notes_input = input(notes_prompt).strip()
 
     # Handle 'ditto' and empty input
-    if url_input.lower() == "ditto":
+    if url_input.lower() == "ditto" or url_input.lower() == "d":
         url = last_url
     elif url_input:
         url = format_nexusmods_link(url_input)
@@ -105,7 +105,7 @@ def edit_mod(mod):
     else:
         url = None
 
-    if notes_input.lower() == "ditto":
+    if notes_input.lower() == "ditto" or notes_input.lower() == "d":
         notes = last_notes
     elif notes_input:
         notes = notes_input
