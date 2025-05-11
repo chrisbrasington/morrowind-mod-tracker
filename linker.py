@@ -75,7 +75,7 @@ def display_mod_list(mods):
         notes_display = mod.notes if mod.notes else "(no notes)"
         print(f"{idx}. [{section_name}] {mod.name}\n     URL: {url_display}\n     Notes: {notes_display}")
 
-ddef edit_mod(mod):
+def edit_mod(mod):
     global last_url, last_notes
     clear_screen()
     open_mod_page(mod.name)
