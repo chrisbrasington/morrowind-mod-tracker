@@ -7,6 +7,8 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse, parse_qs
 
 MARKDOWN_PATH = "README.md"
+last_url = None
+last_notes = None
 
 class DuckDuckGoParser(HTMLParser):
     def __init__(self):
@@ -73,17 +75,46 @@ def display_mod_list(mods):
         notes_display = mod.notes if mod.notes else "(no notes)"
         print(f"{idx}. [{section_name}] {mod.name}\n     URL: {url_display}\n     Notes: {notes_display}")
 
-def edit_mod(mod):
+ddef edit_mod(mod):
+    global last_url, last_notes
     clear_screen()
     open_mod_page(mod.name)
     print(f"\nEditing '{mod.name}'")
     print(mod)
 
-    url = input(f"  Current URL: {mod.url or '(none)'}\n  New URL (or Enter to skip): ").strip()
-    notes = input(f"  Current Notes: {mod.notes or '(none)'}\n  New Notes (or Enter to skip): ").strip()
+    url_prompt = f"  Current URL: {mod.url or '(none)'}\n"
+    if last_url:
+        url_prompt += "  New URL (Enter to skip, 'ditto' to reuse last): "
+    else:
+        url_prompt += "  New URL (Enter to skip): "
+    url_input = input(url_prompt).strip()
+
+    notes_prompt = f"  Current Notes: {mod.notes or '(none)'}\n"
+    if last_notes:
+        notes_prompt += "  New Notes (Enter to skip, 'ditto' to reuse last): "
+    else:
+        notes_prompt += "  New Notes (Enter to skip): "
+    notes_input = input(notes_prompt).strip()
+
+    # Handle 'ditto' and empty input
+    if url_input.lower() == "ditto":
+        url = last_url
+    elif url_input:
+        url = format_nexusmods_link(url_input)
+        last_url = url
+    else:
+        url = None
+
+    if notes_input.lower() == "ditto":
+        notes = last_notes
+    elif notes_input:
+        notes = notes_input
+        last_notes = notes
+    else:
+        notes = None
 
     if url:
-        mod.url = format_nexusmods_link(url)
+        mod.url = url
     if notes:
         mod.notes = notes
 
