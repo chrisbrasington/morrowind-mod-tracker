@@ -1,9 +1,21 @@
-import re
+import json, re, sys
 from pathlib import Path
 
-MOD_DIR = "~/mods/morrowind/"
-OPENMW_CFG = "~/.config/openmw/openmw.cfg"
-MARKDOWN_OUTPUT = "README.md"
+def expand_if_tilde(path_str):
+    return str(Path(path_str).expanduser()) if path_str.startswith("~/") else path_str
+
+# Load config from JSON
+with open("config.json") as f:
+    config = json.load(f)
+
+MOD_DIR = expand_if_tilde(config["MOD_DIR"])
+OPENMW_CFG = expand_if_tilde(config["OPENMW_CFG"])
+MARKDOWN_OUTPUT = expand_if_tilde(config["OUTPUT"])
+
+print(MOD_DIR)
+print(OPENMW_CFG)
+print(MARKDOWN_OUTPUT)
+sys.exit()
 
 class Mod:
     def __init__(self, name: str):
