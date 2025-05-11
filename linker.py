@@ -41,8 +41,8 @@ class DuckDuckGoParser(HTMLParser):
                 else:
                     other_urls.append(cleaned_url)
 
-        # Concatenate the lists with priority (modding-openmw.com > nexusmods.com > others)
-        sorted_urls = modding_openmw_urls + nexusmods_urls + other_urls
+        # Concatenate the lists with priority (nexusmods.com > modding-openmw.com > others)
+        sorted_urls = nexusmods_urls + modding_openmw_urls + other_urls
 
         # Group by category for printing
         categorized_links = {
