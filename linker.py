@@ -1,16 +1,14 @@
 import argparse
-import os, sys
+import os, platform, sys, webbrowser
 from classes import ModDictionary
 
 MARKDOWN_PATH = "README.md"
 
-def flatten_mods(mod_dict):
-    """Return a list of (section_name, mod) tuples."""
-    all_mods = []
-    for section_name, section in mod_dict.sections.items():
-        for mod in section.mods:
-            all_mods.append((section_name, mod))
-    return all_mods
+def clear_screen():
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
 
 def display_mod_list(mods):
     for idx, (section_name, mod) in enumerate(mods, 1):
@@ -19,7 +17,10 @@ def display_mod_list(mods):
         print(f"{idx}. [{section_name}] {mod.name}\n     URL: {url_display}\n     Notes: {notes_display}")
 
 def edit_mod(mod):
+    clear_screen()
+    open_mod_page(mod.name)
     print(f"\nEditing '{mod.name}'")
+    print(mod)
 
     url = input(f"  Current URL: {mod.url or '(none)'}\n  New URL (or Enter to skip): ").strip()
     notes = input(f"  Current Notes: {mod.notes or '(none)'}\n  New Notes (or Enter to skip): ").strip()
@@ -31,13 +32,20 @@ def edit_mod(mod):
 
     print("  ✅ Mod updated.\n")
 
+def flatten_mods(mod_dict):
+    """Return a list of (section_name, mod) tuples."""
+    all_mods = []
+    for section_name, section in mod_dict.sections.items():
+        for mod in section.mods:
+            all_mods.append((section_name, mod))
+    return all_mods
+
 def format_nexusmods_link(url: str) -> str:
     if "nexusmods.com/morrowind/mods/" in url:
         # Extract the mod ID from the URL
         mod_id = url.rstrip("/").split("/")[-1]
         return f"[{mod_id}]({url})"
     return url  # Return the original if it's not a Nexus Mods URL
-
 
 def interactive_selection(mod_dict):
     while True:
@@ -55,6 +63,14 @@ def interactive_selection(mod_dict):
         edit_mod(mod)
 
         save(mod_dict)
+
+def open_mod_page(name):
+    # Format the name for the URL (replace spaces with + and make it lowercase)
+    formatted_name = name.replace(' ', '+').lower()
+    url = f'https://www.nexusmods.com/games/morrowind/search?keyword={formatted_name}'
+    
+    # Open the URL in the default web browser
+    webbrowser.open(url)
 
 def save(mod_dict):
     # Save updated markdown

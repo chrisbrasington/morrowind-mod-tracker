@@ -15,26 +15,26 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Textures |  |  | (none) | Books/Textures |
+| Textures | Replaces all the books, bookpages and scrolls. | [43100](https://www.nexusmods.com/morrowind/mods/43100) | (none) | Books/Textures |
 
 ## Camping
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Devilish Needs |  |  | Camping/DevilishNeeds/DevilishNeeds.esp, Camping/DevilishNeeds/DevilishNeeds.omwscripts | Camping/DevilishNeeds |
-| OAAB |  |  | Camping/OAAB/OAAB_Data.esm | Camping/OAAB |
+| Devilish Needs | Camping mostly - Eat, drink, sleep, and stay dry or suffer the consequences. | [56480](https://www.nexusmods.com/morrowind/mods/56480) | Camping/DevilishNeeds/DevilishNeeds.esp, Camping/DevilishNeeds/DevilishNeeds.omwscripts | Camping/DevilishNeeds |
+| OAAB | OAAB_Data is a free-to-use asset repository for the Morrowind Community. | [49042](https://www.nexusmods.com/morrowind/mods/49042) | Camping/OAAB/OAAB_Data.esm | Camping/OAAB |
 
 ## Cheat
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Cheat |  |  | Cheat/NoArrowWeight.ESP | Cheat |
+| Cheat | Tired of arrows encumbering you? Well, no more! | [42570](https://www.nexusmods.com/morrowind/mods/42570) | Cheat/NoArrowWeight.ESP | Cheat |
 
 ## Cyrodill
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Cyrodill |  |  | Cyrodill/Cyr_Main.esm | Cyrodill |
+| Cyrodill | Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. | [44922](https://www.nexusmods.com/morrowind/mods/44922) | Cyrodill/Cyr_Main.esm | Cyrodill |
 
 ## Extra
 
