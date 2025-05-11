@@ -23,6 +23,7 @@
 |------|-------|-------|-------|-------|
 | Devilish Needs | Camping mostly - Eat, drink, sleep, and stay dry or suffer the consequences. | [56480](https://www.nexusmods.com/morrowind/mods/56480) | Camping/DevilishNeeds/DevilishNeeds.esp, Camping/DevilishNeeds/DevilishNeeds.omwscripts | Camping/DevilishNeeds |
 | OAAB | OAAB_Data is a free-to-use asset repository for the Morrowind Community. | [49042](https://www.nexusmods.com/morrowind/mods/49042) | Camping/OAAB/OAAB_Data.esm | Camping/OAAB |
+| CampingKits |  |  | Camping/CampingKits/CampingKits.ESP | (none) |
 
 ## Cheat
 
@@ -40,7 +41,8 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Extra |  |  | Extra/LuaMultiMark.omwaddon, Extra/CampingKits.ESP | Extra |
+| Extra |  |  | (none) | Extra |
+| LuaMultiMark |  |  | Extra/LuaMultiMark/LuaMultiMark.omwaddon | (none) |
 
 ## Fixes
 
@@ -109,7 +111,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| OpenMWContainersAnimated |  |  | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated/ContainersAnimated.esp | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated, ObjectsClutter/OpenMWContainersAnimated/Optional/kollops |
+| OpenMWContainersAnimated |  |  | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated/ContainersAnimated.esp | ObjectsClutter/OpenMWContainersAnimated/Optional/kollops, ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated |
 
 ## Patches
 
@@ -147,7 +149,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| MorrowindEnhancedTextures |  |  | (none) | TexturePacks/MorrowindEnhancedTextures/MET6-1main, TexturePacks/MorrowindEnhancedTextures/Interface, TexturePacks/MorrowindEnhancedTextures/atlas |
+| MorrowindEnhancedTextures |  |  | (none) | TexturePacks/MorrowindEnhancedTextures/Interface, TexturePacks/MorrowindEnhancedTextures/atlas, TexturePacks/MorrowindEnhancedTextures/MET6-1main |
 | RealSignposts |  |  | TexturePacks/RealSignposts/RealSignposts.esp | TexturePacks/RealSignposts |
 
 ## Tools
@@ -192,5 +194,5 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| KirelsInteriorWeather |  |  | Weather/KirelsInteriorWeather/k_weather(loudersounds).esp, Weather/KirelsInteriorWeather/k_weather.esp | Weather/KirelsInteriorWeather |
+| KirelsInteriorWeather |  |  | Weather/KirelsInteriorWeather/k_weather.esp, Weather/KirelsInteriorWeather/k_weather(loudersounds).esp | Weather/KirelsInteriorWeather |
 
