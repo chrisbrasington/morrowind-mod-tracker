@@ -2,30 +2,64 @@ import argparse
 import os, platform, sys, webbrowser
 from classes import ModDictionary
 #from duckduckgo_search import DDGS
-import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
+from urllib.parse import urlparse, parse_qs
 
 MARKDOWN_PATH = "README.md"
 
 class DuckDuckGoParser(HTMLParser):
     def __init__(self):
         super().__init__()
+        self.links = []
         self.first_link = None
 
     def handle_starttag(self, tag, attrs):
-        if self.first_link:  # Already found, skip further processing
-            return
-        if tag == 'a':
-            attrs_dict = dict(attrs)
-            href = attrs_dict.get('href', '')
-            class_ = attrs_dict.get('class', '')
-            if 'result__a' in class_ and href:
-                # Normalize the link (adds "https:" if it starts with "//")
-                if href.startswith("//"):
-                    href = "https:" + href
-                self.first_link = href
+        if tag == "a" and ("class", "result__a") in attrs:
+            href = dict(attrs).get("href", "")
+            self.links.append(href)
 
+    def get_priority_link(self):
+        # Lists for categorized URLs
+        modding_openmw_urls = []
+        nexusmods_urls = []
+        other_urls = []
+
+        for url in self.links:  # Now we're using self.links, which is populated during parsing
+            # Parse the DuckDuckGo link
+            parsed_url = urlparse(url)
+            
+            # Extract the 'uddg' query parameter
+            query_params = parse_qs(parsed_url.query)
+            if 'uddg' in query_params:
+                # Decode the URL and append to the appropriate list based on domain
+                cleaned_url = query_params['uddg'][0]
+                if 'modding-openmw.com' in cleaned_url:
+                    modding_openmw_urls.append(cleaned_url)
+                elif 'nexusmods.com' in cleaned_url:
+                    nexusmods_urls.append(cleaned_url)
+                else:
+                    other_urls.append(cleaned_url)
+
+        # Concatenate the lists with priority (modding-openmw.com > nexusmods.com > others)
+        sorted_urls = modding_openmw_urls + nexusmods_urls + other_urls
+
+        # Group by category for printing
+        categorized_links = {
+            'open-mw': modding_openmw_urls,
+            'nexusmods': nexusmods_urls,
+            'other': other_urls
+        }
+
+        # Print the categorized URLs
+        for category, links in categorized_links.items():
+            if links:
+                print(f"{category}:")
+                for link in links:
+                    print(f"  {link}")
+
+        # Return the highest priority link (first modding-openmw.com link, if available)
+        return sorted_urls[0] if sorted_urls else None
 
 def clear_screen():
     if platform.system() == "Windows":
@@ -96,7 +130,7 @@ def interactive_selection(mod_dict):
 #     webbrowser.open(url)
 
 def open_mod_page(name):
-    query = f"{name}"
+    query = f"morrowind {name}"
     encoded_query = urllib.parse.quote(query)
     url = f"https://html.duckduckgo.com/html/?q={encoded_query}"
     
@@ -112,8 +146,11 @@ def open_mod_page(name):
     parser = DuckDuckGoParser()
     parser.feed(html)
 
-    if parser.first_link:
-        webbrowser.open(parser.first_link)
+    # Get the prioritized link
+    first_link = parser.get_priority_link()
+
+    if first_link:
+        webbrowser.open(first_link)
     else:
         print("No result found.")
 

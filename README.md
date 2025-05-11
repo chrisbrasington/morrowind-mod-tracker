@@ -84,7 +84,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| GlowintheDahrk |  |  | Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers_NoUvirith.ESP, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers.ESP, Lighting/GlowintheDahrk/04RavenRockGlassWindows/GITD_WL_RR_Interiors.esp | Lighting/GlowintheDahrk/00Core, Lighting/GlowintheDahrk/01HiResWindowTextureReplacer, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell, Lighting/GlowintheDahrk/04RavenRockGlassWindows, Lighting/GlowintheDahrk/07TelvanniTowerInteriorGlowOpenMW |
+| GlowintheDahrk | This is a modern, pluginless replacement of the old Windows Glow mods | https://modding-openmw.com/mods/glow-in-the-dahrk/ | Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers_NoUvirith.ESP, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell/GITD_Telvanni_Dormers.ESP, Lighting/GlowintheDahrk/04RavenRockGlassWindows/GITD_WL_RR_Interiors.esp | Lighting/GlowintheDahrk/00Core, Lighting/GlowintheDahrk/01HiResWindowTextureReplacer, Lighting/GlowintheDahrk/03TelvanniDormersonVvardenfell, Lighting/GlowintheDahrk/04RavenRockGlassWindows, Lighting/GlowintheDahrk/07TelvanniTowerInteriorGlowOpenMW |
 | GlowingFlames |  |  | Lighting/GlowingFlames/GlowingFlames-NoMoreLightlessFlamesv1.1.ESP, Lighting/GlowingFlames/GlowingFlames-TrueLightsAndDarknessTweaks.ESP | Lighting/GlowingFlames |
 | RafaelsShaderPack |  |  | (none) | Lighting/RafaelsShaderPack |
 | Enhanced PBR Lighting for OpenMW |  |  | (none) | Lighting/EnhancedPBRLightingforOpenMW/OpenMW0.49 |
