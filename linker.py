@@ -81,14 +81,36 @@ def edit_mod(mod):
     clear_screen()
 
     query = f"morrowind {mod.name}"
-    if last_search_query == query:
-        print(f"🔁 Same mod name as last: auto-filling URL and notes")
-        if last_url:
-            mod.url = last_url
-        if last_notes:
-            mod.notes = last_notes
-        print("  ✅ Mod auto-updated.\n")
-        return
+    encoded_query = urllib.parse.quote(query)
+    search_url = f"https://html.duckduckgo.com/html/?q={encoded_query}"
+
+    # Fetch and parse the DuckDuckGo results
+    req = urllib.request.Request(search_url, headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(req) as response:
+        html = response.read().decode('utf-8')
+
+    parser = DuckDuckGoParser()
+    parser.feed(html)
+    first_link = parser.get_priority_link()
+
+    if first_link:
+        global last_url, last_notes
+        if first_link == last_url:
+            print(f"🔁 Same URL as last opened:")
+            print(f"   ➤ URL:   {last_url or '(none)'}")
+            print(f"   ➤ Notes: {last_notes or '(none)'}")
+            confirm = input("   Use same URL and Notes? [Y/n]: ").strip().lower()
+            if confirm in ("", "y"):
+                if last_url:
+                    mod.url = last_url
+                if last_notes:
+                    mod.notes = last_notes
+                print("  ✅ Mod auto-updated.\n")
+                return
+        else:
+            # Open in browser and update last_url
+            webbrowser.open(first_link)
+            last_url = first_link  # track the URL we just opened
 
     # Otherwise, search and allow manual input
     search_result_url = open_mod_page(mod.name)
