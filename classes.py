@@ -195,8 +195,12 @@ class ModDictionary:
                 line = line.strip()
                 print(line, end='')
 
+                # allow disabled content files
+                if '#content' in line:
+                    line = line.replace('#','')
+                    print(f'\nallowind disabled: {line}')
                 # skip base game + expansions (not "mods" but requires)
-                if (line == "content=Tribunal.esm" or 
+                elif (line == "content=Tribunal.esm" or 
                     line == "content=Bloodmoon.esm" or 
                     line == "content=Morrowind.esm" or 
                     line.startswith("#") or 
