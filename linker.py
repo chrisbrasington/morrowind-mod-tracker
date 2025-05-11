@@ -34,10 +34,10 @@ class DuckDuckGoParser(HTMLParser):
             if 'uddg' in query_params:
                 # Decode the URL and append to the appropriate list based on domain
                 cleaned_url = query_params['uddg'][0]
-                if 'modding-openmw.com' in cleaned_url:
-                    modding_openmw_urls.append(cleaned_url)
-                elif 'nexusmods.com' in cleaned_url:
+                if 'nexusmods.com' in cleaned_url:
                     nexusmods_urls.append(cleaned_url)
+                elif 'modding-openmw.com' in cleaned_url:
+                    modding_openmw_urls.append(cleaned_url)
                 else:
                     other_urls.append(cleaned_url)
 
@@ -46,8 +46,8 @@ class DuckDuckGoParser(HTMLParser):
 
         # Group by category for printing
         categorized_links = {
-            'open-mw': modding_openmw_urls,
             'nexusmods': nexusmods_urls,
+            'open-mw': modding_openmw_urls,
             'other': other_urls
         }
 
