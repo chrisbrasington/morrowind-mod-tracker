@@ -136,7 +136,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| VtastekLightShaders | A highly advanced shader replacement that also revamps all lighting in the game. | https://modding-openmw.com/mods/vtasteks-light-shaders/ | Shaders/VtastekLightShaders/LightFixes.esp | Shaders/VtastekLightShaders |
+| VtastekLightShaders | A highly advanced shader replacement that also revamps all lighting in the game. |  | Shaders/VtastekLightShaders/LightFixes.esp | Shaders/VtastekLightShaders |
 
 ## Skyrim
 

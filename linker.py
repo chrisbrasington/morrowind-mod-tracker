@@ -123,7 +123,7 @@ def edit_mod(mod):
     if last_url and url_input.lower() in ("ditto", "d"):
         url = last_url
     elif url_input:
-        url = format_nexusmods_link(url_input)
+        url = format_hyperlink(url_input)
         last_url = url
     else:
         url = None
@@ -152,10 +152,13 @@ def flatten_mods(mod_dict):
             all_mods.append((section_name, mod))
     return all_mods
 
-def format_nexusmods_link(url: str) -> str:
+def format_hyperlink(url: str) -> str:
     if "nexusmods.com/morrowind/mods/" in url:
         # Extract the mod ID from the URL
         mod_id = url.rstrip("/").split("/")[-1]
+        return f"[{mod_id}]({url})"
+    elif 'modding-openmw.com/mods/' in url:
+        mod_id = url.split('mods/')[-1].rstrip('/')
         return f"[{mod_id}]({url})"
     return url  # Return the original if it's not a Nexus Mods URL
 
