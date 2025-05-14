@@ -101,11 +101,11 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
+| DynamicActors | Play idle animations when talking to NPCs. | [54782](https://www.nexusmods.com/morrowind/mods/54782) | NPCs/DynamicActors/DynamicActors.omwscripts | (none) |
 | FamiliarFacesbyCaleb | An in-depth yet completely vanilla friendly touch up of every head and almost every hair (a few looked okay) in the game. | [50093](https://www.nexusmods.com/morrowind/mods/50093) | (none) | NPCs/FamiliarFacesbyCaleb |
 | Facelift | Some people have desired a simple enhancement of vanilla faces and hairs, so here you go. | [47617](https://www.nexusmods.com/morrowind/mods/47617) | (none) | NPCs/Facelift |
 | QuestGreetings | ElevenAI generated voices for quest-giving NPCs in Morrowind. Currently adds over 1800 original lines of voiced dialogue using the original actors voices. | [52273](https://www.nexusmods.com/morrowind/mods/52273) | NPCs/QuestGreetings/QuestVoiceGreetings.ESP | NPCs/QuestGreetings |
 | Voices of Vardenfell | A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. | [52279](https://www.nexusmods.com/morrowind/mods/52279) | NPCs/VoicesofVardenfell/VoVOpenMW.omwscripts | (none) |
-| DynamicActors | Play idle animations when talking to NPCs. | [54782](https://www.nexusmods.com/morrowind/mods/54782) | NPCs/DynamicActors/DynamicActors.omwscripts | (none) |
 
 ## ObjectsClutter
 
