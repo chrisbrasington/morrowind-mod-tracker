@@ -195,6 +195,10 @@ class ModDictionary:
                 line = line.strip()
                 print(line, end='')
 
+                # treat grass as content
+                if 'groundcover=' in line:
+                    line = line.replace('groundcover=', 'content=')
+
                 # allow disabled content files
                 if '#content' in line:
                     line = line.replace('#','')
