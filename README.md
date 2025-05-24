@@ -31,6 +31,12 @@
 |------|-------|-------|-------|-------|
 | Cheat | Tired of arrows encumbering you? Well, no more! | [42570](https://www.nexusmods.com/morrowind/mods/42570) | Cheat/NoArrowWeight.ESP | Cheat |
 
+## Clothing
+
+| Name | Notes | URL   | Files | Paths |
+|------|-------|-------|-------|-------|
+| Clothing | Fine Elsweyr clothing stop in Suran | [52331](https://www.nexusmods.com/morrowind/mods/52331) | Clothing/Westly_Presents_FCOT.esp | (none) |
+
 ## Cyrodill
 
 | Name | Notes | URL   | Files | Paths |
@@ -73,6 +79,12 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | AesthesiaGroundcovergrassmod | Grass for Morrowind - vanilla and Tamriel Rebuilt support. Made for every region. Includes Mesh Generator files. | [46377](https://www.nexusmods.com/morrowind/mods/46377) | Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanilla/GrassBloodmoon.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassWG.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAT.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRSV.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRWG.esp | Groundcover/AesthesiaGroundcovergrassmod, Groundcover/AesthesiaGroundcovergrassmod/darker, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions, Groundcover/AesthesiaGroundcovergrassmod/GrassTR |
+
+## HUD
+
+| Name | Notes | URL   | Files | Paths |
+|------|-------|-------|-------|-------|
+| HUD | With preset for hotkeys: https://www.nexusmods.com/morrowind/mods/56649?tab=description | [53038?tab=files](https://www.nexusmods.com/morrowind/mods/53038?tab=files) | HUD/voshondsQuickSelect.omwscripts | (none) |
 
 ## Landmasses
 
@@ -195,4 +207,10 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | KirelsInteriorWeather | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. | [49278](https://www.nexusmods.com/morrowind/mods/49278) | Weather/KirelsInteriorWeather/k_weather.esp, Weather/KirelsInteriorWeather/k_weather(loudersounds).esp | Weather/KirelsInteriorWeather |
+
+## mnt
+
+| Name | Notes | URL   | Files | Paths |
+|------|-------|-------|-------|-------|
+| nvme-slot2 |  |  | (none) | mnt/nvme-slot2/mods/morrowind/NPCs/DynamicActors, mnt/nvme-slot2/mods/morrowind/Clothing, mnt/nvme-slot2/mods/morrowind/HUD, mnt/nvme-slot2/mods/morrowind/HUD/SimpleHUD/version05-skyrimwithmap, mnt/nvme-slot2/mods/morrowind/HUD/SimpleHUDPreset/mygui, mnt/nvme-slot2/mods/morrowind/HUD/scripts/voshondsQuickSelect, mnt/nvme-slot2/mods/morrowind/HUD/textures/voshondsQuickSelect |
 
