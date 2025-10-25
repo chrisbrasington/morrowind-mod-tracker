@@ -21,7 +21,8 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Devilish Needs | Camping mostly - Eat, drink, sleep, and stay dry or suffer the consequences. | [56480](https://www.nexusmods.com/morrowind/mods/56480) | (none) | Camping/DevilishNeeds |
+| Devilish Needs | Camping mostly - Eat, drink, sleep, and stay dry or suffer the consequences. | [56480](https://www.nexusmods.com/morrowind/mods/56480) | Camping/DevilishNeeds/DevilishNeeds.esp, Camping/DevilishNeeds/DevilishNeeds.omwscripts | Camping/DevilishNeeds |
+| OAAB | OAAB_Data is a free-to-use asset repository for the Morrowind Community. | [49042](https://www.nexusmods.com/morrowind/mods/49042) | Camping/OAAB/OAAB_Data.esm | Camping/OAAB |
 | Easy Camping | An extremely simple, balanced and practical camping mod that seems to actually work! | [42919](https://www.nexusmods.com/morrowind/mods/42919) | Camping/EasyCamping/CampingKits.ESP | Camping/EasyCamping |
 
 ## Cheat
@@ -30,24 +31,11 @@
 |------|-------|-------|-------|-------|
 | Cheat | Tired of arrows encumbering you? Well, no more! | [42570](https://www.nexusmods.com/morrowind/mods/42570) | Cheat/NoArrowWeight.ESP | Cheat |
 
-## Cities
-
-| Name | Notes | URL   | Files | Paths |
-|------|-------|-------|-------|-------|
-| The Waters of His Glory |  |  | Cities/TheWatersofHisGlory/CantonAqueducts.ESP, Cities/TheWatersofHisGlory/PlazaFountains.ESP, Cities/TheWatersofHisGlory/TelvanniAqueduct.ESP, Cities/TheWatersofHisGlory/TheWatersofHisGlory.ESP | Cities/TheWatersofHisGlory/ |
-
 ## Clothing
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Clothing | Fine Elsweyr clothing stop in Suran | [52331](https://www.nexusmods.com/morrowind/mods/52331) | Clothing/Westly_Presents_FCOT.esp | Clothing |
-
-## Combat
-
-| Name | Notes | URL   | Files | Paths |
-|------|-------|-------|-------|-------|
-|  |  |  | (none) | Combat/ |
-| Combat |  |  | Combat/MercyCAO.omwscripts | (none) |
+| Clothing | Fine Elsweyr clothing stop in Suran | [52331](https://www.nexusmods.com/morrowind/mods/52331) | Clothing/Westly_Presents_FCOT.esp | (none) |
 
 ## Cyrodill
 
@@ -90,13 +78,13 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| AesthesiaGroundcovergrassmod | Grass for Morrowind - vanilla and Tamriel Rebuilt support. Made for every region. Includes Mesh Generator files. | [46377](https://www.nexusmods.com/morrowind/mods/46377) | Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanilla/GrassBloodmoon.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassWG.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAC_fix.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAI_fix.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAL_fix.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAT_fix.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRBC_fix.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRGL_fix.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRSV_fix.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRWG_fix.esp | Groundcover/AesthesiaGroundcovergrassmod, Groundcover/AesthesiaGroundcovergrassmod/darker, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions, Groundcover/AesthesiaGroundcovergrassmod/GrassTR |
+| AesthesiaGroundcovergrassmod | Grass for Morrowind - vanilla and Tamriel Rebuilt support. Made for every region. Includes Mesh Generator files. | [46377](https://www.nexusmods.com/morrowind/mods/46377) | Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanilla/GrassBloodmoon.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions/GrassWG.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAI.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRAT.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRBC.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRGL.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRSV.esp, Groundcover/AesthesiaGroundcovergrassmod/GrassTR/GrassTRWG.esp | Groundcover/AesthesiaGroundcovergrassmod, Groundcover/AesthesiaGroundcovergrassmod/darker, Groundcover/AesthesiaGroundcovergrassmod/GrassVanillaregions, Groundcover/AesthesiaGroundcovergrassmod/GrassTR |
 
 ## HUD
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| HUD | With preset for hotkeys: https://www.nexusmods.com/morrowind/mods/56649?tab=description | [53038?tab=files](https://www.nexusmods.com/morrowind/mods/53038?tab=files) | HUD/voshondsQuickSelect.omwscripts | HUD |
+| HUD | With preset for hotkeys: https://www.nexusmods.com/morrowind/mods/56649?tab=description | [53038?tab=files](https://www.nexusmods.com/morrowind/mods/53038?tab=files) | HUD/voshondsQuickSelect.omwscripts | (none) |
 
 ## Landmasses
 
@@ -120,17 +108,16 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | TamrielData | Tamriel_Data contains a data unified file structure spearheaded by Project Tamriel and Tamriel Rebuilt as the first adopter. | [44537](https://www.nexusmods.com/morrowind/mods/44537) | ModdingResources/TamrielData/Tamriel_Data.omwscripts, ModdingResources/TamrielData/Tamriel_Data.esm | ModdingResources/TamrielData |
-| OAAB |  |  | ModdingResources/OAAB/OAAB_Data.esm | ModdingResources/OAAB |
-| Behaviour Tree Lua 2nd Edition |  |  | (none) | ModdingResources/BehaviourTreeLua2ndEdition/ |
 
 ## NPCs
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| DynamicActors | Play idle animations when talking to NPCs. | [54782](https://www.nexusmods.com/morrowind/mods/54782) | NPCs/DynamicActors/DynamicActors.omwscripts | NPCs/DynamicActors |
+| DynamicActors | Play idle animations when talking to NPCs. | [54782](https://www.nexusmods.com/morrowind/mods/54782) | NPCs/DynamicActors/DynamicActors.omwscripts | (none) |
 | FamiliarFacesbyCaleb | An in-depth yet completely vanilla friendly touch up of every head and almost every hair (a few looked okay) in the game. | [50093](https://www.nexusmods.com/morrowind/mods/50093) | (none) | NPCs/FamiliarFacesbyCaleb |
 | Facelift | Some people have desired a simple enhancement of vanilla faces and hairs, so here you go. | [47617](https://www.nexusmods.com/morrowind/mods/47617) | (none) | NPCs/Facelift |
 | QuestGreetings | ElevenAI generated voices for quest-giving NPCs in Morrowind. Currently adds over 1800 original lines of voiced dialogue using the original actors voices. | [52273](https://www.nexusmods.com/morrowind/mods/52273) | NPCs/QuestGreetings/QuestVoiceGreetings.ESP | NPCs/QuestGreetings |
+| Voices of Vardenfell | A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. | [52279](https://www.nexusmods.com/morrowind/mods/52279) | NPCs/VoicesofVardenfell/VoVOpenMW.omwscripts | (none) |
 
 ## ObjectsClutter
 
@@ -162,7 +149,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| VtastekLightShaders | A highly advanced shader replacement that also revamps all lighting in the game. | [vtasteks-light-shaders](https://modding-openmw.com/mods/vtasteks-light-shaders/) | (none) | Shaders/VtastekLightShaders |
+| VtastekLightShaders | A highly advanced shader replacement that also revamps all lighting in the game. | [vtasteks-light-shaders](https://modding-openmw.com/mods/vtasteks-light-shaders/) | Shaders/VtastekLightShaders/LightFixes.esp | Shaders/VtastekLightShaders |
 
 ## Skyrim
 
@@ -181,8 +168,8 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| wazalightfixes | This is a tool which generates a plugin which fixes lights. | [waza_lightfixes](https://modding-openmw.com/mods/waza_lightfixes/) | Tools/wazalightfixes/LightFixes.esp | Tools/wazalightfixes |
-| luahelper | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | (none) | Tools/luahelper |
+| wazalightfixes | This is a tool which generates a plugin which fixes lights. | [waza_lightfixes](https://modding-openmw.com/mods/waza_lightfixes/) | (none) | Tools/wazalightfixes |
+| luahelper | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Tools/luahelper/OpenMW_luahelper.esp, Tools/luahelper/OpenMW_luahelper.omwscripts, Tools/luahelper/OpenMW_luahelper_dialog.esp | Tools/luahelper |
 
 ## UserInterface
 
@@ -199,9 +186,9 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| LuaHelper | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Voice/LuaHelper/OpenMW_luahelper_dialog_TR.esp, Voice/LuaHelper/OpenMW_luahelper.omwscripts, Voice/LuaHelper/OpenMW_luahelper.esp, Voice/LuaHelper/OpenMW_luahelper_dialog.esp | Voice/LuaHelper, Voice/LuaHelper/scripts, Voice/LuaHelper/scripts/OpenMW_luahelper |
+| LuaHelper | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Voice/LuaHelper/OpenMW_luahelper_dialog_TR.esp | Voice/LuaHelper, Voice/LuaHelper/scripts, Voice/LuaHelper/scripts/OpenMW_luahelper |
 | VoicesOfVvardenfell | Kezyma's Voices of Vvardenfell - A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. | [52279](https://www.nexusmods.com/morrowind/mods/52279) | (none) | Voice/VoicesOfVvardenfell, Voice/VoicesOfVvardenfell/00-Core, Voice/VoicesOfVvardenfell/01-PatchforPurists, Voice/VoicesOfVvardenfell/11-FurbyZone'sSkyrimNeloth, Voice/VoicesOfVvardenfell/12-FurbyZone'sAlmalexia, Voice/VoicesOfVvardenfell/00-Core/MWSE/mods/AIVoices |
-| PatchForOpenMW | NEW version for Full Working of Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49 only. | [54137](https://www.nexusmods.com/morrowind/mods/54137) | Voice/PatchForOpenMW/VoVOpenMW.omwscripts | Voice/PatchForOpenMW |
+| PatchForOpenMW | NEW version for Full Working of Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49 only. | [54137](https://www.nexusmods.com/morrowind/mods/54137) | (none) | Voice/PatchForOpenMW |
 
 ## Water
 
@@ -220,4 +207,10 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | KirelsInteriorWeather | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. | [49278](https://www.nexusmods.com/morrowind/mods/49278) | Weather/KirelsInteriorWeather/k_weather.esp, Weather/KirelsInteriorWeather/k_weather(loudersounds).esp | Weather/KirelsInteriorWeather |
+
+## mnt
+
+| Name | Notes | URL   | Files | Paths |
+|------|-------|-------|-------|-------|
+| nvme-slot2 |  |  | (none) | mnt/nvme-slot2/mods/morrowind/NPCs/DynamicActors, mnt/nvme-slot2/mods/morrowind/Clothing, mnt/nvme-slot2/mods/morrowind/HUD, mnt/nvme-slot2/mods/morrowind/HUD/SimpleHUD/version05-skyrimwithmap, mnt/nvme-slot2/mods/morrowind/HUD/SimpleHUDPreset/mygui, mnt/nvme-slot2/mods/morrowind/HUD/scripts/voshondsQuickSelect, mnt/nvme-slot2/mods/morrowind/HUD/textures/voshondsQuickSelect |
 
