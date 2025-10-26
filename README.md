@@ -1,3 +1,10 @@
+## Animation
+
+| Name | Notes | URL   | Files | Paths |
+|------|-------|-------|-------|-------|
+| Reanimation |  |  | Animation/Reanimation/ReAnimation_API.omwscripts, Animation/Reanimation/ReAnimation_v2_Rogue.omwscripts | Animation/Reanimation |
+| Impact Effects |  |  | Animation/ImpactEffects/ImpactEffects.omwscripts | Animation/ImpactEffects |
+
 ## Architecture
 
 | Name | Notes | URL   | Files | Paths |
@@ -46,8 +53,8 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-|  |  |  | (none) | Combat/ |
 | Combat |  |  | Combat/MercyCAO.omwscripts | (none) |
+|  |  |  | (none) | Combat/ |
 
 ## Cyrodill
 
@@ -158,6 +165,12 @@
 | MorrowindOptimizationPatch | Greatly improves performance and fixes tons of mesh errors. | [45384](https://www.nexusmods.com/morrowind/mods/45384) | Performance/MorrowindOptimizationPatch/01LakeFjaldingAnti-Suck/LakeFjaldingAnti-Suck.ESP | Performance/MorrowindOptimizationPatch/00Core, Performance/MorrowindOptimizationPatch/01LakeFjaldingAnti-Suck, Performance/MorrowindOptimizationPatch/04BetterVanillaTextures, Performance/MorrowindOptimizationPatch/05GraphicHerbalismPatch, Performance/MorrowindOptimizationPatch/02WeaponSheathingPatch |
 | ProjectAtlas | The goal of Project Atlas is to identify the most performance heavy areas of vanilla Morrowind and some popular mods and target high usage/strain meshes in those areas for atlasing. This effort involves reworking the UVs for those meshes and creating texture atlases to cover various sets. | [45399](https://www.nexusmods.com/morrowind/mods/45399) | (none) | Performance/ProjectAtlas/Project-Atlas-master/00Core, Performance/ProjectAtlas/Project-Atlas-master/01Textures-MET, Performance/ProjectAtlas/Project-Atlas-master/02Urns-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/03Redware-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/04EmperorParasols-Smoothed, Performance/ProjectAtlas/Project-Atlas-master/07GraphicHerbalismPatch, Performance/ProjectAtlas/Project-Atlas-master/06GlowintheDahrkPatch |
 
+## Physics
+
+| Name | Notes | URL   | Files | Paths |
+|------|-------|-------|-------|-------|
+| Lua physics |  |  | Physics/Luaphysics/LuaPhysicsEngine.omwscripts | Physics/Luaphysics |
+
 ## Shaders
 
 | Name | Notes | URL   | Files | Paths |
@@ -176,6 +189,7 @@
 |------|-------|-------|-------|-------|
 | MorrowindEnhancedTextures | Upscales every in-game texture with the help of machine learning. 100% vanilla-friendly. | [46221](https://www.nexusmods.com/morrowind/mods/46221) | (none) | TexturePacks/MorrowindEnhancedTextures/Interface, TexturePacks/MorrowindEnhancedTextures/atlas, TexturePacks/MorrowindEnhancedTextures/MET6-1main |
 | RealSignposts | The RealSignposts Plugin replaces the signposts in Morrowind by signposts showing the real names of the locations. | [3879](https://www.nexusmods.com/morrowind/mods/3879) | TexturePacks/RealSignposts/RealSignposts.esp | TexturePacks/RealSignposts |
+| Landscape Retexture |  |  | (none) | TexturePacks/LandscapeRetexture |
 
 ## Tools
 
@@ -194,6 +208,7 @@
 | InterfaceReimaigned | Modernized Dialogue and Decluttering of the UI | [54985](https://www.nexusmods.com/morrowind/mods/54985) | (none) | UserInterface/InterfaceReimaigned |
 | PerfectPlacement | Adds interactive placement, rotation and wall mounting of items. Arrange gear, books and anything else you can pick up. Requires MWSE 2.1 or OpenMW 0.49dev. | [46562](https://www.nexusmods.com/morrowind/mods/46562) | UserInterface/PerfectPlacement/PerfectPlacement.omwscripts | UserInterface/PerfectPlacement |
 | Small SKyrim Crosshair | Adds small skyrim-a-like crosshair with ownership mod compatibility | [46351](https://www.nexusmods.com/morrowind/mods/46351) | (none) | UserInterface/SmallSKyrimCrosshair |
+| Canvas Map Splash Screens |  |  | (none) | UserInterface/CanvasMapSplashScreens |
 
 ## Voice
 
@@ -208,6 +223,7 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | DistantSeafloorforOpenMW | Extends the seafloor around Vvardenfell to hide the edge of the world in OpenMW. Compatible with everything. | [50796](https://www.nexusmods.com/morrowind/mods/50796) | Water/DistantSeafloorforOpenMW/00Core/distant_seafloor_2.00.esm, Water/DistantSeafloorforOpenMW/01PatchforvanillaSolstheimlocation/distantseafloorbloodmoonpatch.esp | Water/DistantSeafloorforOpenMW/00Core, Water/DistantSeafloorforOpenMW/01PatchforvanillaSolstheimlocation |
+| Better Waterfalls |  |  | (none) | Water/BetterWaterfalls, Water/BetterWaterfalls/00Core, Water/BetterWaterfalls/01VanillaResolutionTextures, Water/BetterWaterfalls/02TamrielRebuiltWater |
 
 ## Weapons
 
