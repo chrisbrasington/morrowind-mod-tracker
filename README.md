@@ -65,7 +65,7 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | JammingsOff | Changing Bounding Box size for all NPC and Player. | [44523](https://www.nexusmods.com/morrowind/mods/44523) | (none) | Fixes/JammingsOff/Jammingsoff(v1.1)/ver1.0(only_Xnif_files)/DataFiles |
-| DynamicDistantBuildingsforOpenMW | Makes distant land more responsive to quest progress. Great House strongholds do not appear in the distance at game start, and the whole Ghostfence vanishes at the end of the main quest. | [51236](https://www.nexusmods.com/morrowind/mods/51236) | Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Ghostfence_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_H_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_R_v1.0.esp, Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails/HM_DDD_Strongholds_T_v1.0.esp | Fixes/DynamicDistantBuildingsforOpenMW/DynamicDistantDetails |
+| DistantFixesLuaEdition | A Lua framework for handling updates to distant objects that can support any content via YAML-based data. | https://modding-openmw.gitlab.io/distant-fixes-lua-edition/ | Fixes/DistantFixesLuaEdition/distant-fixes-lua-edition.omwscripts | Fixes/DistantFixesLuaEdition |
 
 ## Fog
 

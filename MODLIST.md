@@ -28,12 +28,9 @@
 | Combat | [Mercy Combat AI Overhaul](https://www.nexusmods.com/morrowind/mods/55064) | An immersive overhaul of in-combat NPC behavior for OpenMW 0.49. With new voice lines and animations. |
 | Extra | [LuaMultiMark](https://www.nexusmods.com/morrowind/mods/53260) | Allows the player to have multiple marked locations. |
 | Fixes | [JammingsOff](https://www.nexusmods.com/morrowind/mods/44523) | Changing Bounding Box size for all NPC and Player. |
-| Fixes | [DynamicDistantBuildingsforOpenMW](https://www.nexusmods.com/morrowind/mods/51236) | Makes distant land more responsive to quest progress. Great House strongholds do not appear in the distance at game start, and the whole Ghostfence vanishes at the end of the main quest. |
 | Gameplay | [GraphicHerbalismMWSEandOpenMWEdition](https://www.nexusmods.com/morrowind/mods/46599) | Pick plants |
 | Groundcover | [AesthesiaGroundcovergrassmod](https://www.nexusmods.com/morrowind/mods/46377) | Grass for Morrowind - vanilla and Tamriel Rebuilt support. Made for every region. Includes Mesh Generator files. |
 | Lighting | [GlowingFlames](https://www.nexusmods.com/morrowind/mods/46124) | Flames are now glow mapped and/or properly illuminated. |
-| Lighting | [Enhanced Shadows for OpenMW](https://www.nexusmods.com/morrowind/mods/53667) | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly |
-| Lighting | [Enhanced Shadows for OpenMW](https://www.nexusmods.com/morrowind/mods/53667) | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly |
 | Lighting | [Enhanced Shadows for OpenMW](https://www.nexusmods.com/morrowind/mods/53667) | Optimized postprocess shader pack for OpenMW, making it look better than ever before while still being very Vanilla-friendly |
 | Lighting | [Enhanced Water for OpenMW](https://www.nexusmods.com/morrowind/mods/56186) | OpenMW Water Shaders with dynamic caustics, water foam, volumetric light rays, and realistic fog effects. |
 | ModdingResources | [OAAB](https://www.nexusmods.com/morrowind/mods/49042) | Asset repository |
@@ -75,4 +72,5 @@
 | HUD | [voshondsQuickSelect](https://www.nexusmods.com/morrowind/mods/56494) | Adds hotbars/actionsbars to the game for convinient access to up to 30 user defined items/spells/weapons |
 | Tools | [wazalightfixes](https://github.com/glassmancody/waza_lightfixes/releases) | This is a tool which generates a plugin which fixes lights. |
 | Voice | [VoicesOfVvardenfell PatchForOpenMW](https://www.nexusmods.com/morrowind/mods/54137') | Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49+ |
+| Fixes | [DistantFixesLuaEdition](https://modding-openmw.gitlab.io/distant-fixes-lua-edition/) | A Lua framework for handling updates to distant objects that can support any content via YAML-based data. |
 
