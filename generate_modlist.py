@@ -136,6 +136,13 @@ def main():
                 output.append(f"| {mod['Type']} | {mod['Name']} | {mod['Description']} |")
         output.append("")
 
+    # --- prepend NOTES.md ---
+    try:
+        notes_lines = load_markdown("NOTES.md")
+        output = notes_lines + [""] + output  # add blank line after notes
+    except FileNotFoundError:
+        print("NOTES.md not found, skipping prepend.")
+
     write_markdown(target_path, output)
     print(f"Updated: {target_path}")
 
