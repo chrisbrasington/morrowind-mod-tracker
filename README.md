@@ -2,13 +2,17 @@
 
 ## Getting Started
 
-If you're new to modding morrowind, I'd recommend starting with the [I Heart Vanilla](https://modding-openmw.com/lists/i-heart-vanilla/) guide and modlist. It adds bugfixes, quality of life improvements, some higher quality textures/meshes and things like graphic herbalism (seeing the plants you pick).
+If you're new to morrowind (period) - [openMW](https://openmw.org/) is an open-source game engine highly recommended. Will get you playing at high resolution on a modern system. Vvardenfell is worth the adventure even some 20+ years after its release.
+
+Morrowind is highly moddable, I'd recommend starting with the [I Heart Vanilla](https://modding-openmw.com/lists/i-heart-vanilla/) guide and modlist. It adds bugfixes, quality of life improvements, some higher quality textures/meshes and things like graphic herbalism (seeing the plants you pick).
 
 Beyond that - this is my personal extended list as it has grown over time. Things that I felt enhanced the experience without deviating too far from the core experience, such as volumetric fog, dynamic actors (the game not pausing when you talk to NPCs), and some immersive shaders/lighting. 
 
-[Tamriel Rebuilt](https://www.tamriel-rebuilt.org/) is the real gold to be found here - but that can be added after playing the main game. 
-
 [See screenshots of modded morrowind here.](https://steamcommunity.com/id/raylinth/screenshots/?appid=22320&sort=newestfirst&browsefilter=myfiles&view=imagewall)
+
+## [Tamriel Rebuilt](https://www.tamriel-rebuilt.org/)
+
+[Tamriel Rebuilt](https://www.tamriel-rebuilt.org/) is the real gold to be found here - but that can be added after playing the main game. In my mind, there is unlikely to ever be a mod as impressive as this one in any game - ever.
 
 ## OpenMW Settings
 
