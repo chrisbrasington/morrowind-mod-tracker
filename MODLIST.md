@@ -24,7 +24,6 @@
 | Books | [Textures](https://www.nexusmods.com/morrowind/mods/43100) | Replaces all the books, bookpages and scrolls. |
 | Camping | [Easy Camping](https://www.nexusmods.com/morrowind/mods/42919) | An extremely simple, balanced and practical camping mod that seems to actually work! |
 | Cheat | [No Arrow Weight](https://www.nexusmods.com/morrowind/mods/42570) | Tired of arrows encumbering you? Well, no more! |
-| Animation | [Impact Effects](https://www.nexusmods.com/morrowind/mods/55508) | Sounds and VFX when your weapon hits surfaces. |
 | Clothing | [Westly Presents Fine Clothiers of Tamriel](https://www.nexusmods.com/morrowind/mods/52331) | Adds a clothing store in Suran carrying imports from all over Tamriel. |
 | Combat | [Mercy Combat AI Overhaul](https://www.nexusmods.com/morrowind/mods/55064) | An immersive overhaul of in-combat NPC behavior for OpenMW 0.49. With new voice lines and animations. |
 | Extra | [LuaMultiMark](https://www.nexusmods.com/morrowind/mods/53260) | Allows the player to have multiple marked locations. |
