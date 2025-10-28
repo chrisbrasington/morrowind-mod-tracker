@@ -53,7 +53,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Combat | NPC combat tweaks, may warn or surrender. | [55064](https://www.nexusmods.com/morrowind/mods/55064) | Combat/MercyCAO.omwscripts | (none) |
+| Mercy - Combat AI Overhaul | NPC combat tweaks, may warn or surrender. | [55064](https://www.nexusmods.com/morrowind/mods/55064) | Combat/MercyCAO.omwscripts | (none) |
 
 ## Cyrodill
 
