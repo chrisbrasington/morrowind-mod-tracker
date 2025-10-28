@@ -35,7 +35,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Cheat | Tired of arrows encumbering you? Well, no more! | [42570](https://www.nexusmods.com/morrowind/mods/42570) | Cheat/NoArrowWeight.ESP | Cheat |
+| No Arrow Weight | Tired of arrows encumbering you? Well, no more! | [42570](https://www.nexusmods.com/morrowind/mods/42570) | Cheat/NoArrowWeight.ESP | Cheat |
 
 ## Cities
 

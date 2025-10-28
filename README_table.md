@@ -8,7 +8,7 @@
 | Books | [Textures](https://www.nexusmods.com/morrowind/mods/43100) | Replaces all the books, bookpages and scrolls. |
 | Camping | [Devilish Needs](https://www.nexusmods.com/morrowind/mods/56480) | Camping mostly - Eat, drink, sleep, and stay dry or suffer the consequences. |
 | Camping | [Easy Camping](https://www.nexusmods.com/morrowind/mods/42919) | An extremely simple, balanced and practical camping mod that seems to actually work! |
-| Cheat | [Cheat](https://www.nexusmods.com/morrowind/mods/42570) | Tired of arrows encumbering you? Well, no more! |
+| Cheat | [No Arrow Weight](https://www.nexusmods.com/morrowind/mods/42570) | Tired of arrows encumbering you? Well, no more! |
 | Cities | [The Waters of His Glory](https://www.nexusmods.com/morrowind/mods/55508) | Grand Aqueducts near Vivec City. |
 | Clothing | [Clothing](https://www.nexusmods.com/morrowind/mods/52331) | Fine Elsweyr clothing stop in Suran |
 | Combat | [Combat](https://www.nexusmods.com/morrowind/mods/55064) | NPC combat tweaks, may warn or surrender. |
