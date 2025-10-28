@@ -79,31 +79,32 @@ def main():
         other_section = "# Other Mods"
         tgt_sections[other_section] = [other_section]
 
-    # Parse and update target mods
+    # Parse and update target mods, collect all existing URLs
     updated_sections = {}
-    seen_urls = set()
+    all_target_urls = set()
     
     for section, content in tgt_sections.items():
         tgt_mods = parse_table(content, TABLE_HEADER_TARGET)
         
-        # Update existing mods - URL is embedded in Name field as [text](url)
+        # Update existing mods and track all URLs in target
         for mod in tgt_mods:
             url = extract_url(mod.get("Name", ""))  # Extract URL from markdown link
+            all_target_urls.add(url)
             if url in src_by_url:
                 mod["Description"] = src_by_url[url]["Notes"]
-                seen_urls.add(url)
         
         updated_sections[section] = tgt_mods
 
-    # Add new mods to "Other Mods"
+    # Add new mods to "Other Mods" only if URL doesn't exist anywhere in target
     for url, src_mod in src_by_url.items():
-        if url not in seen_urls:
+        if url not in all_target_urls:
             new_mod = {
                 "Type": "Mod",
                 "Name": f"[{src_mod['Name']}]({url})",
                 "Description": src_mod["Notes"]
             }
             updated_sections[other_section].append(new_mod)
+            all_target_urls.add(url)  # Track it to prevent duplicates within this run
 
     # Rebuild markdown
     output = []
