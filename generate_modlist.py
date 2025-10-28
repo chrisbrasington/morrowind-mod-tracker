@@ -6,10 +6,18 @@ from collections import defaultdict
 TABLE_HEADER_SOURCE = ["Name", "Notes", "URL", "Files", "Paths"]
 TABLE_HEADER_TARGET = ["Type", "Name", "Description"]
 
+def normalize_url(url):
+    """Normalize URL - if it's just a number, convert to full Nexus URL"""
+    url = url.strip()
+    if url.isdigit():
+        return f"https://www.nexusmods.com/morrowind/mods/{url}"
+    return url
+
 def extract_url(text):
     """Extract URL from markdown link or return text if no link"""
     match = re.search(r"\(([^)]+)\)", text)
-    return match.group(1).strip() if match else text.strip()
+    url = match.group(1).strip() if match else text.strip()
+    return normalize_url(url)
 
 def parse_table(lines, headers):
     """Parse markdown table into list of dicts"""
@@ -66,7 +74,7 @@ def main():
     # Build URL -> mod mapping from source
     src_by_url = {}
     for mod in src_mods:
-        url = mod.get("URL", "").strip()  # URL is in its own column
+        url = normalize_url(mod.get("URL", ""))  # Normalize URL (handles mod IDs)
         if url:
             src_by_url[url] = mod
 
