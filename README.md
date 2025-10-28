@@ -23,6 +23,7 @@ Beyond that - this is my personal extended list as it has grown over time. Thing
 If you need details on the file paths I have for the various mods, see [MODLIST_DETAILS.md](https://github.com/chrisbrasington/morrowind-mod-tracker/blob/main/MODLIST_DETAILS.md)
 
 # Essentials
+
 | Type | Name | Description |
 |------|------|------|
 | Patches | [PatchforPurists](https://www.nexusmods.com/morrowind/mods/45096) | Over 9000+ bugs still present in the game have been fixed. |
@@ -38,6 +39,7 @@ If you need details on the file paths I have for the various mods, see [MODLIST_
 | Weapons | [WeaponSheathing](https://www.nexusmods.com/morrowind/mods/46069) | Makes unreadied weapons appear on the character's hip or back. |
 
 # Land masses
+
 | Type | Name | Description |
 |------|------|------|
 | Landmasses | [Tamriel Rebuilt](https://www.tamriel-rebuilt.org/) | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. |
@@ -46,6 +48,7 @@ If you need details on the file paths I have for the various mods, see [MODLIST_
 | Landmasses | [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. |
 
 # Quality of Life / UI
+
 | Type | Name | Description |
 |------|------|------|
 | Cheat | [No Arrow Weight](https://www.nexusmods.com/morrowind/mods/42570) | Tired of arrows encumbering you? Well, no more! |
@@ -56,6 +59,7 @@ If you need details on the file paths I have for the various mods, see [MODLIST_
 | HUD | [voshondsQuickSelect](https://www.nexusmods.com/morrowind/mods/56494) | Adds hotbars/actionsbars to the game for convinient access to up to 30 user defined items/spells/weapons |
 
 # Graphics Essential
+
 | Type | Name | Description |
 |------|------|------|
 | Fog | [openmw-volumetric-clouds-main](https://github.com/zesterer/openmw-volumetric-clouds) | Zesterer's Volumetric Cloud & Mist Mod for OpenMW |
@@ -63,6 +67,7 @@ If you need details on the file paths I have for the various mods, see [MODLIST_
 | UserInterface | [InterfaceReimaigned](https://www.nexusmods.com/morrowind/mods/54985) | Modernized Dialogue and Decluttering of the UI |
 
 # Graphics Extra
+
 | Type | Name | Description |
 |------|------|------|
 | Architecture | [Nordsshutyourwindows](https://www.nexusmods.com/morrowind/mods/50087) | Nord's windows have a wooden shutter, open in the day and closed at night. |
@@ -98,6 +103,7 @@ If you need details on the file paths I have for the various mods, see [MODLIST_
 | Tools | [wazalightfixes](https://github.com/glassmancody/waza_lightfixes/releases) | This is a tool which generates a plugin which fixes lights. |
 
 # Voice/Audio
+
 | Type | Name | Description |
 |------|------|------|
 | Audiobooks | [Audiobooks](https://www.nexusmods.com/morrowind/mods/52458) | Turn the books in Morrowind into listenable audiobooks! |
@@ -106,6 +112,7 @@ If you need details on the file paths I have for the various mods, see [MODLIST_
 | Voice | [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. |
 
 # Other Mods
+
 | Type | Name | Description |
 |------|------|------|
 | Camping | [Easy Camping](https://www.nexusmods.com/morrowind/mods/42919) | An extremely simple, balanced and practical camping mod that seems to actually work! |
