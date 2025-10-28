@@ -103,12 +103,13 @@ def merge(readme_rows, sections):
             orig_name = m.group("name").strip()
             orig_desc = m.group("desc").strip()
 
-            if orig_desc != new_desc:
-                # Update only the description, preserving orig_type & orig_name
-                sections[sec][idx] = f"| {orig_type} | [{orig_name}]({url}) | {new_desc} |"
+            if orig_desc.strip() != new_desc.strip():
+                sections[sec][idx] = f"| {orig_type} | [{orig_name}]({url}) | {new_desc.strip()} |"
                 updated += 1
             else:
+                # No real change — leave the row untouched
                 skipped += 1
+                continue
             # ensure we won't process duplicates later
             continue
 
