@@ -2,7 +2,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Reanimation | Improved animations | [52596](https://www.nexusmods.com/morrowind/mods/52596) | Animation/Reanimation/ReAnimation_API.omwscripts, Animation/Reanimation/ReAnimation_v2_Rogue.omwscripts | Animation/Reanimation |
+| Reanimation | An immersive reimagining of (some) of the TES3: Morrowind 1st-person animations. Developed for OpenMW engine. | [52596](https://www.nexusmods.com/morrowind/mods/52596) | Animation/Reanimation/ReAnimation_API.omwscripts, Animation/Reanimation/ReAnimation_v2_Rogue.omwscripts | Animation/Reanimation |
 | Impact Effects | Sounds and VFX when your weapon hits surfaces. | [55508](https://www.nexusmods.com/morrowind/mods/55508) | Animation/ImpactEffects/ImpactEffects.omwscripts | Animation/ImpactEffects |
 
 ## Architecture
@@ -28,7 +28,6 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Devilish Needs | Camping mostly - Eat, drink, sleep, and stay dry or suffer the consequences. | [56480](https://www.nexusmods.com/morrowind/mods/56480) | (none) | Camping/DevilishNeeds |
 | Easy Camping | An extremely simple, balanced and practical camping mod that seems to actually work! | [42919](https://www.nexusmods.com/morrowind/mods/42919) | Camping/EasyCamping/CampingKits.ESP | Camping/EasyCamping |
 
 ## Cheat

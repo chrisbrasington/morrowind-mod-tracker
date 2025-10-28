@@ -10,19 +10,18 @@
 |------|------|------|
 | Landmasses | [Tamriel Rebuilt](https://www.tamriel-rebuilt.org/) | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. |
 | ModdingResources | [TamrielData](https://www.nexusmods.com/morrowind/mods/44537) | Tamriel_Data contains a data unified file structure spearheaded by Project Tamriel and Tamriel Rebuilt as the first adopter. |
-| Cyrodill | [Cyrodill](https://www.nexusmods.com/morrowind/mods/44922) | Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. |
-| Skyrim | [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. |
+| Landmasses | [Cyrodill](https://www.nexusmods.com/morrowind/mods/44922) | Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. |
+| Landmasses | [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. |
 
 # Other Mods
 | Type | Name | Description |
 |------|------|------|
-| Animation | [Reanimation](https://www.nexusmods.com/morrowind/mods/52596) | Improved animations |
+| Animation | [Reanimation](https://www.nexusmods.com/morrowind/mods/52596) | An immersive reimagining of (some) of the TES3: Morrowind 1st-person animations. Developed for OpenMW engine. |
 | Animation | [Impact Effects](https://www.nexusmods.com/morrowind/mods/55508) | Sounds and VFX when your weapon hits surfaces. |
 | Architecture | [Nordsshutyourwindows](https://www.nexusmods.com/morrowind/mods/50087) | Nord's windows have a wooden shutter, open in the day and closed at night. |
 | Architecture | [MorrowindInteriorsProject](https://www.nexusmods.com/morrowind/mods/52237) | Adds exteriors to all interior cells with windows. So far, Molag Mar, Caldera, Pelagiad, and Gnisis. |
 | Audiobooks | [Audiobooks](https://www.nexusmods.com/morrowind/mods/52458) | Turn the books in Morrowind into listenable audiobooks! |
 | Books | [Textures](https://www.nexusmods.com/morrowind/mods/43100) | Replaces all the books, bookpages and scrolls. |
-| Camping | [Devilish Needs](https://www.nexusmods.com/morrowind/mods/56480) | Camping mostly - Eat, drink, sleep, and stay dry or suffer the consequences. |
 | Camping | [Easy Camping](https://www.nexusmods.com/morrowind/mods/42919) | An extremely simple, balanced and practical camping mod that seems to actually work! |
 | Cheat | [No Arrow Weight](https://www.nexusmods.com/morrowind/mods/42570) | Tired of arrows encumbering you? Well, no more! |
 | Animation | [Impact Effects](https://www.nexusmods.com/morrowind/mods/55508) | Sounds and VFX when your weapon hits surfaces. |
