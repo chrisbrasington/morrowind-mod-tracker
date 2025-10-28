@@ -8,10 +8,14 @@
 
 
 
+
+
 # Land masses
 | Type | Name | Description |
 |------|------|-------------|
 | ModdingResources | [TamrielData](https://www.nexusmods.com/morrowind/mods/44537) | Tamriel_Data contains a data unified file structure spearheaded by Project Tamriel and Tamriel Rebuilt as the first adopter. |
+
+
 
 
 
@@ -62,12 +66,11 @@
 | UserInterface | [PerfectPlacement](https://www.nexusmods.com/morrowind/mods/46562) | Adds interactive placement, rotation and wall mounting of items. Arrange gear, books and anything else you can pick up. Requires MWSE 2.1 or OpenMW 0.49dev. |
 | UserInterface | [Small SKyrim Crosshair](https://www.nexusmods.com/morrowind/mods/46351) | Adds small skyrim-a-like crosshair with ownership mod compatibility |
 | UserInterface | [Canvas Map Splash Screens](https://www.nexusmods.com/morrowind/mods/56025) | Canvas map loading screens |
-| Voice | [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. |
+| Tools | [luahelper](https://www.nexusmods.com/morrowind/mods/54629) | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. |
 | Voice | [VoicesOfVvardenfell](https://www.nexusmods.com/morrowind/mods/52279) | Kezyma's Voices of Vvardenfell - A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. |
 | Voice | [PatchForOpenMW](https://www.nexusmods.com/morrowind/mods/54137) | NEW version for Full Working of Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49 only. |
 | Water | [DistantSeafloorforOpenMW](https://www.nexusmods.com/morrowind/mods/50796) | Extends the seafloor around Vvardenfell to hide the edge of the world in OpenMW. Compatible with everything. |
 | Water | [Better Waterfalls](https://www.nexusmods.com/morrowind/mods/45424) | Better waterfalls |
 | Weapons | [WeaponSheathing](https://www.nexusmods.com/morrowind/mods/46069) | Makes unreadied weapons appear on the character's hip or back. |
 | Weather | [KirelsInteriorWeather](https://www.nexusmods.com/morrowind/mods/49278) | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. |
-
 
