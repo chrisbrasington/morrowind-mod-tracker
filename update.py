@@ -1,7 +1,7 @@
 from classes import ModDictionary
 import os, sys
 
-MARKDOWN_PATH = "README.md"
+MARKDOWN_PATH = "MOD_DETAILS.md"
 
 def add_missing_mods(config_dict, result_dict):
     for section_name, source_section in config_dict.sections.items():
