@@ -3,7 +3,7 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | Reanimation | Improved animations | [52596](https://www.nexusmods.com/morrowind/mods/52596) | Animation/Reanimation/ReAnimation_API.omwscripts, Animation/Reanimation/ReAnimation_v2_Rogue.omwscripts | Animation/Reanimation |
-| Impact Effects | Sounds and VFX when your weapon hits surfaces TEST TEST TEST | [55508](https://www.nexusmods.com/morrowind/mods/55508) | Animation/ImpactEffects/ImpactEffects.omwscripts | Animation/ImpactEffects |
+| Impact Effects | Sounds and VFX when your weapon hits surfaces. | [55508](https://www.nexusmods.com/morrowind/mods/55508) | Animation/ImpactEffects/ImpactEffects.omwscripts | Animation/ImpactEffects |
 
 ## Architecture
 
