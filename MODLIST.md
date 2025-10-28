@@ -73,7 +73,7 @@ yo
 | Water | [DistantSeafloorforOpenMW](https://www.nexusmods.com/morrowind/mods/50796) | Extends the seafloor around Vvardenfell to hide the edge of the world in OpenMW. Compatible with everything. |
 | Water | [Better Waterfalls](https://www.nexusmods.com/morrowind/mods/45424) | Better waterfalls |
 | Weather | [KirelsInteriorWeather](https://www.nexusmods.com/morrowind/mods/49278) | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. |
-| HUD | [HUD](https://www.nexusmods.com/morrowind/mods/53038?tab=files) | With preset for hotkeys: https://www.nexusmods.com/morrowind/mods/56649?tab=description |
+| HUD | [HUD](https://www.nexusmods.com/morrowind/mods/53038?tab=files) | Simple HUD |
 | Lighting | [GlowintheDahrk](https://modding-openmw.com/mods/glow-in-the-dahrk/) | This is a modern, pluginless replacement of the old Windows Glow mods |
 | Tools | [waza lightfixes](https://modding-openmw.com/mods/waza_lightfixes/) | This is a tool which generates a plugin which fixes lights. |
 | UserInterface | [BigIcons](https://modding-openmw.com/mods/big-icons/) | Replaces the small 16x16 spell effect icons with your choice of larger icons. Works with your choice of MWSE or OpenMW |
