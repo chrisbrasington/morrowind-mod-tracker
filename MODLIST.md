@@ -1,21 +1,20 @@
 # Essentials
-
 | Type | Name | Description |
-|------|------|-------------|
+|------|------|------|
 | Patches | [Patch for Purists](https://www.nexusmods.com/morrowind/mods/45096) | Over 9000+ bugs still present in the game have been fixed. |
 | Patches | [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931) | An attempt to fix the many issues present in Bethesda's original Official Plugins. Includes fixes for all of the Official Plugins, and offers merged and compatibility options as well. |
 | Patches | [Expansion Delay](https://www.nexusmods.com/morrowind/mods/47588) | This mod fixes Bethesda's overly enthusiastic expansion hooks by delaying the Dark Brotherhood attacks (for Tribunal) and limiting intrustive dialogue topics to a few NPCs (Bloodmoon). |
 
 # Land masses
 | Type | Name | Description |
-|------|------|-------------|
+|------|------|------|
 | ModdingResources | [Tamriel Data](https://www.nexusmods.com/morrowind/mods/44537) | Tamriel_Data contains a data unified file structure spearheaded by Project Tamriel and Tamriel Rebuilt as the first adopter. |
 | Cyrodill | [Cyrodill](https://www.nexusmods.com/morrowind/mods/44922) | Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. |
 | Skyrim | [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. |
 
 # Other Mods
 | Type | Name | Description |
-|------|------|-------------|
+|------|------|------|
 | Animation | [Reanimation](https://www.nexusmods.com/morrowind/mods/52596) | Improved animations |
 | Animation | [Impact Effects](https://www.nexusmods.com/morrowind/mods/55508) | Sounds and VFX when your weapon hits surfaces. |
 | Architecture | [Nordsshutyourwindows](https://www.nexusmods.com/morrowind/mods/50087) | Nord's windows have a wooden shutter, open in the day and closed at night. |
@@ -65,3 +64,4 @@
 | Water | [Better Waterfalls](https://www.nexusmods.com/morrowind/mods/45424) | Better waterfalls |
 | Weapons | [WeaponSheathing](https://www.nexusmods.com/morrowind/mods/46069) | Makes unreadied weapons appear on the character's hip or back. |
 | Weather | [KirelsInteriorWeather](https://www.nexusmods.com/morrowind/mods/49278) | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. |
+

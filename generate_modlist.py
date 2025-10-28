@@ -1,192 +1,158 @@
 #!/usr/bin/env python3
 import sys
 import re
-from collections import OrderedDict
+from collections import defaultdict
 
-# Strict row regex: captures Type, link text (Name), URL, Description
-ROW_RE = re.compile(r'^\|\s*(?P<type>[^|]+?)\s*\|\s*\[(?P<name>[^\]]+)\]\((?P<url>https?://[^\)]+)\)\s*\|\s*(?P<desc>.*?)\s*\|$')
+TABLE_HEADER_SOURCE = ["Name", "Notes", "URL", "Files", "Paths"]
+TABLE_HEADER_TARGET = ["Type", "Name", "Description"]
 
-TABLE_HEADER = "| Type | Name | Description |"
-TABLE_DIVIDER = "|------|------|-------------|"
+def parse_mod_table(lines, expected_headers):
+    mods = []
+    headers_line = "|" + "|".join(expected_headers) + "|"
 
-def parse_readme_rows(lines):
-    rows = []
-    for ln in lines:
-        m = ROW_RE.match(ln.strip())
-        if m:
-            rows.append({
-                "type": m.group("type").strip(),
-                "name": m.group("name").strip(),
-                "url": m.group("url").strip(),
-                "desc": m.group("desc").strip()
-            })
-    return rows
+    i = 0
+    while i < len(lines):
+        if lines[i].strip().replace(" ", "") == headers_line.replace(" ", ""):
+            i += 2  # skip header + separator line
+            while i < len(lines) and lines[i].startswith("|"):
+                row = [col.strip() for col in lines[i].strip().strip("|").split("|")]
+                if len(row) >= len(expected_headers):
+                    mod = dict(zip(expected_headers, row))
+                    mods.append(mod)
+                i += 1
+        else:
+            i += 1
+    return mods
 
-def load_modlist_sections(path):
-    """Return OrderedDict of sections -> list(lines) preserving order"""
-    sections = OrderedDict()
-    current = None
-    buf = []
 
-    with open(path, "r", encoding="utf-8") as fh:
-        for raw in fh:
-            line = raw.rstrip("\n")
-            if line.startswith("# "):
-                if current is not None:
-                    sections[current] = buf
-                current = line[2:].strip()
-                buf = []
-            else:
-                if current is not None:
-                    buf.append(line)
-                else:
-                    # Lines before first section - keep under empty name
-                    sections.setdefault("", []).append(line)
-        if current is not None:
-            sections[current] = buf
+def load_markdown(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read().splitlines()
+
+
+def write_markdown(path, lines):
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
+def extract_sections(lines):
+    """Extract all sections and their table content from MODLIST.md"""
+    sections = defaultdict(list)
+    current_section = None
+
+    for line in lines:
+        if line.startswith("# "):
+            current_section = line
+            sections[current_section].append(line)
+        elif current_section:
+            sections[current_section].append(line)
 
     return sections
 
-def build_lookup(sections):
-    """Return two dicts: by_url[url] -> (section, idx), by_name[name] -> (section, idx)"""
-    by_url = {}
-    by_name = {}
-    for sec, lines in sections.items():
-        for idx, ln in enumerate(lines):
-            m = ROW_RE.match(ln.strip())
-            if not m:
-                continue
-            url = m.group("url").strip()
-            name = m.group("name").strip()
-            by_url[url] = (sec, idx)
-            # If multiple same names exist, first wins (fallback)
-            if name not in by_name:
-                by_name[name] = (sec, idx)
-    return by_url, by_name
 
-def ensure_other_mods(sections):
-    if "Other Mods" not in sections:
-        sections["Other Mods"] = [TABLE_HEADER, TABLE_DIVIDER]
-    else:
-        # ensure a header exists in that section if empty
-        lines = sections["Other Mods"]
-        if not lines or not any(l.strip().startswith("| Type") for l in lines):
-            sections["Other Mods"] = [TABLE_HEADER, TABLE_DIVIDER] + [l for l in lines if l.strip() != ""]
-    return sections
+def mod_key(mod):
+    """Uniquely identify mods matching by name + URL"""
+    return (mod.get("Name") or "").strip(), (mod.get("URL") or "").strip()
 
-def merge(readme_rows, sections):
-    by_url, by_name = build_lookup(sections)
 
-    added = 0
-    updated = 0
-    skipped = 0
+def convert_source_mod(src_mod, category="Other Mods"):
+    return {
+        "Type": category.replace("# ", "").strip(),
+        "Name": src_mod["Name"],
+        "Description": src_mod["Notes"]
+    }
 
-    sections = ensure_other_mods(sections)
 
-    # We'll modify sections in place
-    for row in readme_rows:
-        url = row["url"]
-        name = row["name"]
-        new_desc = row["desc"]
+def update_or_append_mod(target_rows, src_mod, category_header):
+    """Checks if mod exists: update description OR append into section"""
+    src_key = mod_key(src_mod)
 
-        if url in by_url:
-            sec, idx = by_url[url]
-            orig_line = sections[sec][idx]
-            m = ROW_RE.match(orig_line.strip())
-            if not m:
-                # weird line; replace conservatively
-                sections[sec][idx] = f"| {row['type']} | [{row['name']}]({url}) | {new_desc} |"
-                updated += 1
-                continue
+    # Try updating existing
+    for row in target_rows:
+        if mod_key(row) == src_key:
+            row["Description"] = src_mod["Notes"]  # update description
+            return
 
-            orig_type = m.group("type").strip()
-            orig_name = m.group("name").strip()
-            orig_desc = m.group("desc").strip()
+    # Append as new entry
+    new_mod = convert_source_mod(src_mod, category_header)
+    target_rows.append(new_mod)
 
-            if orig_desc.strip() != new_desc.strip():
-                sections[sec][idx] = f"| {orig_type} | [{orig_name}]({url}) | {new_desc.strip()} |"
-                updated += 1
-            else:
-                # No real change — leave the row untouched
-                skipped += 1
-                continue
-            # ensure we won't process duplicates later
-            continue
 
-        if name in by_name:
-            # name exists but url differs -> treat as same mod name: update description only
-            sec, idx = by_name[name]
-            orig_line = sections[sec][idx]
-            m = ROW_RE.match(orig_line.strip())
-            if not m:
-                sections[sec][idx] = f"| {row['type']} | [{row['name']}]({url}) | {new_desc} |"
-                updated += 1
-                continue
+def parse_target_tables(sections):
+    """Parse tables in existing MODLIST.md into structured dict"""
+    parsed = {}
 
-            orig_type = m.group("type").strip()
-            orig_name = m.group("name").strip()
-            orig_url = m.group("url").strip()
-            orig_desc = m.group("desc").strip()
+    for section, content in sections.items():
+        rows = parse_mod_table(content, TABLE_HEADER_TARGET)
+        parsed[section] = rows
 
-            # Update description, but keep orig_type and orig_name and orig_url (do not change name/type)
-            if orig_desc != new_desc:
-                sections[sec][idx] = f"| {orig_type} | [{orig_name}]({orig_url}) | {new_desc} |"
-                updated += 1
-            else:
-                skipped += 1
-            continue
+    return parsed
 
-        # Not found -> append to Other Mods
-        new_line = f"| {row['type']} | [{row['name']}]({url}) | {new_desc} |"
-        sections["Other Mods"].append(new_line)
-        added += 1
-        # update lookups so repeated entries in README_table.md won't duplicate
-        by_url[url] = ("Other Mods", len(sections["Other Mods"]) - 1)
-        if row["name"] not in by_name:
-            by_name[row["name"]] = ("Other Mods", len(sections["Other Mods"]) - 1)
 
-    return sections, added, updated, skipped
+def rebuild_sections(sections, parsed_tables):
+    """Rebuild markdown content with updated mod rows in each section"""
+    out = []
 
-def write_sections(path, sections):
-    with open(path, "w", encoding="utf-8") as fh:
-        for i, (sec, lines) in enumerate(sections.items()):
-            # Strip trailing blank lines inside a section
-            while lines and not lines[-1].strip():
-                lines.pop()
+    for section, content in sections.items():
+        out.append(section)
 
-            # Section header
-            if sec:
-                fh.write(f"# {sec}\n")
+        rows = parsed_tables.get(section, [])
+        if rows:
+            out.append("| " + " | ".join(TABLE_HEADER_TARGET) + " |")
+            out.append("|" + "|".join(["------"] * len(TABLE_HEADER_TARGET)) + "|")
+            for r in rows:
+                out.append(f"| {r['Type']} | {r['Name']} | {r['Description']} |")
+        else:
+            # preserve sections with no mods
+            for l in content[1:]:
+                out.append(l)
 
-            # Write section content
-            for ln in lines:
-                fh.write(ln.rstrip() + "\n")
+        out.append("")  # spacing
 
-            # Only add ONE blank line between sections, and not after final section
-            if i < len(sections) - 1:
-                fh.write("\n")
+    return out
+
 
 def main():
     if len(sys.argv) != 3:
         print("Usage: python generate_modlist.py README_table.md MODLIST.md")
         sys.exit(1)
 
-    readme_table = sys.argv[1]
-    modlist = sys.argv[2]
+    source_path, target_path = sys.argv[1], sys.argv[2]
 
-    with open(readme_table, "r", encoding="utf-8") as fh:
-        readme_lines = fh.read().splitlines()
+    src_lines = load_markdown(source_path)
+    tgt_lines = load_markdown(target_path)
 
-    with open(modlist, "r", encoding="utf-8") as fh:
-        _ = fh.read()  # validate exists
+    src_sections = extract_sections(src_lines)
+    tgt_sections = extract_sections(tgt_lines)
 
-    readme_rows = parse_readme_rows(readme_lines)
-    sections = load_modlist_sections(modlist)
+    # Parse tables
+    src_mods_by_section = {
+        sec: parse_mod_table(lines, TABLE_HEADER_SOURCE)
+        for sec, lines in src_sections.items()
+    }
 
-    merged_sections, added, updated, skipped = merge(readme_rows, sections)
-    write_sections(modlist, merged_sections)
+    tgt_mods_by_section = parse_target_tables(tgt_sections)
 
-    print(f"Done. added={added} updated={updated} skipped={skipped}")
+    # Find "Other Mods" section or create one
+    other_section = next((s for s in tgt_sections if "Other Mods" in s), "# Other Mods")
+    if other_section not in tgt_sections:
+        tgt_sections[other_section] = [other_section]
+        tgt_mods_by_section[other_section] = []
+
+    # Apply update/append logic
+    for src_section, mods in src_mods_by_section.items():
+        category_name = src_section.replace("##", "#").strip()  # convert to header
+        for mod in mods:
+            update_or_append_mod(
+                tgt_mods_by_section[other_section], mod, category_name
+            )
+
+    # Rebuild new file
+    updated = rebuild_sections(tgt_sections, tgt_mods_by_section)
+    write_markdown(target_path, updated)
+
+    print(f"Updated: {target_path}")
+
 
 if __name__ == "__main__":
     main()
