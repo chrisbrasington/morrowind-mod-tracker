@@ -17,3 +17,7 @@ Beyond that - this is my personal extended list as it has grown over time. Thing
 | **Visuals / Shadows**    | Terrain Shadows<br>Indoor Shadows<br>                                           | (more if desired, kept minimal to be less demanding)                                                                                                                             |
 | **Interface**            | GUI Scale Factor: 1.5 (optional)<br>Can Zoom on Maps                                             | Zoom on maps is fantastic                                                                                                                             |
 | **Shaders**               | 1. DIVE<br>2. HBAO<br>3. VAIO<br>4. godrays<br>5. wetworld<br>6. tonemap<br>7. SMAA<br>8. clouds | In-game: press F2. For clouds shader: no skybox used                                                                         |
+
+## Mod Path Details
+
+If you need details on the file paths I have for the various mods, see [MODLIST_DETAILS.md](https://github.com/chrisbrasington/morrowind-mod-tracker/blob/main/MODLIST_DETAILS.md)
