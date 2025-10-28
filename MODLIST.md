@@ -3,11 +3,12 @@
 |------|------|------|
 | Patches | [PatchforPurists](https://www.nexusmods.com/morrowind/mods/45096) | Over 9000+ bugs still present in the game have been fixed. |
 | Patches | [UnofficialMorrowindOfficialPluginsPatched](https://www.nexusmods.com/morrowind/mods/43931) | An attempt to fix the many issues present in Bethesda's original Official Plugins. Includes fixes for all of the Official Plugins, and offers merged and compatibility options as well. |
-| PatchesFixesandConsistency | [Expansion Delay](https://www.nexusmods.com/morrowind/mods/47588) | This mod fixes Bethesda's overly enthusiastic expansion hooks by delaying the Dark Brotherhood attacks (for Tribunal) and limiting intrustive dialogue topics to a few NPCs (Bloodmoon). |
+| Patches | [ExpansionDelay](https://www.nexusmods.com/morrowind/mods/47588) | Delays the Dark Brotherhood attacks (for Tribunal) |
 
 # Land masses
 | Type | Name | Description |
 |------|------|------|
+| Landmasses | [Tamriel Rebuilt](https://www.tamriel-rebuilt.org/) | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. |
 | ModdingResources | [TamrielData](https://www.nexusmods.com/morrowind/mods/44537) | Tamriel_Data contains a data unified file structure spearheaded by Project Tamriel and Tamriel Rebuilt as the first adopter. |
 | Cyrodill | [Cyrodill](https://www.nexusmods.com/morrowind/mods/44922) | Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. |
 | Skyrim | [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. |
@@ -25,8 +26,8 @@
 | Camping | [Easy Camping](https://www.nexusmods.com/morrowind/mods/42919) | An extremely simple, balanced and practical camping mod that seems to actually work! |
 | Cheat | [No Arrow Weight](https://www.nexusmods.com/morrowind/mods/42570) | Tired of arrows encumbering you? Well, no more! |
 | Animation | [Impact Effects](https://www.nexusmods.com/morrowind/mods/55508) | Sounds and VFX when your weapon hits surfaces. |
-| Clothing | [Westly's Fine Clothiers of Tamriel](https://www.nexusmods.com/morrowind/mods/52331) | Fine Elsweyr clothing stop in Suran |
-| Combat | [Mercy - Combat AI Overhaul](https://www.nexusmods.com/morrowind/mods/55064) | NPC combat tweaks, may warn or surrender. |
+| Clothing | [Westly Presents Fine Clothiers of Tamriel](https://www.nexusmods.com/morrowind/mods/52331) | Adds a clothing store in Suran carrying imports from all over Tamriel. |
+| Combat | [Mercy Combat AI Overhaul](https://www.nexusmods.com/morrowind/mods/55064) | An immersive overhaul of in-combat NPC behavior for OpenMW 0.49. With new voice lines and animations. |
 | Extra | [LuaMultiMark](https://www.nexusmods.com/morrowind/mods/53260) | Allows the player to have multiple marked locations. |
 | Fixes | [JammingsOff](https://www.nexusmods.com/morrowind/mods/44523) | Changing Bounding Box size for all NPC and Player. |
 | Fixes | [DynamicDistantBuildingsforOpenMW](https://www.nexusmods.com/morrowind/mods/51236) | Makes distant land more responsive to quest progress. Great House strongholds do not appear in the distance at game start, and the whole Ghostfence vanishes at the end of the main quest. |
@@ -43,7 +44,7 @@
 | NPCs | [FamiliarFacesbyCaleb](https://www.nexusmods.com/morrowind/mods/50093) | An in-depth yet completely vanilla friendly touch up of every head and almost every hair (a few looked okay) in the game. |
 | NPCs | [Facelift](https://www.nexusmods.com/morrowind/mods/47617) | Some people have desired a simple enhancement of vanilla faces and hairs, so here you go. |
 | NPCs | [QuestGreetings](https://www.nexusmods.com/morrowind/mods/52273) | ElevenAI generated voices for quest-giving NPCs in Morrowind. Currently adds over 1800 original lines of voiced dialogue using the original actors voices. |
-| ObjectsClutter | [OpenMW Containers Animated](https://www.nexusmods.com/morrowind/mods/46232) | This mod adds open/close animation and sounds to all containers that should have animation. |
+| ObjectsClutter | [OpenMWContainersAnimated](https://www.nexusmods.com/morrowind/mods/46232) | This mod adds open/close animation and sounds to all containers that should have animation. |
 | Performance | [MorrowindOptimizationPatch](https://www.nexusmods.com/morrowind/mods/45384) | Greatly improves performance and fixes tons of mesh errors. |
 | Performance | [ProjectAtlas](https://www.nexusmods.com/morrowind/mods/45399) | The goal of Project Atlas is to identify the most performance heavy areas of vanilla Morrowind and some popular mods and target high usage/strain meshes in those areas for atlasing. This effort involves reworking the UVs for those meshes and creating texture atlases to cover various sets. |
 | Physics | [Lua physics](https://www.nexusmods.com/morrowind/mods/56589) | Object physics |
@@ -52,9 +53,9 @@
 | TexturePacks | [Landscape Retexture](https://www.nexusmods.com/morrowind/mods/42575) | Landscape retexturing |
 | Voice | [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. |
 | UserInterface | [CantonsontheGlobalMap](https://www.nexusmods.com/morrowind/mods/50534) | Vivec and Molag Mar no longer look like empty water on the global map. |
-| UserInterface | [BetterDialogueFont](https://www.nexusmods.com/morrowind/mods/36873) | A high resolution replacer for Morrowind's Magic Cards font, used in most of the UI - menus, dialogue and the journal. |
+| UserInterface | [Better Dialogue Font](https://www.nexusmods.com/morrowind/mods/36873) | A high resolution replacer for Morrowind's Magic Cards font, used in most of the UI - menus, dialogue and the journal. |
 | UserInterface | [InterfaceReimaigned](https://www.nexusmods.com/morrowind/mods/54985) | Modernized Dialogue and Decluttering of the UI |
-| UserInterface | [Perfect Placement](https://www.nexusmods.com/morrowind/mods/46562) | Adds interactive placement, rotation and wall mounting of items. Arrange gear, books and anything else you can pick up. Requires MWSE 2.1 or OpenMW 0.49dev. |
+| UserInterface | [PerfectPlacement](https://www.nexusmods.com/morrowind/mods/46562) | Adds interactive placement, rotation and wall mounting of items. Arrange gear, books and anything else you can pick up. |
 | UserInterface | [Small Skyrim Crosshair](https://www.nexusmods.com/morrowind/mods/46351) | Adds small skyrim-a-like crosshair with ownership mod compatibility |
 | UserInterface | [Canvas Map Splash Screens](https://www.nexusmods.com/morrowind/mods/56025) | Canvas map loading screens |
 | Voice | [LuaHelper](https://www.nexusmods.com/morrowind/mods/54629) | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. |
@@ -73,4 +74,7 @@
 | Shaders | [VtastekLightShaders](https://modding-openmw.com/mods/vtasteks-light-shaders/) | A highly advanced shader replacement that also revamps all lighting in the game. |
 | Tools | [waza lightfixes](https://modding-openmw.com/mods/waza_lightfixes/) | This is a tool which generates a plugin which fixes lights. |
 | UserInterface | [BigIcons](https://modding-openmw.com/mods/big-icons/) | Replaces the small 16x16 spell effect icons with your choice of larger icons. Works with your choice of MWSE or OpenMW |
+| HUD | [voshondsQuickSelect](https://www.nexusmods.com/morrowind/mods/56494) | Adds hotbars/actionsbars to the game for convinient access to up to 30 user defined items/spells/weapons |
+| Tools | [wazalightfixes](https://github.com/glassmancody/waza_lightfixes/releases) | This is a tool which generates a plugin which fixes lights. |
+| Voice | [VoicesOfVvardenfell PatchForOpenMW](https://www.nexusmods.com/morrowind/mods/54137') | Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49+ |
 

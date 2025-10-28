@@ -55,12 +55,6 @@
 |------|-------|-------|-------|-------|
 | Mercy Combat AI Overhaul | An immersive overhaul of in-combat NPC behavior for OpenMW 0.49. With new voice lines and animations. | [55064](https://www.nexusmods.com/morrowind/mods/55064) | Combat/MercyCombatAIOverhaul/MercyCAO.omwscripts | Combat/MercyCombatAIOverhaul |
 
-## Cyrodill
-
-| Name | Notes | URL   | Files | Paths |
-|------|-------|-------|-------|-------|
-| Cyrodill | Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. | [44922](https://www.nexusmods.com/morrowind/mods/44922) | Cyrodill/Cyr_Main.esm | Cyrodill |
-
 ## Extra
 
 | Name | Notes | URL   | Files | Paths |
@@ -109,6 +103,8 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | TamrielRebuilt | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. | [42145](https://www.nexusmods.com/morrowind/mods/42145) | Landmasses/TamrielRebuilt/00Core/TR_Mainland.esm, Landmasses/TamrielRebuilt/01FactionIntegration/TR_Factions.esp | Landmasses/TamrielRebuilt/00Core, Landmasses/TamrielRebuilt/01FactionIntegration |
+| Cyrodill | Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. | [44922](https://www.nexusmods.com/morrowind/mods/44922) | Landmasses/Cyrodill/Cyr_Main.esm | Landmasses/Cyrodill |
+| Skyrim | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. | [44921](https://www.nexusmods.com/morrowind/mods/44921) | Landmasses/Skyrim/Sky_Main.esm | Landmasses/Skyrim |
 
 ## Lighting
 
@@ -170,12 +166,6 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | VtastekLightShaders | A highly advanced shader replacement that also revamps all lighting in the game. | [vtasteks-light-shaders](https://modding-openmw.com/mods/vtasteks-light-shaders/) | (none) | Shaders/VtastekLightShaders |
-
-## Skyrim
-
-| Name | Notes | URL   | Files | Paths |
-|------|-------|-------|-------|-------|
-| Skyrim | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. | [44921](https://www.nexusmods.com/morrowind/mods/44921) | Skyrim/Sky_Main.esm, Skyrim/Sky_Main_Grass.esp | Skyrim |
 
 ## TexturePacks
 
