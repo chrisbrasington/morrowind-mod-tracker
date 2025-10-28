@@ -148,14 +148,22 @@ def merge(readme_rows, sections):
 
 def write_sections(path, sections):
     with open(path, "w", encoding="utf-8") as fh:
-        for sec, lines in sections.items():
-            # skip empty unnamed preface
-            if sec != "":
+        for i, (sec, lines) in enumerate(sections.items()):
+            # Strip trailing blank lines inside a section
+            while lines and not lines[-1].strip():
+                lines.pop()
+
+            # Section header
+            if sec:
                 fh.write(f"# {sec}\n")
-            # write existing lines
+
+            # Write section content
             for ln in lines:
-                fh.write(ln + "\n")
-            fh.write("\n")
+                fh.write(ln.rstrip() + "\n")
+
+            # Only add ONE blank line between sections, and not after final section
+            if i < len(sections) - 1:
+                fh.write("\n")
 
 def main():
     if len(sys.argv) != 3:

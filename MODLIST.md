@@ -6,14 +6,10 @@
 | Patches | [Unofficial Morrowind Official Plugins Patched](https://www.nexusmods.com/morrowind/mods/43931) | An attempt to fix the many issues present in Bethesda's original Official Plugins. Includes fixes for all of the Official Plugins, and offers merged and compatibility options as well. |
 | PatchesFixesandConsistency | [Expansion Delay](https://www.nexusmods.com/morrowind/mods/47588) | This mod fixes Bethesda's overly enthusiastic expansion hooks by delaying the Dark Brotherhood attacks (for Tribunal) and limiting intrustive dialogue topics to a few NPCs (Bloodmoon). |
 
-
-
 # Land masses
 | Type | Name | Description |
 |------|------|-------------|
 | ModdingResources | [Tamriel Data](https://www.nexusmods.com/morrowind/mods/44537) | Tamriel_Data contains a data unified file structure spearheaded by Project Tamriel and Tamriel Rebuilt as the first adopter. |
-
-
 
 # Other Mods
 | Type | Name | Description |
@@ -69,5 +65,3 @@
 | Water | [Better Waterfalls](https://www.nexusmods.com/morrowind/mods/45424) | Better waterfalls |
 | Weapons | [WeaponSheathing](https://www.nexusmods.com/morrowind/mods/46069) | Makes unreadied weapons appear on the character's hip or back. |
 | Weather | [KirelsInteriorWeather](https://www.nexusmods.com/morrowind/mods/49278) | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. |
-
-
