@@ -40,7 +40,6 @@
 | Shaders | [VtastekLightShaders](https://modding-openmw.com/mods/vtasteks-light-shaders/) | A highly advanced shader replacement that also revamps all lighting in the game. |
 | UserInterface | [InterfaceReimaigned](https://www.nexusmods.com/morrowind/mods/54985) | Modernized Dialogue and Decluttering of the UI |
 
-
 # Graphics Extra
 | Type | Name | Description |
 |------|------|------|
@@ -90,3 +89,5 @@
 | Camping | [Easy Camping](https://www.nexusmods.com/morrowind/mods/42919) | An extremely simple, balanced and practical camping mod that seems to actually work! |
 | Clothing | [Westly Presents Fine Clothiers of Tamriel](https://www.nexusmods.com/morrowind/mods/52331) | Adds a clothing store in Suran carrying imports from all over Tamriel. |
 | Cities | [The Waters of His Glory](https://www.nexusmods.com/morrowind/mods/56621) | Grand Aqueducts near Vivec City. |
+| Landmasses | [TamrielRebuilt](https://www.nexusmods.com/morrowind/mods/42145) | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. |
+
