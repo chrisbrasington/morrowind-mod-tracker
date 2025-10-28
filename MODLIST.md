@@ -21,11 +21,13 @@
 | Landmasses | [Cyrodill](https://www.nexusmods.com/morrowind/mods/44922) | Project Cyrodiil is a new lands mod from the Project Tamriel team that adds part of Cyrodiil, the Imperial Province, to the world of TESIII: Morrowind. |
 | Landmasses | [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. |
 
-# Quality of Life
+# Quality of Life / UI
 | Cheat | [No Arrow Weight](https://www.nexusmods.com/morrowind/mods/42570) | Tired of arrows encumbering you? Well, no more! |
 | Fixes | [JammingsOff](https://www.nexusmods.com/morrowind/mods/44523) | Changing Bounding Box size for all NPC and Player. |
 | Fixes | [DistantFixesLuaEdition](https://modding-openmw.gitlab.io/distant-fixes-lua-edition/) | A Lua framework for handling updates to distant objects that can support any content via YAML-based data. |
 | UserInterface | [Better Dialogue Font](https://www.nexusmods.com/morrowind/mods/36873) | A high resolution replacer for Morrowind's Magic Cards font, used in most of the UI - menus, dialogue and the journal. |
+| Fonts | [AlternativeTrueTypeFonts](https://modding-openmw.com/mods/alternative-truetype-fonts/) | Fonts to replace the default fonts used by OpenMW: Pelagiad by Isak Larborn and Ayembedt by Georg Duffner. |
+| HUD | [voshondsQuickSelect](https://www.nexusmods.com/morrowind/mods/56494) | Adds hotbars/actionsbars to the game for convinient access to up to 30 user defined items/spells/weapons |
 
 # Graphics Essential
 | Type | Name | Description |
@@ -33,6 +35,7 @@
 | Fog | [openmw-volumetric-clouds-main](https://github.com/zesterer/openmw-volumetric-clouds) | Zesterer's Volumetric Cloud & Mist Mod for OpenMW |
 | Shaders | [VtastekLightShaders](https://modding-openmw.com/mods/vtasteks-light-shaders/) | A highly advanced shader replacement that also revamps all lighting in the game. |
 | UserInterface | [InterfaceReimaigned](https://www.nexusmods.com/morrowind/mods/54985) | Modernized Dialogue and Decluttering of the UI |
+
 
 # Graphics Extra
 | Type | Name | Description |
@@ -63,13 +66,10 @@
 | Water | [DistantSeafloorforOpenMW](https://www.nexusmods.com/morrowind/mods/50796) | Extends the seafloor around Vvardenfell to hide the edge of the world in OpenMW. Compatible with everything. |
 | Water | [Better Waterfalls](https://www.nexusmods.com/morrowind/mods/45424) | Better waterfalls |
 | Weather | [KirelsInteriorWeather](https://www.nexusmods.com/morrowind/mods/49278) | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. |
-| Cities | [The Waters of His Glory](https://www.nexusmods.com/morrowind/mods/56621) | Grand Aqueducts near Vivec City. |
-| Fonts | [AlternativeTrueTypeFonts](https://modding-openmw.com/mods/alternative-truetype-fonts/) | Fonts to replace the default fonts used by OpenMW: Pelagiad by Isak Larborn and Ayembedt by Georg Duffner. |
 | HUD | [HUD](https://www.nexusmods.com/morrowind/mods/53038?tab=files) | With preset for hotkeys: https://www.nexusmods.com/morrowind/mods/56649?tab=description |
 | Lighting | [GlowintheDahrk](https://modding-openmw.com/mods/glow-in-the-dahrk/) | This is a modern, pluginless replacement of the old Windows Glow mods |
 | Tools | [waza lightfixes](https://modding-openmw.com/mods/waza_lightfixes/) | This is a tool which generates a plugin which fixes lights. |
 | UserInterface | [BigIcons](https://modding-openmw.com/mods/big-icons/) | Replaces the small 16x16 spell effect icons with your choice of larger icons. Works with your choice of MWSE or OpenMW |
-| HUD | [voshondsQuickSelect](https://www.nexusmods.com/morrowind/mods/56494) | Adds hotbars/actionsbars to the game for convinient access to up to 30 user defined items/spells/weapons |
 | Tools | [wazalightfixes](https://github.com/glassmancody/waza_lightfixes/releases) | This is a tool which generates a plugin which fixes lights. |
 
 # Voice/Audio
@@ -83,3 +83,4 @@
 |------|------|------|
 | Camping | [Easy Camping](https://www.nexusmods.com/morrowind/mods/42919) | An extremely simple, balanced and practical camping mod that seems to actually work! |
 | Clothing | [Westly Presents Fine Clothiers of Tamriel](https://www.nexusmods.com/morrowind/mods/52331) | Adds a clothing store in Suran carrying imports from all over Tamriel. |
+| Cities | [The Waters of His Glory](https://www.nexusmods.com/morrowind/mods/56621) | Grand Aqueducts near Vivec City. |
