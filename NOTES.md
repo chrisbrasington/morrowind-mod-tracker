@@ -8,6 +8,8 @@ Beyond that - this is my personal extended list as it has grown over time. Thing
 
 [Tamriel Rebuilt](https://www.tamriel-rebuilt.org/) is the real gold to be found here - but that can be added after playing the main game. 
 
+[See screenshots of modded morrowind here.](https://steamcommunity.com/id/raylinth/screenshots/?appid=22320&sort=newestfirst&browsefilter=myfiles&view=imagewall)
+
 ## OpenMW Settings
 
 | Category / Subcategory   | Setting / Description                                                                            | Notes / Additional Info                                                                                                      |
