@@ -6,18 +6,15 @@ from collections import defaultdict
 TABLE_HEADER_SOURCE = ["Name", "Notes", "URL", "Files", "Paths"]
 TABLE_HEADER_TARGET = ["Type", "Name", "Description"]
 
-def normalize_url(url):
-    """Normalize URL - if it's just a number, convert to full Nexus URL"""
-    url = url.strip()
-    if url.isdigit():
-        return f"https://www.nexusmods.com/morrowind/mods/{url}"
-    return url
-
 def extract_url(text):
-    """Extract URL from markdown link or return text if no link"""
+    """Extract URL from markdown link [text](url) or return text if no link"""
     match = re.search(r"\(([^)]+)\)", text)
-    url = match.group(1).strip() if match else text.strip()
-    return normalize_url(url)
+    return match.group(1).strip() if match else text.strip()
+
+def extract_name(text):
+    """Extract name from markdown link [name](url) or return text if no link"""
+    match = re.search(r"\[([^\]]+)\]", text)
+    return match.group(1).strip() if match else text.strip()
 
 def parse_table(lines, headers):
     """Parse markdown table into list of dicts"""
@@ -68,14 +65,16 @@ def main():
     src_lines = load_markdown(source_path)
     tgt_lines = load_markdown(target_path)
 
-    # Parse source mods - URL comes from URL column
+    # Parse source mods - URL comes from URL column (as markdown link)
     src_mods = parse_table(src_lines, TABLE_HEADER_SOURCE)
     
     # Build URL -> mod mapping from source
     src_by_url = {}
     for mod in src_mods:
-        url = normalize_url(mod.get("URL", ""))  # Normalize URL (handles mod IDs)
+        url = extract_url(mod.get("URL", ""))  # Extract URL from markdown link
+        name = extract_name(mod.get("Name", ""))  # Extract name from markdown link
         if url:
+            mod["_clean_name"] = name  # Store clean name for later use
             src_by_url[url] = mod
 
     # Parse target sections
@@ -108,7 +107,7 @@ def main():
         if url not in all_target_urls:
             new_mod = {
                 "Type": "Mod",
-                "Name": f"[{src_mod['Name']}]({url})",
+                "Name": f"[{src_mod['_clean_name']}]({url})",
                 "Description": src_mod["Notes"]
             }
             updated_sections[other_section].append(new_mod)
