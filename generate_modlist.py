@@ -3,99 +3,92 @@ import sys
 import re
 from collections import defaultdict
 
+# Source table headers
 TABLE_HEADER_SOURCE = ["Name", "Notes", "URL", "Files", "Paths"]
+# Target table headers
 TABLE_HEADER_TARGET = ["Type", "Name", "Description"]
 
+def extract_name(name_field):
+    """Strip markdown link: [Text](url) -> Text"""
+    match = re.match(r"\[(.*?)\]", name_field)
+    if match:
+        return match.group(1).strip()
+    return name_field.strip()
+
+def mod_key(mod):
+    """Return the normalized mod name for matching"""
+    return extract_name(mod.get("Name", ""))
+
 def parse_mod_table(lines, expected_headers):
+    """Parse markdown table into list of dicts"""
     mods = []
     headers_line = "|" + "|".join(expected_headers) + "|"
-
     i = 0
     while i < len(lines):
         if lines[i].strip().replace(" ", "") == headers_line.replace(" ", ""):
-            i += 2  # skip header + separator line
+            i += 2  # skip header + separator
             while i < len(lines) and lines[i].startswith("|"):
                 row = [col.strip() for col in lines[i].strip().strip("|").split("|")]
                 if len(row) >= len(expected_headers):
-                    mod = dict(zip(expected_headers, row))
-                    mods.append(mod)
+                    mods.append(dict(zip(expected_headers, row)))
                 i += 1
         else:
             i += 1
     return mods
 
-
 def load_markdown(path):
     with open(path, "r", encoding="utf-8") as f:
         return f.read().splitlines()
-
 
 def write_markdown(path, lines):
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
 
-
 def extract_sections(lines):
-    """Extract all sections and their table content from MODLIST.md"""
+    """Split markdown by headers (# ...)"""
     sections = defaultdict(list)
     current_section = None
-
     for line in lines:
         if line.startswith("# "):
             current_section = line
             sections[current_section].append(line)
         elif current_section:
             sections[current_section].append(line)
-
     return sections
-
-
-def mod_key(mod):
-    """Uniquely identify mods matching by name + URL"""
-    return (mod.get("Name") or "").strip(), (mod.get("URL") or "").strip()
-
 
 def convert_source_mod(src_mod, category="Other Mods"):
     return {
-        "Type": category.replace("# ", "").strip(),
-        "Name": src_mod["Name"],
+        "Type": category.replace("#", "").strip(),
+        "Name": f"[{src_mod['Name']}]({src_mod['URL']})",
         "Description": src_mod["Notes"]
     }
 
-
-def update_or_append_mod(target_rows, src_mod, category_header):
-    """Checks if mod exists: update description OR append into section"""
-    src_key = mod_key(src_mod)
-
-    # Try updating existing
-    for row in target_rows:
-        if mod_key(row) == src_key:
-            row["Description"] = src_mod["Notes"]  # update description
-            return
-
-    # Append as new entry
-    new_mod = convert_source_mod(src_mod, category_header)
-    target_rows.append(new_mod)
-
+def update_or_append_mod_all_sections(tgt_mods_by_section, src_mod, category_name):
+    src_name = mod_key(src_mod)
+    # Try updating in any section first
+    for section, rows in tgt_mods_by_section.items():
+        for row in rows:
+            if mod_key(row) == src_name:
+                row["Description"] = src_mod["Notes"]
+                return
+    # If not found anywhere, append to "Other Mods"
+    other_section = next((s for s in tgt_mods_by_section if "Other Mods" in s), "# Other Mods")
+    new_mod = convert_source_mod(src_mod, category_name)
+    tgt_mods_by_section[other_section].append(new_mod)
 
 def parse_target_tables(sections):
-    """Parse tables in existing MODLIST.md into structured dict"""
+    """Parse tables in existing MODLIST.md"""
     parsed = {}
-
     for section, content in sections.items():
         rows = parse_mod_table(content, TABLE_HEADER_TARGET)
         parsed[section] = rows
-
     return parsed
 
-
 def rebuild_sections(sections, parsed_tables):
-    """Rebuild markdown content with updated mod rows in each section"""
+    """Rebuild markdown with updated tables"""
     out = []
-
     for section, content in sections.items():
         out.append(section)
-
         rows = parsed_tables.get(section, [])
         if rows:
             out.append("| " + " | ".join(TABLE_HEADER_TARGET) + " |")
@@ -103,14 +96,11 @@ def rebuild_sections(sections, parsed_tables):
             for r in rows:
                 out.append(f"| {r['Type']} | {r['Name']} | {r['Description']} |")
         else:
-            # preserve sections with no mods
+            # preserve blank sections
             for l in content[1:]:
                 out.append(l)
-
-        out.append("")  # spacing
-
+        out.append("")
     return out
-
 
 def main():
     if len(sys.argv) != 3:
@@ -133,26 +123,21 @@ def main():
 
     tgt_mods_by_section = parse_target_tables(tgt_sections)
 
-    # Find "Other Mods" section or create one
+    # Find or create "Other Mods"
     other_section = next((s for s in tgt_sections if "Other Mods" in s), "# Other Mods")
     if other_section not in tgt_sections:
         tgt_sections[other_section] = [other_section]
         tgt_mods_by_section[other_section] = []
 
-    # Apply update/append logic
+    # Update descriptions or append new mods
     for src_section, mods in src_mods_by_section.items():
-        category_name = src_section.replace("##", "#").strip()  # convert to header
+        category_name = src_section.replace("##", "#").strip()
         for mod in mods:
-            update_or_append_mod(
-                tgt_mods_by_section[other_section], mod, category_name
-            )
+            update_or_append_mod_all_sections(tgt_mods_by_section, mod, category_name)
 
-    # Rebuild new file
     updated = rebuild_sections(tgt_sections, tgt_mods_by_section)
     write_markdown(target_path, updated)
-
     print(f"Updated: {target_path}")
-
 
 if __name__ == "__main__":
     main()
