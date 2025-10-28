@@ -2,8 +2,8 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Reanimation |  |  | Animation/Reanimation/ReAnimation_API.omwscripts, Animation/Reanimation/ReAnimation_v2_Rogue.omwscripts | Animation/Reanimation |
-| Impact Effects |  |  | Animation/ImpactEffects/ImpactEffects.omwscripts | Animation/ImpactEffects |
+| Reanimation | Improved animations | [52596](https://www.nexusmods.com/morrowind/mods/52596) | Animation/Reanimation/ReAnimation_API.omwscripts, Animation/Reanimation/ReAnimation_v2_Rogue.omwscripts | Animation/Reanimation |
+| Impact Effects | Sounds and VFX when your weapon hits surfaces. | [55508](https://www.nexusmods.com/morrowind/mods/55508) | Animation/ImpactEffects/ImpactEffects.omwscripts | Animation/ImpactEffects |
 
 ## Architecture
 
@@ -41,7 +41,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| The Waters of His Glory |  |  | Cities/TheWatersofHisGlory/CantonAqueducts.ESP, Cities/TheWatersofHisGlory/PlazaFountains.ESP, Cities/TheWatersofHisGlory/TelvanniAqueduct.ESP, Cities/TheWatersofHisGlory/TheWatersofHisGlory.ESP | Cities/TheWatersofHisGlory/ |
+| The Waters of His Glory | Grand Aqueducts near Vivec City. | [55508](https://www.nexusmods.com/morrowind/mods/55508) | Cities/TheWatersofHisGlory/CantonAqueducts.ESP, Cities/TheWatersofHisGlory/PlazaFountains.ESP, Cities/TheWatersofHisGlory/TelvanniAqueduct.ESP, Cities/TheWatersofHisGlory/TheWatersofHisGlory.ESP | Cities/TheWatersofHisGlory/ |
 
 ## Clothing
 
@@ -53,8 +53,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Combat |  |  | Combat/MercyCAO.omwscripts | (none) |
-|  |  |  | (none) | Combat/ |
+| Combat | NPC combat tweaks, may warn or surrender. | [55064](https://www.nexusmods.com/morrowind/mods/55064) | Combat/MercyCAO.omwscripts | (none) |
 
 ## Cyrodill
 
@@ -127,8 +126,8 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | TamrielData | Tamriel_Data contains a data unified file structure spearheaded by Project Tamriel and Tamriel Rebuilt as the first adopter. | [44537](https://www.nexusmods.com/morrowind/mods/44537) | ModdingResources/TamrielData/Tamriel_Data.omwscripts, ModdingResources/TamrielData/Tamriel_Data.esm | ModdingResources/TamrielData |
-| OAAB |  |  | ModdingResources/OAAB/OAAB_Data.esm | ModdingResources/OAAB |
-| Behaviour Tree Lua 2nd Edition |  |  | (none) | ModdingResources/BehaviourTreeLua2ndEdition/ |
+| OAAB | Asset repository | [49042](https://www.nexusmods.com/morrowind/mods/49042) | ModdingResources/OAAB/OAAB_Data.esm | ModdingResources/OAAB |
+| Behaviour Tree Lua 2nd Edition | Scripting resource | [55062](https://www.nexusmods.com/morrowind/mods/55062) | (none) | ModdingResources/BehaviourTreeLua2ndEdition/ |
 
 ## NPCs
 
@@ -169,7 +168,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Lua physics |  |  | Physics/Luaphysics/LuaPhysicsEngine.omwscripts | Physics/Luaphysics |
+| Lua physics | Object physics | [56589](https://www.nexusmods.com/morrowind/mods/56589) | Physics/Luaphysics/LuaPhysicsEngine.omwscripts | Physics/Luaphysics |
 
 ## Shaders
 
@@ -189,7 +188,7 @@
 |------|-------|-------|-------|-------|
 | MorrowindEnhancedTextures | Upscales every in-game texture with the help of machine learning. 100% vanilla-friendly. | [46221](https://www.nexusmods.com/morrowind/mods/46221) | (none) | TexturePacks/MorrowindEnhancedTextures/Interface, TexturePacks/MorrowindEnhancedTextures/atlas, TexturePacks/MorrowindEnhancedTextures/MET6-1main |
 | RealSignposts | The RealSignposts Plugin replaces the signposts in Morrowind by signposts showing the real names of the locations. | [3879](https://www.nexusmods.com/morrowind/mods/3879) | TexturePacks/RealSignposts/RealSignposts.esp | TexturePacks/RealSignposts |
-| Landscape Retexture |  |  | (none) | TexturePacks/LandscapeRetexture |
+| Landscape Retexture | Landscape retexturing | [42575](https://www.nexusmods.com/morrowind/mods/42575) | (none) | TexturePacks/LandscapeRetexture |
 
 ## Tools
 
@@ -208,7 +207,7 @@
 | InterfaceReimaigned | Modernized Dialogue and Decluttering of the UI | [54985](https://www.nexusmods.com/morrowind/mods/54985) | (none) | UserInterface/InterfaceReimaigned |
 | PerfectPlacement | Adds interactive placement, rotation and wall mounting of items. Arrange gear, books and anything else you can pick up. Requires MWSE 2.1 or OpenMW 0.49dev. | [46562](https://www.nexusmods.com/morrowind/mods/46562) | UserInterface/PerfectPlacement/PerfectPlacement.omwscripts | UserInterface/PerfectPlacement |
 | Small SKyrim Crosshair | Adds small skyrim-a-like crosshair with ownership mod compatibility | [46351](https://www.nexusmods.com/morrowind/mods/46351) | (none) | UserInterface/SmallSKyrimCrosshair |
-| Canvas Map Splash Screens |  |  | (none) | UserInterface/CanvasMapSplashScreens |
+| Canvas Map Splash Screens | Canvas map loading screens | [56025](https://www.nexusmods.com/morrowind/mods/56025) | (none) | UserInterface/CanvasMapSplashScreens |
 
 ## Voice
 
@@ -223,7 +222,7 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | DistantSeafloorforOpenMW | Extends the seafloor around Vvardenfell to hide the edge of the world in OpenMW. Compatible with everything. | [50796](https://www.nexusmods.com/morrowind/mods/50796) | Water/DistantSeafloorforOpenMW/00Core/distant_seafloor_2.00.esm, Water/DistantSeafloorforOpenMW/01PatchforvanillaSolstheimlocation/distantseafloorbloodmoonpatch.esp | Water/DistantSeafloorforOpenMW/00Core, Water/DistantSeafloorforOpenMW/01PatchforvanillaSolstheimlocation |
-| Better Waterfalls |  |  | (none) | Water/BetterWaterfalls, Water/BetterWaterfalls/00Core, Water/BetterWaterfalls/01VanillaResolutionTextures, Water/BetterWaterfalls/02TamrielRebuiltWater |
+| Better Waterfalls | Better waterfalls | [45424](https://www.nexusmods.com/morrowind/mods/45424) | (none) | Water/BetterWaterfalls, Water/BetterWaterfalls/00Core, Water/BetterWaterfalls/01VanillaResolutionTextures, Water/BetterWaterfalls/02TamrielRebuiltWater |
 
 ## Weapons
 
