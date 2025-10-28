@@ -108,7 +108,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| TamrielRebuilt | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. | https://www.tamriel-rebuilt.org/ | Landmasses/TamrielRebuilt/00Core/TR_Mainland.esm, Landmasses/TamrielRebuilt/01FactionIntegration/TR_Factions.esp | Landmasses/TamrielRebuilt/00Core, Landmasses/TamrielRebuilt/01FactionIntegration |
+| TamrielRebuilt | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. | [42145](https://www.nexusmods.com/morrowind/mods/42145) | Landmasses/TamrielRebuilt/00Core/TR_Mainland.esm, Landmasses/TamrielRebuilt/01FactionIntegration/TR_Factions.esp | Landmasses/TamrielRebuilt/00Core, Landmasses/TamrielRebuilt/01FactionIntegration |
 
 ## Lighting
 
