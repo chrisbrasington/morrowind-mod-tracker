@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import sys
 import re
-from collections import defaultdict
 
 TABLE_HEADER_SOURCE = ["Name", "Notes", "URL", "Files", "Paths"]
 TABLE_HEADER_TARGET = ["Type", "Name", "Description"]
@@ -20,7 +19,7 @@ def parse_table(lines, headers):
     """Parse markdown table into list of dicts"""
     mods = []
     header_regex = re.compile(r"\|\s*" + r"\s*\|\s*".join(headers) + r"\s*\|", re.IGNORECASE)
-    
+
     i = 0
     while i < len(lines):
         if header_regex.match(lines[i].strip()):
@@ -69,16 +68,12 @@ def main():
     src_lines = load_markdown(source_path)
     tgt_lines = load_markdown(target_path)
 
-    # Parse source mods - URL comes from URL column (as markdown link)
-    src_mods = parse_table(src_lines, TABLE_HEADER_SOURCE)
+    # Parse source mods
     src_sections = extract_sections(src_lines)
-    
-    # Build URL -> mod mapping from source, track which section each came from
     src_by_url = {}
     for section_header, section_lines in src_sections.items():
         section_mods = parse_table(section_lines, TABLE_HEADER_SOURCE)
         section_type = get_section_type(section_header)
-        
         for mod in section_mods:
             url = extract_url(mod.get("URL", ""))
             name = extract_name(mod.get("Name", ""))
@@ -92,34 +87,32 @@ def main():
 
     # Parse target sections
     tgt_sections = extract_sections(tgt_lines)
-    
-    # Find or create "Other Mods" section
+
+    # Ensure "Other Mods" section exists
     other_section = next((s for s in tgt_sections if "Other Mods" in s), None)
     if not other_section:
         other_section = "# Other Mods"
         tgt_sections[other_section] = [other_section]
 
-    # Parse and update target mods, collect all existing URLs
+    # Track URLs in each target section
+    section_urls = {s: set() for s in tgt_sections.keys()}
     updated_sections = {}
-    all_target_urls = set()
-    
+
     for section, content in tgt_sections.items():
         tgt_mods = parse_table(content, TABLE_HEADER_TARGET)
-        
-        # Update existing mods - keep in current section but update all fields from source
+        # Update existing mods in-place
         for mod in tgt_mods:
             url = extract_url(mod.get("Name", ""))
-            all_target_urls.add(url)
+            section_urls[section].add(url)
             if url in src_by_url:
                 src = src_by_url[url]
-                # Update all fields but keep mod in its current section
                 mod["Type"] = src["type"]
                 mod["Name"] = f"[{src['name']}]({src['url']})"
                 mod["Description"] = src["description"]
-        
         updated_sections[section] = tgt_mods
 
-    # Add new mods to "Other Mods" only if URL doesn't exist anywhere in target
+    # Add new mods to "Other Mods" only if they are not in any section
+    all_target_urls = set(url for urls in section_urls.values() for url in urls)
     for url, src in src_by_url.items():
         if url not in all_target_urls:
             new_mod = {
@@ -135,13 +128,12 @@ def main():
     for section in tgt_sections.keys():
         output.append(section)
         mods = updated_sections.get(section, [])
-        
+
         if mods:
             output.append("| " + " | ".join(TABLE_HEADER_TARGET) + " |")
             output.append("|" + "|".join(["------"] * len(TABLE_HEADER_TARGET)) + "|")
             for mod in mods:
                 output.append(f"| {mod['Type']} | {mod['Name']} | {mod['Description']} |")
-        
         output.append("")
 
     write_markdown(target_path, output)

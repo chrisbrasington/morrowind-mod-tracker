@@ -24,6 +24,8 @@
 | Landmasses | [Skyrim](https://www.nexusmods.com/morrowind/mods/44921) | 100+ quests, including new regional questlines for the Imperial Guilds, bounty hunting, and miscellaneous quests; 290+ exterior cells of hand-crafted landscape; 330+ interior cells, including the massive cities of Karthwasten and Dragonstar, towns, camps, and dozens of locations for you to loot in classic TES fashion. |
 
 # Quality of Life / UI
+| Type | Name | Description |
+|------|------|------|
 | Cheat | [No Arrow Weight](https://www.nexusmods.com/morrowind/mods/42570) | Tired of arrows encumbering you? Well, no more! |
 | Fixes | [JammingsOff](https://www.nexusmods.com/morrowind/mods/44523) | Changing Bounding Box size for all NPC and Player. |
 | Fixes | [DistantFixesLuaEdition](https://modding-openmw.gitlab.io/distant-fixes-lua-edition/) | A Lua framework for handling updates to distant objects that can support any content via YAML-based data. |
@@ -75,6 +77,8 @@
 | Tools | [wazalightfixes](https://github.com/glassmancody/waza_lightfixes/releases) | This is a tool which generates a plugin which fixes lights. |
 
 # Voice/Audio
+| Type | Name | Description |
+|------|------|------|
 | Audiobooks | [Audiobooks](https://www.nexusmods.com/morrowind/mods/52458) | Turn the books in Morrowind into listenable audiobooks! |
 | Voice | [VoicesOfVvardenfell PatchForOpenMW](https://www.nexusmods.com/morrowind/mods/54137') | Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49+ |
 | Voice | [VoicesOfVvardenfell](https://www.nexusmods.com/morrowind/mods/52279) | Kezyma's Voices of Vvardenfell - A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. |
