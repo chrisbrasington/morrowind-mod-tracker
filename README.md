@@ -41,7 +41,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| The Waters of His Glory | Grand Aqueducts near Vivec City. | [55508](https://www.nexusmods.com/morrowind/mods/55508) | Cities/TheWatersofHisGlory/CantonAqueducts.ESP, Cities/TheWatersofHisGlory/PlazaFountains.ESP, Cities/TheWatersofHisGlory/TelvanniAqueduct.ESP, Cities/TheWatersofHisGlory/TheWatersofHisGlory.ESP | Cities/TheWatersofHisGlory/ |
+| The Waters of His Glory | Grand Aqueducts near Vivec City. | [56621](https://www.nexusmods.com/morrowind/mods/56621) | Cities/TheWatersofHisGlory/CantonAqueducts.ESP, Cities/TheWatersofHisGlory/PlazaFountains.ESP, Cities/TheWatersofHisGlory/TelvanniAqueduct.ESP, Cities/TheWatersofHisGlory/TheWatersofHisGlory.ESP | Cities/TheWatersofHisGlory/ |
 
 ## Clothing
 
@@ -235,4 +235,3 @@
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
 | KirelsInteriorWeather | Plays weather sound effects in interior cells, but not in places like caves, ruins, etc and places you wouldn't expect to hear them - all with little or no FPS hit. | [49278](https://www.nexusmods.com/morrowind/mods/49278) | Weather/KirelsInteriorWeather/k_weather.esp, Weather/KirelsInteriorWeather/k_weather(loudersounds).esp | Weather/KirelsInteriorWeather |
-
