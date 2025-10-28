@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-If you're new to morrowind (period) - [openMW](https://openmw.org/) is an open-source game engine highly recommended. Will get you playing at high resolution on a modern system. Vvardenfell is worth the adventure even some 20+ years after its release.
+If you're new to [morrowind](https://store.steampowered.com/app/22320/The_Elder_Scrolls_III_Morrowind_Game_of_the_Year_Edition/) (period) - [openMW](https://openmw.org/) is an open-source game engine highly recommended. Will get you playing at high resolution on a modern system. Vvardenfell is worth the adventure even some 20+ years after its release.
 
 Morrowind is highly moddable, I'd recommend starting with the [I Heart Vanilla](https://modding-openmw.com/lists/i-heart-vanilla/) guide and modlist. It adds bugfixes, quality of life improvements, some higher quality textures/meshes and things like graphic herbalism (seeing the plants you pick).
 
