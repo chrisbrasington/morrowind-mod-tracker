@@ -47,15 +47,13 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Clothing |  |  | (none) | Clothing |
-| Westly Presents |  |  | Clothing/WestlyPresents/Westly_Presents_FCOT.esp | Clothing/WestlyPresents |
+| Westly Presents Fine Clothiers of Tamriel | Adds a clothing store in Suran carrying imports from all over Tamriel. | [52331](https://www.nexusmods.com/morrowind/mods/52331) | Clothing/WestlyPresentsFineClothiersofTamriel/Westly_Presents_FCOT.esp | Clothing/WestlyPresentsFineClothiersofTamriel |
 
 ## Combat
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| Mercy Combat AI Overhaul |  |  | Combat/MercyCombatAIOverhaul/MercyCAO.omwscripts | Combat/MercyCombatAIOverhaul |
-|  |  |  | (none) | Combat/ |
+| Mercy Combat AI Overhaul | An immersive overhaul of in-combat NPC behavior for OpenMW 0.49. With new voice lines and animations. | [55064](https://www.nexusmods.com/morrowind/mods/55064) | Combat/MercyCombatAIOverhaul/MercyCAO.omwscripts | Combat/MercyCombatAIOverhaul |
 
 ## Cyrodill
 
@@ -104,8 +102,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| HUD | With preset for hotkeys: https://www.nexusmods.com/morrowind/mods/56649?tab=description | [53038?tab=files](https://www.nexusmods.com/morrowind/mods/53038?tab=files) | (none) | HUD |
-| voshondsQuickSelect |  |  | HUD/voshondsQuickSelect/voshondsQuickSelect.omwscripts | HUD/voshondsQuickSelect |
+| voshondsQuickSelect | Adds hotbars/actionsbars to the game for convinient access to up to 30 user defined items/spells/weapons | [56494](https://www.nexusmods.com/morrowind/mods/56494) | HUD/voshondsQuickSelect/voshondsQuickSelect.omwscripts | HUD/voshondsQuickSelect |
 
 ## Landmasses
 
@@ -145,7 +142,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| OpenMWContainersAnimated |  |  | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated/ContainersAnimated.esp | ObjectsClutter/OpenMWContainersAnimated/Optional/kollops, ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated |
+| OpenMWContainersAnimated | This mod adds open/close animation and sounds to all containers that should have animation. | [46232](https://www.nexusmods.com/morrowind/mods/46232) | ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated/ContainersAnimated.esp | ObjectsClutter/OpenMWContainersAnimated/Optional/kollops, ObjectsClutter/OpenMWContainersAnimated/ContainersAnimated |
 
 ## Patches
 
@@ -153,7 +150,7 @@
 |------|-------|-------|-------|-------|
 | PatchforPurists | Over 9000+ bugs still present in the game have been fixed. | [45096](https://www.nexusmods.com/morrowind/mods/45096) | Patches/PatchforPurists/PatchforPurists.esm, Patches/PatchforPurists/PatchforPurists-Semi-PuristFixes.ESP, Patches/PatchforPurists/PatchforPurists-BookTypos.ESP | Patches/PatchforPurists |
 | UnofficialMorrowindOfficialPluginsPatched | An attempt to fix the many issues present in Bethesda's original Official Plugins. Includes fixes for all of the Official Plugins, and offers merged and compatibility options as well. | [43931](https://www.nexusmods.com/morrowind/mods/43931) | Patches/UnofficialMorrowindOfficialPluginsPatched/UnofficialMorrowindOfficialPluginsPatched.ESP | Patches/UnofficialMorrowindOfficialPluginsPatched, Patches/UnofficialMorrowindOfficialPluginsPatched/CompatibilityVersion |
-| ExpansionDelay |  |  | Patches/ExpansionDelay/ExpansionDelay.ESP | Patches/ExpansionDelay |
+| ExpansionDelay | Delays the Dark Brotherhood attacks (for Tribunal) | [47588](https://www.nexusmods.com/morrowind/mods/47588) | Patches/ExpansionDelay/ExpansionDelay.ESP | Patches/ExpansionDelay |
 
 ## Performance
 
@@ -192,8 +189,8 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| wazalightfixes |  |  | Tools/wazalightfixes/LightFixes.esp | Tools/wazalightfixes |
-| luahelper |  |  | (none) | Tools/luahelper |
+| wazalightfixes | This is a tool which generates a plugin which fixes lights. | https://github.com/glassmancody/waza_lightfixes/releases | Tools/wazalightfixes/LightFixes.esp | Tools/wazalightfixes |
+| luahelper | Support mod for other OpenMW lua based mods. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | (none) | Tools/luahelper |
 
 ## UserInterface
 
@@ -203,9 +200,9 @@
 | CantonsontheGlobalMap | Vivec and Molag Mar no longer look like empty water on the global map. | [50534](https://www.nexusmods.com/morrowind/mods/50534) | UserInterface/CantonsontheGlobalMap/DataFiles/Cantons_on_the_Global_Map_v1.1.esp | UserInterface/CantonsontheGlobalMap/DataFiles |
 | InterfaceReimaigned | Modernized Dialogue and Decluttering of the UI | [54985](https://www.nexusmods.com/morrowind/mods/54985) | (none) | UserInterface/InterfaceReimaigned |
 | Canvas Map Splash Screens | Canvas map loading screens | [56025](https://www.nexusmods.com/morrowind/mods/56025) | (none) | UserInterface/CanvasMapSplashScreens |
-| Better Dialogue Font |  |  | (none) | UserInterface/BetterDialogueFont |
-| PerfectPlacement |  |  | UserInterface/PerfectPlacement/PerfectPlacement.omwscripts | UserInterface/PerfectPlacement |
-| Small Skyrim Crosshair |  |  | (none) | UserInterface/SmallSkyrimCrosshair |
+| Better Dialogue Font | A high resolution replacer for Morrowind's Magic Cards font, used in most of the UI - menus, dialogue and the journal. | [36873](https://www.nexusmods.com/morrowind/mods/36873) | (none) | UserInterface/BetterDialogueFont |
+| PerfectPlacement | Adds interactive placement, rotation and wall mounting of items. Arrange gear, books and anything else you can pick up. | [46562](https://www.nexusmods.com/morrowind/mods/46562) | UserInterface/PerfectPlacement/PerfectPlacement.omwscripts | UserInterface/PerfectPlacement |
+| Small Skyrim Crosshair | Adds small skyrim-a-like crosshair with ownership mod compatibility | [46351](https://www.nexusmods.com/morrowind/mods/46351) | (none) | UserInterface/SmallSkyrimCrosshair |
 
 ## Voice
 
@@ -213,7 +210,7 @@
 |------|-------|-------|-------|-------|
 | LuaHelper | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Voice/LuaHelper/OpenMW_luahelper_dialog_TR.esp, Voice/LuaHelper/OpenMW_luahelper.omwscripts, Voice/LuaHelper/OpenMW_luahelper.esp, Voice/LuaHelper/OpenMW_luahelper_dialog.esp | Voice/LuaHelper, Voice/LuaHelper/scripts, Voice/LuaHelper/scripts/OpenMW_luahelper |
 | VoicesOfVvardenfell | Kezyma's Voices of Vvardenfell - A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. | [52279](https://www.nexusmods.com/morrowind/mods/52279) | (none) | Voice/VoicesOfVvardenfell, Voice/VoicesOfVvardenfell/00-Core, Voice/VoicesOfVvardenfell/01-PatchforPurists, Voice/VoicesOfVvardenfell/11-FurbyZone'sSkyrimNeloth, Voice/VoicesOfVvardenfell/12-FurbyZone'sAlmalexia, Voice/VoicesOfVvardenfell/00-Core/MWSE/mods/AIVoices |
-| PatchForOpenMW |  |  | Voice/PatchForOpenMW/VoVOpenMW.omwscripts | Voice/PatchForOpenMW |
+| PatchForOpenMW | Full Working of Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49+ | [54137](https://www.nexusmods.com/morrowind/mods/54137) | Voice/PatchForOpenMW/VoVOpenMW.omwscripts | Voice/PatchForOpenMW |
 
 ## Water
 
