@@ -124,5 +124,3 @@ If you need details on the file paths I have for the various mods, see [MODLIST_
 | Camping | [Easy Camping](https://www.nexusmods.com/morrowind/mods/42919) | An extremely simple, balanced and practical camping mod that seems to actually work! |
 | Clothing | [Westly Presents Fine Clothiers of Tamriel](https://www.nexusmods.com/morrowind/mods/52331) | Adds a clothing store in Suran carrying imports from all over Tamriel. |
 | Cities | [The Waters of His Glory](https://www.nexusmods.com/morrowind/mods/56621) | Grand Aqueducts near Vivec City. |
-| Landmasses | [TamrielRebuilt](https://www.nexusmods.com/morrowind/mods/42145) | Tamriel Rebuilt is a modding project that adds Morrowind's mainland to The Elder Scrolls III: Morrowind for you to explore. |
-
