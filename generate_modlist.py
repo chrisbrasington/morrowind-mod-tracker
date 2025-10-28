@@ -6,8 +6,8 @@ TABLE_HEADER = "| Type | Name | Description |"
 URL_REGEX = re.compile(r'\[(.*?)\]\((https?://[^\)]+)\)')
 
 def parse_table(lines):
-    """Extract rows as dict: {type: [(name, url, desc)]}"""
-    mods = defaultdict(list)
+    """Extract rows as dict: {type: {name: (url, desc)}}"""
+    mods = defaultdict(dict)
     for line in lines:
         line = line.strip()
         if not line.startswith("|") or line.startswith("| Type"):
@@ -21,7 +21,7 @@ def parse_table(lines):
             continue
         name = name_match.group(1)
         url = name_match.group(2)
-        mods[mod_type].append((name, url, desc))
+        mods[mod_type][name] = (url, desc)
     return mods
 
 def load_modlist(path):
@@ -45,29 +45,47 @@ def load_modlist(path):
     return sections
 
 def extract_existing_mods(sections):
-    existing = set()
-    for section in sections.values():
-        for line in section:
+    """Return a dict: {name: (section, url, desc)}"""
+    existing = {}
+    for section_name, lines in sections.items():
+        for line in lines:
             match = URL_REGEX.search(line)
             if match:
-                existing.add(match.group(1))
+                name = match.group(1)
+                url = match.group(2)
+                # Get description (everything after the third |)
+                parts = [p.strip() for p in line.split("|")]
+                desc = parts[3] if len(parts) > 3 else ""
+                existing[name] = (section_name, url, desc)
     return existing
 
 def merge_mods(modlist_sections, new_mods):
     existing = extract_existing_mods(modlist_sections)
+
+    # Ensure Other Mods exists
     if "Other Mods" not in modlist_sections:
         modlist_sections["Other Mods"] = [TABLE_HEADER, "|------|------|-------------|"]
+
     updated = {s: list(lines) for s, lines in modlist_sections.items()}
 
     for mod_type, entries in new_mods.items():
-        for name, url, desc in entries:
+        for name, (url, desc) in entries.items():
             if name in existing:
-                continue
-            row = f"| {mod_type} | [{name}]({url}) | {desc} |"
-            if mod_type in updated:
-                updated[mod_type].append(row)
+                section_name, existing_url, existing_desc = existing[name]
+                # If description changed, update it
+                if desc != existing_desc:
+                    # Replace the line
+                    for i, line in enumerate(updated[section_name]):
+                        if f"[{name}]({existing_url})" in line:
+                            updated[section_name][i] = f"| {mod_type} | [{name}]({existing_url}) | {desc} |"
+                continue  # Already exists, updated if needed
             else:
-                updated["Other Mods"].append(row)
+                row = f"| {mod_type} | [{name}]({url}) | {desc} |"
+                if mod_type in updated:
+                    updated[mod_type].append(row)
+                else:
+                    updated["Other Mods"].append(row)
+
     return updated
 
 def write_modlist(path, sections):
@@ -85,7 +103,7 @@ def generate_modlist(readme_table_path, modlist_path):
     new_mods = parse_table(readme_lines)
     updated_sections = merge_mods(modlist_sections, new_mods)
     write_modlist(modlist_path, updated_sections)
-    print(f"✅ MODLIST.md updated with new mods from {readme_table_path}")
+    print(f"✅ MODLIST.md updated with new mods from {readme_table_path} (descriptions updated if changed)")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -94,3 +112,4 @@ if __name__ == "__main__":
     readme_table_file = sys.argv[1]
     modlist_file = sys.argv[2]
     generate_modlist(readme_table_file, modlist_file)
+

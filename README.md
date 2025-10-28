@@ -148,7 +148,7 @@
 
 | Name | Notes | URL   | Files | Paths |
 |------|-------|-------|-------|-------|
-| PatchforPurists | Patch for Purists is an unofficial patch for The Elder Scrolls III: Morrowind Game of the Year Edition which attempts to continue where the latest official version of the game left off. Over 9000+ bugs still present in the game have been fixed. | [45096](https://www.nexusmods.com/morrowind/mods/45096) | Patches/PatchforPurists/PatchforPurists.esm, Patches/PatchforPurists/PatchforPurists-Semi-PuristFixes.ESP, Patches/PatchforPurists/PatchforPurists-BookTypos.ESP | Patches/PatchforPurists |
+| PatchforPurists | Over 9000+ bugs still present in the game have been fixed. | [45096](https://www.nexusmods.com/morrowind/mods/45096) | Patches/PatchforPurists/PatchforPurists.esm, Patches/PatchforPurists/PatchforPurists-Semi-PuristFixes.ESP, Patches/PatchforPurists/PatchforPurists-BookTypos.ESP | Patches/PatchforPurists |
 | UnofficialMorrowindOfficialPluginsPatched | An attempt to fix the many issues present in Bethesda's original Official Plugins. Includes fixes for all of the Official Plugins, and offers merged and compatibility options as well. | [43931](https://www.nexusmods.com/morrowind/mods/43931) | Patches/UnofficialMorrowindOfficialPluginsPatched/UnofficialMorrowindOfficialPluginsPatched.ESP | Patches/UnofficialMorrowindOfficialPluginsPatched, Patches/UnofficialMorrowindOfficialPluginsPatched/CompatibilityVersion |
 
 ## PatchesFixesandConsistency
