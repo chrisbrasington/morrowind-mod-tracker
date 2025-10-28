@@ -43,16 +43,20 @@ def write_markdown(path, lines):
         f.write("\n".join(lines) + "\n")
 
 def extract_sections(lines):
-    """Split markdown by headers"""
+    """Split markdown by headers and preserve section names"""
     sections = {}
     current_section = None
     for line in lines:
-        if line.startswith("# "):
+        if line.startswith("#"):
             current_section = line
             sections[current_section] = [line]
         elif current_section:
             sections[current_section].append(line)
     return sections
+
+def get_section_type(section_header):
+    """Extract type from section header like '# Animation' -> 'Animation'"""
+    return section_header.lstrip('#').strip()
 
 def main():
     if len(sys.argv) != 3:
@@ -67,15 +71,24 @@ def main():
 
     # Parse source mods - URL comes from URL column (as markdown link)
     src_mods = parse_table(src_lines, TABLE_HEADER_SOURCE)
+    src_sections = extract_sections(src_lines)
     
-    # Build URL -> mod mapping from source
+    # Build URL -> mod mapping from source, track which section each came from
     src_by_url = {}
-    for mod in src_mods:
-        url = extract_url(mod.get("URL", ""))  # Extract URL from markdown link
-        name = extract_name(mod.get("Name", ""))  # Extract name from markdown link
-        if url:
-            mod["_clean_name"] = name  # Store clean name for later use
-            src_by_url[url] = mod
+    for section_header, section_lines in src_sections.items():
+        section_mods = parse_table(section_lines, TABLE_HEADER_SOURCE)
+        section_type = get_section_type(section_header)
+        
+        for mod in section_mods:
+            url = extract_url(mod.get("URL", ""))
+            name = extract_name(mod.get("Name", ""))
+            if url:
+                src_by_url[url] = {
+                    "type": section_type,
+                    "name": name,
+                    "description": mod.get("Notes", ""),
+                    "url": url
+                }
 
     # Parse target sections
     tgt_sections = extract_sections(tgt_lines)
@@ -93,25 +106,29 @@ def main():
     for section, content in tgt_sections.items():
         tgt_mods = parse_table(content, TABLE_HEADER_TARGET)
         
-        # Update existing mods and track all URLs in target
+        # Update existing mods - keep in current section but update all fields from source
         for mod in tgt_mods:
-            url = extract_url(mod.get("Name", ""))  # Extract URL from markdown link
+            url = extract_url(mod.get("Name", ""))
             all_target_urls.add(url)
             if url in src_by_url:
-                mod["Description"] = src_by_url[url]["Notes"]
+                src = src_by_url[url]
+                # Update all fields but keep mod in its current section
+                mod["Type"] = src["type"]
+                mod["Name"] = f"[{src['name']}]({src['url']})"
+                mod["Description"] = src["description"]
         
         updated_sections[section] = tgt_mods
 
     # Add new mods to "Other Mods" only if URL doesn't exist anywhere in target
-    for url, src_mod in src_by_url.items():
+    for url, src in src_by_url.items():
         if url not in all_target_urls:
             new_mod = {
-                "Type": "Mod",
-                "Name": f"[{src_mod['_clean_name']}]({url})",
-                "Description": src_mod["Notes"]
+                "Type": src["type"],
+                "Name": f"[{src['name']}]({src['url']})",
+                "Description": src["description"]
             }
             updated_sections[other_section].append(new_mod)
-            all_target_urls.add(url)  # Track it to prevent duplicates within this run
+            all_target_urls.add(url)
 
     # Rebuild markdown
     output = []
