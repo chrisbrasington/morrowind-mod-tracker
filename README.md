@@ -210,7 +210,7 @@
 |------|-------|-------|-------|-------|
 | LuaHelper | Tamriel Rebuilt voiced dialogue ESP to support TR release 25.05.09 hotfix. Support mod for use by other OpenMW lua Mods. Requires OpenMW 0.49. | [54629](https://www.nexusmods.com/morrowind/mods/54629) | Voice/LuaHelper/OpenMW_luahelper_dialog_TR.esp, Voice/LuaHelper/OpenMW_luahelper.omwscripts, Voice/LuaHelper/OpenMW_luahelper.esp, Voice/LuaHelper/OpenMW_luahelper_dialog.esp | Voice/LuaHelper, Voice/LuaHelper/scripts, Voice/LuaHelper/scripts/OpenMW_luahelper |
 | VoicesOfVvardenfell | Kezyma's Voices of Vvardenfell - A project to fully voice Morrowind using ElevenAI and MWSE. Comes with an optional 'greetings-only' mode and is easily extensible to add compatibility with other mods with no knowledge of scripting or the CS and no additional esp. | [52279](https://www.nexusmods.com/morrowind/mods/52279) | (none) | Voice/VoicesOfVvardenfell, Voice/VoicesOfVvardenfell/00-Core, Voice/VoicesOfVvardenfell/01-PatchforPurists, Voice/VoicesOfVvardenfell/11-FurbyZone'sSkyrimNeloth, Voice/VoicesOfVvardenfell/12-FurbyZone'sAlmalexia, Voice/VoicesOfVvardenfell/00-Core/MWSE/mods/AIVoices |
-| PatchForOpenMW | Full Working of Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49+ | [54137](https://www.nexusmods.com/morrowind/mods/54137) | Voice/PatchForOpenMW/VoVOpenMW.omwscripts | Voice/PatchForOpenMW |
+| VoicesOfVvardenfell PatchForOpenMW | Kezyma's Voices of Vvardenfell, all dialogue now playable. OpenMW 0.49+ | [54137'](https://www.nexusmods.com/morrowind/mods/54137') | Voice/VoicesOfVvardenfellPatchForOpenMW/VoVOpenMW.omwscripts | Voice/VoicesOfVvardenfellPatchForOpenMW |
 
 ## Water
 
